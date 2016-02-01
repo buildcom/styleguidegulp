@@ -1,0 +1,55 @@
+// File: Typography Variables
+// Description: http://patternlab.io/about.html#atoms
+// Version: 0.1.0
+// ------------------------------------------------------------
+
+// Font Families
+$sans-serif-fam: "Helvetica Neue", Helvetica, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, Arial, sans-serif;
+$serif-fam: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+$mono-fam:  Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+$script-fam: "Brushscript", "Comic Sans MS", cursive;
+$display-fam: "Helvetica Inserat", "Helvetica Neue Condensed Bold", Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+
+
+// Base Font Size
+$p-font-size:  14px;
+
+// Baseline
+$baseline: 21px;
+
+// Heading Font Sizes (http://type-scale.com/)
+$h6-font-size: $p-font-size * 0.85;   // @14px*.85 = 2px less
+$h5-font-size: $p-font-size * 0.85;   // @14px*.85 = 2px less
+$h4-font-size: $p-font-size * 1.00;   // @14px*1.00 = 0px swing
+$h3-font-size: $p-font-size * 1.333;  // @14px*1.333 = 5px more (golden)
+$h2-font-size: $p-font-size * 1.777;  // @14px*1.777 = 10px more (golden)
+$h1-font-size: $p-font-size * 2.111;  // @14px*2.111 = 16px more (2.369 = golden)
+
+// Leading
+$p-led:  $baseline;      // @14px this is 21px line height
+$h6-led: $baseline;      // @14px this is 21px line height
+$h5-led: $baseline;      // @16px this is 21px line height
+$h4-led: $baseline;      // @18px this is 21px line height
+$h3-led: $baseline * 2;  // @21px this is 42px line height
+$h2-led: $baseline * 2;  // @24px this is 42px line height
+$h1-led: $baseline * 2;  // @30px this is 42px line height
+
+// Base Underline Rule
+$baseUnderline: solid thin #cdc9c1;
+
+$p-hr:  $baseUnderline;      // this is standard ruler
+$h6-hr: $baseUnderline;      // this is standard ruler
+$h5-hr: $baseUnderline;      // this is standard ruler
+$h4-hr: $baseUnderline;      // this is standard ruler
+$h3-hr: $baseUnderline;		 // this is standard ruler
+$h2-hr: $baseUnderline;	  	 // this is standard ruler
+$h1-hr: $baseUnderline;	  	 // this is standard ruler
+
+// Working through the Typography 
+
+div.displayType H1{
+  font-size:166px;
+}
+displayFoundry{ 
+	margin-top: 3rem;
+}

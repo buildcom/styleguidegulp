@@ -1,0 +1,58 @@
+// File: Typography
+// Description: 
+// Version: 0.1.0
+// ------------------------------------------------------------
+
+// These are proposed fixes for the Header and Typography variables styles switch
+h1{
+  border-bottom: $baseUnderline;}
+
+/*doc
+---
+title: Typography
+name: typography
+category: Styles
+---
+
+**Fondary and typography**
+
+<div class="row ld-rowPadding-tall">
+  <div class="col-md-1">font size </div>
+  <div class="col-md-3"><div class="displayType"><h1>M g</h1></div>
+
+    </div>
+    <div class="col-md-8"><h1></h1>
+<p>A fact is a simple statement that everyone believes. It is innocent, unless found guilty. A hypothesis is a novel suggestion that no one wants to believe. It is guilty, until found effective.</p>
+<p>Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xy Yx Zz <span class="numeric">1234567890 “‘({[?!&amp;$£€@]}).’”</span></p>
+</div>
+
+</div>
+
+<h1>h1 36px</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+
+<h2>h2 25px</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+
+<h3>h3 20px</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+
+<h4>h4 18px</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+
+<h5>h5 16px</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+
+
+**Paragraph padding**
+<div class="row ld-rowPadding-tall">
+  <div class="col-md-6"><h1>h1 36px</h1>
+	<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+		</div>
+	  <div class="col-md-6"><h1>h1 36px</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+		</div>
+</div>
+
+
+*/

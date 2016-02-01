@@ -1,0 +1,85 @@
+// File: Links
+// Description: 
+// Version: 0.1.0
+// ------------------------------------------------------------
+
+a,
+a:visited{
+	color: $color-brand-e;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: $color-brand-e;
+	text-decoration: underline;
+}
+
+/*doc
+---
+title: Links
+name: links
+parent: ctas
+---
+
+When deciding what text to make a link please follow the CTA tips and guidelines [above](#ctas).
+
+#### General Rules
+* **Text links always use the `<a>` element**. Do not use a different element and stylize as a link.
+* **Text links are always underlined on hover**. There are a few exceptions, like:
+	* When the text link is part of a GUI system, such as a vertical panel of links (category links in left nav)
+	* When the link should be disguised as a link and just look like plain text (Like when the heading of the page is a link)
+	* Icons or punctuation that are added as `:before` or `:after` rules should not be underlined on hover
+* **Text links are always a different color than body copy and paragraphs**. They need to standout in a paragraph by color alone. The only exception is when the link is disguised as a link.
+* **Links should never underline parantheticals () or any punctuation** immediately before or after the words in the link; it's ok to underline punctuation that happens between words that are part of the same link.
+
+
+
+```html_example
+This is an example of <a href="#">an inline link</a> within a sentence.
+```
+
+*/
+
+
+
+a i:before {
+	padding: 0 3px;
+}
+
+/*doc
+---
+title: Links + Icons
+name: links-icons
+parent: links
+---
+
+Icons should only be used with links to convey additional information about the nature of the 
+link - that is not already obvious or would require adding some paranthetical information, such as (pdf), to the end of the link. 
+
+#### General Rules
+* Inline text links, like within a paragraph or sentence of text, should not include an icon
+* Links with trailing icons need to be on their own line or have no text following the link
+* Links with preceeding icons need to be on their own line or have no text preceeding the link
+* The links and icons seen below are commonly used on our site.
+* Use the `<i>` tag to insert an icon inside the `<a>` tag
+
+
+**Acceptable Use Cases:**
+
+```html_example
+
+<p>PDF Example: Click the following to <a class="link-pdf" href="#" title="Open the PDF" target="_blank">get your manual<i class="fa fa-file-pdf-o fa-lg"></i></a></p>
+
+<p>Zip File Example: Click the following to <a class="link-pdf" href="#" title="Download the Zip" target="_blank">get your files<i class="fa fa-file-archive-o fa-lg"></i></a></p>
+
+<p>RSS Example: Click the following to <a class="link-pdf" href="#" title="Copy the link to our RSS Feed" target="_blank">get RSS updates<i class="fa fa-rss fa-lg"></i></a></p>
+
+<p>Dollar Sign Example: <a class="link-pdf" href="#" title="Open the PDF" target="_blank"><i class="fa fa-dollar fa-lg"></i>200 Off</a></p>
+
+<p>Read More Example: The quick brown fox&hellip; <a class="link-pdf" href="#" title="Open the PDF" target="_blank">Read More<i class="fa fa-caret-right fa-lg"></i></a></p>
+
+```
+
+*/
