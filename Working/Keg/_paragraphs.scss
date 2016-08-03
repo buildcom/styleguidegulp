@@ -1,0 +1,31 @@
+// File: Paragraphs
+// Description: 
+// Version: 0.1.0
+// ------------------------------------------------------------
+
+p{
+	padding-top: 0;
+}
+
+/*doc
+---
+title: Paragraphs
+name: paragraphs
+parent: typography
+---
+
+* Paragraphs are separated by a blank line.
+
+`<p>Paragraph</p>`
+
+**Paragraph padding**
+<div class="row ld-rowPadding-tall">
+  <div class="col-md-6"><h1>h1 36px</h1>
+	<p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+		</div>
+	  <div class="col-md-6"><h1>h1 36px</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus turpis et ipsum convallis lobortis eget eu tellus. Donec bibendum nibh eget justo congue, ac ornare dolor commodo. Mauris in est nec urna pulvinar tempor. Pellentesque in aliquet velit. Nullam ac massa nisl. Integer placerat nec leo at gravida. Donec dictum magna imperdiet, dignissim odio ac, convallis est. Duis lobortis semper arcu, id laoreet nisi. Aliquam mollis cursus dignissim. Duis id diam eu odio pharetra consequat. Ut sit amet diam quis tortor tempus tempus.</p>
+		</div>
+</div>
+
+*/
