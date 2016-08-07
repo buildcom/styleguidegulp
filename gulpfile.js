@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	plumber = require('gulp-plumber'),
 	gutil = require('gulp-util'),
+    sass = require('gulp-sass'),
     hologram = require('gulp-hologram');
 
 var paths = {

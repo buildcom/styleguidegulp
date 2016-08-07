@@ -10,7 +10,9 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp-sass": "^2.3.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
