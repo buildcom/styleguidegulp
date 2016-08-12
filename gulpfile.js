@@ -39,6 +39,14 @@ gulp.task('caholo', ['copyca'], function() {
 gulp.task('copyca', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.ca.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.ca.work ) )
+        .pipe(sass().on('error', sass.logError))
+});
+
+//Sass Compile for CA
+gulp.task('styles', function() {
+    gulp.src('Source/CA/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('Destination/CA/'))
 });
 
 //Build Keg
@@ -54,11 +62,19 @@ gulp.task('copykeg', function() {
         .pipe( gulp.dest( paths.keg.work ) )
 });
 
+//Sass Compile for Keg
+gulp.task('styles', function() {
+    gulp.src('Source/Keg/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('Destination/Keg/'))
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
     gulp.watch( paths.shared.src, ['caholo','kegholo']);
     gulp.watch( paths.ca.src, ['caholo']);
     gulp.watch( paths.keg.src, ['kegholo']);
+    gulp.watch('Source/**/*.scss',['styles']);
 });
 
 //default task that runs with command 'gulp' and calls other tasks specified
