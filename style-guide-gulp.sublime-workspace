@@ -1,0 +1,334 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"styles"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 1912,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Snippet: bs-co	",
+		"selected_items":
+		[
+			[
+				"Snippet: bs-co	",
+				"Snippet: bs3-col-12"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Destination",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Destination/CA",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Destination/Keg",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/CA",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/Keg",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/Keg"
+	],
+	"file_history":
+	[
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/Keg/theme.scss",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA/theme.scss",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/Keg/_colors.scss",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA/_colors.scss",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA/_colors-system.scss",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/Keg/_colors-system.scss",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/Shared/theme.scss",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/hologram_config.yml",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/doc_assets/_header.html",
+		"/Volumes/JeanPage/jpage/Documents/Websites/_styles/_brand-guide-ca/hologram_config.yml",
+		"/Volumes/JeanPage/jpage/Documents/Websites/_styles/_brand-guide-ca/doc_assets/_header.html",
+		"/Volumes/JeanPage/jpage/Documents/Websites/_styles/_brand-guide-ca/doc_assets/_footer.html",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/node_modules/gulp-hologram/README.md",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/hologram_config_ca.yml",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/package.json",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/gulpfile.js",
+		"/Users/jpage/Documents/Sites/jpage_theme/wp-content/themes/style.css",
+		"/Users/jpage/Documents/Sites/.gitignore",
+		"/Users/jpage/Documents/Sites/jpage_theme/wp-config.php",
+		"/Users/jpage/Desktop/untitled.svg",
+		"/Users/jpage/Desktop/loggedin.html",
+		"/Users/jpage/Documents/Git Repositories/aweber-email-templates/aaa/aweber-template.html",
+		"/Users/jpage/Documents/Git Repositories/aweber-email-templates/ca/ca-aweber-template.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/JeanPage/jpage/Documents/Websites/_styles/_brand-guide-ca",
+			"/Users/jpage/Documents/Sites/jpage_theme/wp-content/themes/phase_liquid",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"demand",
+			"_header.html",
+			"brands",
+			"slick",
+			"hom",
+			"PAC",
+			"<i class=\"fa fa-caret-right\"></i>",
+			"lighting",
+			"img",
+			"font-famil",
+			"<h3 class=\"primary-color\">",
+			"on",
+			"You",
+			"<hr class=\"primary-color\">",
+			"Write",
+			"cardB",
+			"button",
+			"lazy",
+			"Earn",
+			"EARN",
+			"earn",
+			"108 31",
+			"SEE ALL",
+			"#dd3300",
+			"444444",
+			"555350",
+			"000000",
+			"5D5D5D",
+			"See All",
+			"all",
+			"All",
+			"See All",
+			"collapseExample",
+			"#collapseExample",
+			"dadada",
+			"2B2B2B",
+			"-1",
+			"-12",
+			"phone-icon",
+			"465",
+			"col-sm-12 col-md-1",
+			"landing/rewards",
+			"$httpUrl('ShopSocially-LoyaltyDashboard')$",
+			"col-md-2",
+			"col-md-3",
+			"col-sx-6",
+			"hidden-sm-down",
+			"col-sm-3",
+			"4.png",
+			"img-responsive",
+			"col-sm-4",
+			"col-sm-12",
+			"col-xs-12",
+			"<aw:",
+			"$3",
+			"$2",
+			"$1",
+			"img",
+			"h3",
+			"3x",
+			"h3",
+			"h4",
+			"h3"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"#e0653a"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1912,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1407,
+								1407
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "style-guide-gulp.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 248.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

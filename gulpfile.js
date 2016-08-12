@@ -42,16 +42,9 @@ gulp.task('copyca', function() {
         .pipe(sass().on('error', sass.logError))
 });
 
-//Sass Compile for CA
-gulp.task('styles', function() {
-    gulp.src('Source/CA/*.scss')
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('Destination/CA/'))
-});
-
 //Build Keg
 gulp.task('kegholo', ['copykeg'], function() {
-    //Build the CSS from the working directory
+    //Build the CSS from the working directory  
     gulp.src( paths.keg.holo )
         .pipe( hologram({logging:true}) );
 });
@@ -60,13 +53,7 @@ gulp.task('kegholo', ['copykeg'], function() {
 gulp.task('copykeg', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.keg.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.keg.work ) )
-});
-
-//Sass Compile for Keg
-gulp.task('styles', function() {
-    gulp.src('Source/Keg/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('Destination/Keg/'))
 });
 
 // Watch Files For Changes
