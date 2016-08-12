@@ -40,6 +40,7 @@ gulp.task('copyca', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.ca.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.ca.work ) )
         .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/CA'));
 });
 
 //Build Keg
@@ -54,6 +55,7 @@ gulp.task('copykeg', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.keg.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.keg.work ) )
         .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/Keg'));        
 });
 
 // Watch Files For Changes
