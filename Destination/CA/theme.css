@@ -1,3 +1,243 @@
+/* Background (bg) Colors */
+.bg-color-brand-a {
+  background-color: #FFFFFF; }
+
+.bg-color-brand-b {
+  background-color: #5eb9c2; }
+
+.bg-color-brand-c {
+  background-color: #3F8EA0; }
+
+.bg-color-brand-d {
+  background-color: #267d92; }
+
+.bg-color-brand-e {
+  background-color: #1f6576; }
+
+.bg-color-brand-f {
+  background-color: #174c59; }
+
+.bg-color-base-a {
+  background-color: #ffffff; }
+
+.bg-color-base-b {
+  background-color: #f3f3f3; }
+
+.bg-color-base-c {
+  background-color: #b4b6b6; }
+
+.bg-color-base-d {
+  background-color: #898d8d; }
+
+.bg-color-base-e {
+  background-color: #535d5f; }
+
+.bg-color-complement-a {
+  background-color: white; }
+
+.bg-color-complement-b {
+  background-color: #c2675e; }
+
+.bg-color-complement-c {
+  background-color: #a0513f; }
+
+.bg-color-complement-d {
+  background-color: #923b26; }
+
+.bg-color-complement-e {
+  background-color: #76301f; }
+
+.bg-color-complement-f {
+  background-color: #592417; }
+
+.bg-color-system-a {
+  background-color: #ff9900; }
+
+.bg-color-system-b {
+  background-color: #168e60; }
+
+.bg-color-system-bdark1 {
+  background-color: #116f4b; }
+
+.bg-color-system-bdark2 {
+  background-color: #0c5036; }
+
+.bg-color-system-c {
+  background-color: #60b760; }
+
+.bg-color-system-d {
+  background-color: #bd4b4b; }
+
+.bg-color-system-e {
+  background-color: #cc0000; }
+
+.bg-color-system-edark1 {
+  background-color: #a80000; }
+
+.bg-color-system-edark2 {
+  background-color: #850000; }
+
+.bg-color-system-f {
+  background-color: #990000; }
+
+/* Border (bdr) Colors */
+.bdr-color-brand-a {
+  border-color: #FFFFFF; }
+
+.bdr-color-brand-b {
+  border-color: #5eb9c2; }
+
+.bdr-color-brand-c {
+  border-color: #3F8EA0; }
+
+.bdr-color-brand-d {
+  border-color: #267d92; }
+
+.bdr-color-brand-e {
+  border-color: #1f6576; }
+
+.bdr-color-brand-f {
+  border-color: #174c59; }
+
+.bdr-color-base-a {
+  border-color: #ffffff; }
+
+.bdr-color-base-b {
+  border-color: #f3f3f3; }
+
+.bdr-color-base-c {
+  border-color: #b4b6b6; }
+
+.bdr-color-base-d {
+  border-color: #898d8d; }
+
+.bdr-color-base-e {
+  border-color: #535d5f; }
+
+.bdr-color-complement-a {
+  background-color: white; }
+
+.bdr-color-complement-b {
+  background-color: #c2675e; }
+
+.bdr-color-complement-c {
+  background-color: #a0513f; }
+
+.bdr-color-complement-d {
+  background-color: #923b26; }
+
+.bdr-color-complement-e {
+  background-color: #76301f; }
+
+.bdr-color-system-a {
+  border-color: #ff9900; }
+
+.bdr-color-system-b {
+  border-color: #168e60; }
+
+.bdr-color-system-bdark1 {
+  background-color: #116f4b; }
+
+.bdr-color-system-bdark2 {
+  background-color: #0c5036; }
+
+.bdr-color-system-c {
+  border-color: #60b760; }
+
+.bdr-color-system-d {
+  border-color: #bd4b4b; }
+
+.bdr-color-system-e {
+  border-color: #cc0000; }
+
+.bdr-color-system-edark1 {
+  background-color: #a80000; }
+
+.bdr-color-system-edark2 {
+  background-color: #850000; }
+
+.bdr-color-system-f {
+  border-color: #990000; }
+
+/* Text (txt) Colors */
+.txt-color-brand-a {
+  color: #FFFFFF; }
+
+.txt-color-brand-b {
+  color: #5eb9c2; }
+
+.txt-color-brand-c {
+  color: #3F8EA0; }
+
+.txt-color-brand-d {
+  color: #267d92; }
+
+.txt-color-brand-e {
+  color: #1f6576; }
+
+.txt-color-brand-f {
+  color: #174c59; }
+
+.txt-color-base-a {
+  color: #ffffff; }
+
+.txt-color-base-b {
+  color: #f3f3f3; }
+
+.txt-color-base-c {
+  color: #b4b6b6; }
+
+.txt-color-base-e {
+  color: #898d8d; }
+
+.txt-color-base-f {
+  color: #535d5f; }
+
+.txt-color-complement-a {
+  background-color: white; }
+
+.txt-color-complement-b {
+  background-color: #c2675e; }
+
+.txt-color-complement-c {
+  background-color: #a0513f; }
+
+.txt-color-complement-d {
+  background-color: #923b26; }
+
+.txt-color-complement-e {
+  background-color: #76301f; }
+
+.txt-color-system-a {
+  color: #ff9900; }
+
+.txt-color-system-b {
+  color: #168e60; }
+
+.txt-color-system-c {
+  color: #60b760; }
+
+.txt-color-system-d {
+  color: #bd4b4b; }
+
+.txt-color-system-e {
+  color: #cc0000; }
+
+.txt-color-system-f {
+  color: #990000; }
+
+/* .txt-color-system-2-2{ color: $color-system-2-2; } */
+/*doc
+---
+title: Colors
+name: colors
+category: Styles
+---
+
+The Compact Appliance colors should be predominatly neutral to allow feature content to be the center focus. Primary Call to Actions (CTA) to take center stage and grab attention. 
+The brand colors should be used sparingly with ratio of mainly base and system colors.
+
+*/
 /*doc
 ---
 title: Brand Colors & Theme

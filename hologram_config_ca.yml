@@ -10,7 +10,7 @@ destination: ./Destination/CA
 # The assets needed to build the docs (includes header.html,
 # footer.html, etc)
 # You may put doc related assets here too: images, css, etc.
-documentation_assets: ./doc_assets
+documentation_assets: ./doc_assets/CA
 
 # The folder that contains templates for rendering code examples.
 # If you want to change the way code examples appear in the styleguide,
