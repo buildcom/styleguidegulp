@@ -1,0 +1,209 @@
+// File: Icons
+// Description: Icons and how they are used on the site
+// Version: 0.1.0
+// ------------------------------------------------------------
+
+i.fa-lg {padding:0 3px;}
+i.fa-2x {padding:0 5px;}
+
+/*doc
+---
+title: Icons
+name: icons
+parent: ctas
+---
+
+**Any icons added to the site need to be approved by the creative team**. Currently we are only using [FontAwesome](http://fortawesome.github.io/Font-Awesome/) icons and a few of our own custom icons. The following tables show the commonly used icons on the site and how they are to be used.
+
+
+### Icon Sizes & Colors
+The icon size should be based on the content it represents. If the icon is supporting copy and inline with that copy the size of the icon should be of equal size.
+
+The icon color should be based on the content it supports. However, it should only be the link color if the icon itself is a link.
+
+
+Size                                                                      | Modifier Classes              | Use Cases
+------------------------------------------------------------------------- | ----------------------------- | -----------------
+<i class="fa fa-file-pdf-o fa-lg"></i>                                    | `fa fa-file-pdf-o fa-lg`      | Use with paragraph text, h5 and h6
+<i class="fa fa-file-pdf-o fa-2x"></i>                                    | `fa fa-file-pdf-o fa-2x`      | Use with h3 and h4; Minimum size for tappable icons on XS and S devices
+<i class="fa fa-file-pdf-o fa-3x"></i>                                    | `fa fa-file-pdf-o fa-3x`      | Use with h2
+<i class="fa fa-file-pdf-o fa-4x"></i>                                    | `fa fa-file-pdf-o fa-4x`      | Use with h1
+<i class="fa fa-file-pdf-o fa-5x"></i>                                    | `fa fa-file-pdf-o fa-5x`      | Only use this size when the icon is used in conjunction with marketing content
+
+
+
+
+### Icon Types
+The following icons and their use cases are currently used on the site.
+
+
+#### File Icons
+File icons always follow links of a button CTA that links to the file type. Linking to files should open them in a new tab (`target="_blank"`)
+
+File Icons                                                                      | Modifier Classes              | Use Cases
+------------------------------------------------------------------------------- | ----------------------------- | -----------------
+<i class="fa fa-file-pdf-o fa-lg"></i>                                          | `fa fa-file-pdf-o fa-lg`      | PDF File 
+<i class="fa fa-file-archive-o fa-lg"></i>                                      | `fa fa-file-archive-o fa-lg`  | Zip File
+<i class="fa fa-file-word-o fa-lg"></i>                                         | `fa fa-file-word-o fa-lg`     | Word File
+<i class="fa fa-file-excel-o fa-lg"></i>                                        | `fa fa-file-excel-o fa-lg`    | Excel File
+<i class="fa fa-file-text-o fa-lg"></i>                                         | `fa fa-file-text-o fa-lg`     | Text File
+
+**Examples**
+
+<div class="row">
+	<div class="col-xs-12 col-sm-3">
+		<a class="link-pdf" href="#" title="Open the PDF" target="_blank">Get the Manual<i class="fa fa-file-pdf-o fa-lg"></i></a>
+	</div>
+	<div class="col-xs-12 col-sm-3">
+		<button class="btn ld-btn-baseCta">Download Your PDF <i class="fa fa-file-pdf-o fa-lg"></i></button>
+	</div>
+</div>
+
+
+#### CTA Icons
+Use these to cue the user to take an action or to interact with content
+
+CTA Icons                                                                  | Modifier Classes                     | Use Cases
+-------------------------------------------------------------------------- | ------------------------------------ | -----------------
+<i class="fa fa-caret-left fa-lg"></i>                                     | `fa fa-caret-left fa-lg`             | for Back or Previous Links or Buttons 
+<i class="fa fa-caret-right fa-lg"></i>                                    | `fa fa-caret-right fa-lg`            | for Next or Next Step Links or Buttons
+<i class="fa fa-angle-up fa-lg"></i>                                       | `fa fa-angle-up fa-lg`               | Collapse Up (Accordion), Jump Down the Page (for #link)
+<i class="fa fa-angle-down fa-lg"></i>                                     | `fa fa-angle-down fa-lg`             | Open Down (Accordion), Jump Up the Page (for #links)
+<i class="fa fa-chevron-circle-left fa-lg"></i>                            | `fa fa-chevron-circle-left fa-lg`    | Cycle Left (Slideshow)
+<i class="fa fa-chevron-circle-right fa-lg"></i>                           | `fa fa-chevron-circle-right fa-lg`   | Cycle Right (Slideshow)
+
+
+**Examples**
+
+<div class="row">
+	<div class="col-xs-12 col-sm-3">
+		<a href="#" title="Open the PDF" target="_blank"><i class="fa fa-caret-left fa-lg"></i>Back to Wine Refrigerators</a>
+	</div>
+	<div class="col-xs-12 col-sm-3">
+		<button class="btn ld-btn-baseCta">See Details <i class="fa fa-caret-right fa-lg"></i></button>
+	</div>
+</div>
+
+#### Strict GUI Icons
+These icons are reserved for key areas of branding and important functionality, sections or processes on the site.
+
+Strict GUI Icons                                           | Modifier Classes                 | Use Cases
+----------------------------------------------------------- | -------------------------------- | -----------------
+<i class="fa fa-bars fa-lg"></i>                            | `fa fa-bars fa-lg`               | Main Menu
+<i class="fa fa-search fa-lg"></i>                          | `fa fa-search fa-lg`             | Search
+<i class="fa fa-mortar-board fa-lg"></i>                    | `fa fa-mortar-board fa-lg`       | Learning Center
+<i class="fa fa-user fa-lg"></i>                            | `fa fa-user fa-lg`               | My Account
+<i class="fa fa-comments-o fa-lg"></i>                      | `fa fa-comments-o fa-lg`         | Contact Us
+<i class="fa fa-shopping-cart fa-lg"></i>                   | `fa fa-shopping-cart fa-lg`      | Shopping Cart
+<div width="300"><i class="fa fa-cog fa-lg"></i></div>      | `fa fa-cog fa-lg`     	       | Settings
+
+
+**Examples**
+
+<p class="question"> Need to align the text vertically with the horizontal layout of icons and text</p>
+
+<div class="row">
+	<div class="col-xs-3 text-center">
+		<h5><i class="fa fa-bars fa-2x"></i>Shop</h5>
+	</div>
+	<div class="col-xs-3 text-center">
+		<h5><i class="fa fa-mortar-board fa-2x"></i>Learn</h5>
+	</div>
+	<div class="col-xs-3 text-center">
+		<i class="fa fa-user fa-2x"></i>
+		<div class="iconText">Account</div>
+	</div>
+	<div class="col-xs-3 text-center">
+		<i class="fa fa-shopping-cart fa-2x"></i>
+		<div class="iconText">Checkout</div>
+	</div>
+</div>
+
+#### GUI Icons
+These icons may be used in a more than one way but generally communicate the same basic message.
+
+GUI Icons                                                   | Modifier Classes                 | Use Cases
+----------------------------------------------------------- | -------------------------------- | -----------------
+<i class="fa fa-spinner fa-spin fa-lg"></i>                 | `fa fa-spinner fa-spin fa-lg`    | Use for dynamic loading (You must animate with `fa-spin`)
+<i class="fa fa-lock fa-lg"></i>                            | `fa fa-lock fa-lg`               | Secure Shopping Indicator (Use **only on https://** pages)
+<i class="fa fa-times-circle fa-lg"></i>                    | `fa fa-times-circle fa-lg`       | Close Modal (always top right)
+<i class="fa fa-certificate fa-lg"></i>                     | `fa fa-certificate fa-lg`        | Dot Whack, Special (overlay text on this)
+<i class="fa fa-search-plus fa-lg"></i>                     | `fa fa-search-plus fa-lg`        | Zoom In (product image zoom)
+<i class="fa fa-search-minus fa-lg"></i>                    | `fa fa-search-minus fa-lg`       | Zoom Out (product image zoom)
+<i class="fa fa-th fa-lg"></i>                              | `fa fa-th fa-lg`                 | Grid View (Grid & Search Result pages)
+<i class="fa fa-th-list fa-lg"></i>                         | `fa fa-th-list fa-lg`            | List View (Grid & Search Result pages)
+<i class="fa fa-sort fa-lg"></i>                            | `fa fa-sort fa-lg`               | Sortable (Grid & Search Result pages)
+<i class="fa fa-sort-alpha-asc fa-lg"></i>                  | `fa fa-sort-alpha-asc fa-lg`     | Sort Alphabetically from A-Z (Sort Menu)
+<i class="fa fa-sort-alpha-desc fa-lg"></i>                 | `fa fa-sort-alpha-desc fa-lg`    | Sort Alphabetically from Z-A (Sort Menu)
+<i class="fa fa-sort-numeric-asc fa-lg"></i>                | `fa fa-sort-numeric-asc fa-lg`   | Sort Numerically from low to high (Sort Menu)
+<i class="fa fa-sort-numeric-desc fa-lg"></i>               | `fa fa-sort-numeric-desc fa-lg`  | Sort Numerically from high to low (Sort Menu)
+<i class="fa fa-filter fa-lg"></i>                          | `fa fa-filter fa-lg`             | Filter Resutls  (Grid & Search Result pages)
+<i class="fa fa-play fa-lg"></i>                            | `fa fa-play fa-lg`               | Play Video (Overlay Video Image on Hover)
+<i class="fa fa-phone fa-lg"></i>                           | `fa fa-phone fa-lg`              | Call (Use with tel: links and calling customer service)
+<i class="fa fa-comment fa-lg"></i>                         | `fa fa-comment fa-lg`            | Chat (Use wherever and when Live Chat is available)
+<i class="fa fa-info-circle fa-lg"></i>                     | `fa fa-info-circle fa-lg`        | Additional Information Here (Use when more details are provided)
+<i class="fa fa-question-circle fa-lg"></i>                 | `fa fa-question-circle fa-lg`    | Unsure? Get an Answer (Use with FAQs or when vague information needs clarification)
+<i class="fa fa-share fa-lg"></i>                           | `fa fa-share-plus fa-lg`         | Universal Action/Share (social popover)
+<i class="fa fa-envelope fa-lg"></i>                        | `fa fa-envelope fa-lg`           | Email
+<i class="fa fa-print fa-lg"></i>                           | `fa fa-print fa-lg`              | Print
+
+
+#### Form & Feedback Icons
+These icons are found in and around forms to communicate information or relay feedback in realtime.
+
+Form & Feedback Icons                                       | Modifier Classes                 | Use Cases
+----------------------------------------------------------- | -------------------------------- | -----------------
+<i class="fa fa-ban fa-lg"></i>                             | `fa fa-ban fa-lg`                | Ban or Prevent Action or Interaction
+<i class="fa fa-pencil fa-lg"></i>                          | `fa fa-pencil fa-lg`             | Edit
+<i class="fa fa-minus-circle fa-lg"></i>                    | `fa fa-minus-circle fa-lg`       | Remove
+<i class="fa fa-plus-circle fa-lg"></i>                     | `fa fa-plus-circle fa-lg`        | Add
+<i class="fa fa-exclamation-circle fa-lg"></i>              | `fa fa-exclamation-circle fa-lg` | Important (User must read this)
+<i class="fa fa-warning fa-lg"></i>                         | `fa fa-warning fa-lg`            | Caution (User may have incomplete or inaccurate information or should beware)
+<i class="fa fa-check fa-lg"></i>                           | `fa fa-check fa-lg`              | Success, Complete (form field validation)
+<i class="fa fa-times fa-lg"></i>                           | `fa fa-times fa-lg`              | Wrong, Error (form field validation)
+<i class="fa fa-calendar fa-lg"></i>                        | `fa fa-calendar fa-lg`           | Select a Date via Date Picker Calendar
+<i class="fa fa-trash fa-lg"></i>                           | `fa fa-trash fa-lg`              | Delete or Throw-Away an Item
+<i class="fa fa-save fa-lg"></i>                            | `fa fa-save fa-lg`               | Save (Save your Cart)
+
+
+#### Copy & Link Icons
+These icons are found in and around general copy or inline with a text link.
+
+Copy & Link Icons                                           | Modifier Classes                 | Use Cases
+----------------------------------------------------------- | -------------------------------- | -----------------
+<i class="fa fa-quote-left fa-lg"></i>                      | `fa fa-quote-left fa-lg`         | Blockquote ::before
+<i class="fa fa-quote-right fa-lg"></i>                     | `fa fa-quote-right fa-lg`        | Blockquote ::after
+<i class="fa fa-copyright fa-lg"></i>                       | `fa fa-copyright fa-lg`          | Copyright
+<i class="fa fa-download fa-lg"></i>                        | `fa fa-download fa-lg`           | Download something
+<i class="fa fa-external-link fa-lg"></i>                   | `fa fa-external-link fa-lg`      | Open New Window/Tab (target="_blank")
+
+
+#### Payment Icons
+Use these anywhere we mention a payment method
+
+Payment Icons                                                  | Modifier Classes              | Use Cases
+-------------------------------------------------------------- | ----------------------------- | -----------------
+<i class="fa fa-cc-amex fa-lg"></i>                            | `fa fa-cc-amex fa-lg`     	   | American Express
+<i class="fa fa-cc-discover fa-lg"></i>                        | `fa fa-cc-discover fa-lg`     | Discover Card
+<i class="fa fa-cc-mastercard fa-lg"></i>                      | `fa fa-cc-mastercard fa-lg`   | Mastercard
+<i class="fa fa-cc-visa fa-lg"></i>                            | `fa fa-cc-visa fa-lg`         | Visa
+<i class="fa fa-paypal fa-lg"></i>                             | `fa fa-paypal fa-lg`          | PayPal
+<i class="fa fa-google-wallet fa-lg"></i>                      | `fa fa-google-wallet fa-lg`   | Google Wallet
+
+
+#### Social & Following Icons
+Use these icons when linking to a social page we manage.
+
+Social & Following Icons                                                 | Modifier Classes                 | Use Cases
+------------------------------------------------------------------------ | -------------------------------- | -----------------
+<div width="300"><i class="fa fa-facebook-square fa-2x"></i></div>       | `fa fa-facebook-square fa-2x`    | Facebook Page Link
+<i class="fa fa-pinterest-square fa-2x"></i>                             | `fa fa-pinterest-square fa-2x`   | Pinterest Page Link
+<i class="fa fa-google-plus-square fa-2x"></i>                           | `fa fa-google-plus-square fa-2x` | Google Plus Page Link
+<i class="fa fa-linkedin-square fa-2x"></i>                              | `fa fa-linkedin-square fa-2x`    | LinkedIn Page Link
+<i class="fa fa-reddit-square fa-2x"></i>                                | `fa fa-reddit-square fa-2x`      | Reddit Page Link
+<i class="fa fa-twitter-square fa-2x"></i>                               | `fa fa-twitter-square fa-2x`     | Twitter Page Link
+<i class="fa fa-youtube-square fa-2x"></i>                               | `fa fa-youtube-square fa-2x`     | YouTube Page Link
+<i class="fa fa-rss fa-lg"></i>                                          | `fa fa-rss fa-lg`                | RSS Feed Link
+
+
+*/

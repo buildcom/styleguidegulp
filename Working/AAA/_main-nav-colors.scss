@@ -1,0 +1,191 @@
+// File: Nav Color
+// Description: Nav color defined to be different from brand colors for more control beyond brand colors.
+// Version: 0.1.0
+// ------------------------------------------------------------
+.navbar-primary{
+	/* Using Primary instead of base to establish new color pattern */
+	background-color: $color-brand-d;
+	.navbar-brand{}
+	.navbar-nav>li{
+	  float: none;
+	  display: table-cell;
+	  text-align: center;
+	  background-color: $color-brand-d;
+	  border: none;
+	}
+}
+.navbar-sup{
+	background-color: $color-brand-e;
+	.navbar-nav>li{
+	  float: none;
+	  display: table-cell;
+	  text-align: center;
+	  background-color: $color-brand-e;
+	  border: none;
+	}
+}
+.navbar-alt{
+	background-color: $color-base-c;
+	.navbar-nav>li{
+	  float: none;
+	  display: table-cell;
+	  text-align: center;
+	  background-color: $color-base-c;
+	  border: none;
+	}
+}
+
+/*doc
+---
+title: Nav Color
+name: main-nav-color
+category: Special Cases
+---
+
+<h2 class="ld-noUnderline">Main Nav Color</h2>
+
+#### General Rules
+
+* Main navbar __".navbar-base"__ base is primary brand color.
+* Main navbar __".navbar-sup"__ sup is supporting color of complimentary color (SUP ?).
+* Main navbar __".navbar-alt"__ secondary would be another alternative choice of brand/base color.
+
+<!-- PRIMARY BRAND COLOR -->
+<nav class="navbar navbar-primary">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">primary brand</a>
+    </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- END PRIMARY BRAND COLOR -->
+<!-- SUP BRAND COLOR -->
+<nav class="navbar navbar-sup">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">sup brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- END SUP BRAND COLOR -->
+<!-- ALT BRAND COLOR -->
+<nav class="navbar navbar-alt">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">alt brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<!-- END ALT BRAND COLOR -->
+## Vertical Nav Color
+
+#### General Rules
+
+* Vertical navbar base color is system driven.
+
+<!-- START VERTICAL NAV -->
+<div id="verticalNavContainer">
+  <div class="panel panel-base ld-panel-navigation">
+    <div class="panel-heading">
+      <a href="#/kegerators">Kegerators</a>
+    </div>
+    <ul class="list-group">
+    	<a class="list-group-item" href="#/home-kegerators">Home Kegerators</a>
+    	<a class="list-group-item" href="#/dual-tap-kegerators">Dual Tap Kegerators</a>
+    	<a class="list-group-item" href="#/triple-tap-kegerators">Triple Tap Kegerators</a>
+    	<a class="list-group-item" href="#/homebrew-kegerators">Homebrew Kegerators</a>
+    	<a class="list-group-item" href="#/undercounter-built-in-kegerators">Undercounter Kegerators</a>
+    	<a class="list-group-item" href="#/commercial-kegerators">Commercial Kegerators</a>
+    	<a class="list-group-item" href="#/outdoor-kegerators">Outdoor Kegerators</a>
+    	<a class="list-group-item" href="#/mini-kegerators">Mini 5 Liter Kegerators</a>
+    	<a class="list-group-item" href="#/cold-brew-coffee-dispensers">Cold Brew Coffee Dispensers</a>
+    	<a class="list-group-item" href="#/kegerators?view=all">View All</a>
+    </ul>
+  </div>
+</div>
+
+*/

@@ -1,0 +1,143 @@
+// File: Color Variables
+// Description: Named colors should be listed here. Any new colors added to the site should be listed here and named.
+// Site: Allergy and Air
+
+// -----------------------------------------------------------
+
+// Refrence to github sass variables
+
+// Standardized Variable Names for Colors 
+// Brand Colors
+// ---------------
+$color-brand-a : #FFFFFF;			// Site Background Color
+$color-brand-b : #5eb9c2;			// Primary Brand Colour
+$color-brand-c : #3F8EA0;			// Border for $ice;		Hover Background for $ice
+$color-brand-d : #267d92;			// Primary Background Color (dark blue primary)
+$color-brand-e : darken($color-brand-d, 7%);	// Border for $teal; 	Hover Background for $teal
+$color-brand-f : darken($color-brand-d, 14%);	// Link version of $teal
+
+// Base Colors: Base UI colors for 
+// ---------------
+$color-base-a : #ffffff;		// Was $white	
+$color-base-b : #f3f3f3;		// Default Background (Was $ash)
+$color-base-c : #b4b6b6;		// Default Border for (was $dark-ash);		Hover Background for $ash
+$color-base-d : #898d8d;		// Default Background Color ($silver);
+$color-base-e : #535d5f;		// Headings;	Border for $slate ; 		Hover Background for $slate
+$color-base-f : #1D2425;		// Paragraph Copy $dark-slate
+
+// Complementary Colors: For adding rich experience	
+// ---------------
+$color-complement-a : complement($color-brand-a);			
+$color-complement-b : complement($color-brand-b);		// Default Complement Color (light)
+$color-complement-c : complement($color-brand-c);		// Default Default Complement Color
+$color-complement-d : complement($color-brand-d);		// Default Default Complement Color
+$color-complement-e : complement($color-brand-e);		// Default Complement Color
+$color-complement-f : complement($color-brand-f);		// Default Complement Color
+
+// System Colors: Warnings, Alerts, and Star Ratings
+// ---------------
+$color-system-a:     #ff9900; //emphasis or warning
+$color-system-b:     #168e60; //add to cart
+$color-system-bdark1: darken($color-system-b, 7%);
+$color-system-bdark2: darken($color-system-b, 14%);
+$color-system-c:     #60b760; //success
+$color-system-d:     #bd4b4b; //error
+$color-system-e:     #cc0000; //discount or savings
+$color-system-edark1: darken($color-system-e, 7%);
+$color-system-edark2: darken($color-system-e, 14%); 
+$color-system-f:     #990000; //final price
+
+// Rules to Color Mappings for guide only !
+// ---------------
+
+/* Background (bg) Colors */
+.bg-color-brand-a{ background-color: $color-brand-a; }
+.bg-color-brand-b{ background-color: $color-brand-b; }
+.bg-color-brand-c{ background-color: $color-brand-c; }
+.bg-color-brand-d{ background-color: $color-brand-d; }
+.bg-color-brand-e{ background-color: $color-brand-e; }
+.bg-color-brand-f{ background-color: $color-brand-f; }
+.bg-color-base-a{ background-color: $color-base-a; }
+.bg-color-base-b{ background-color: $color-base-b; }
+.bg-color-base-c{ background-color: $color-base-c; }
+.bg-color-base-d{ background-color: $color-base-d; }
+.bg-color-base-e{ background-color: $color-base-e; }
+.bg-color-complement-a{ background-color: $color-complement-a;}
+.bg-color-complement-b{ background-color: $color-complement-b;}
+.bg-color-complement-c{ background-color: $color-complement-c;}
+.bg-color-complement-d{ background-color: $color-complement-d;}
+.bg-color-complement-e{ background-color: $color-complement-e;}
+.bg-color-complement-f{ background-color: $color-complement-f;}
+.bg-color-system-a{ background-color: $color-system-a; }
+.bg-color-system-b{ background-color: $color-system-b; }
+.bg-color-system-bdark1{ background-color: $color-system-bdark1;}
+.bg-color-system-bdark2{ background-color: $color-system-bdark2;}
+.bg-color-system-c{ background-color: $color-system-c; }
+.bg-color-system-d{ background-color: $color-system-d; }
+.bg-color-system-e{ background-color: $color-system-e; }
+.bg-color-system-edark1{ background-color: $color-system-edark1;}
+.bg-color-system-edark2{ background-color: $color-system-edark2;}
+.bg-color-system-f{ background-color: $color-system-f; }
+/* Border (bdr) Colors */
+.bdr-color-brand-a{ border-color: $color-brand-a; }
+.bdr-color-brand-b{ border-color: $color-brand-b; }
+.bdr-color-brand-c{ border-color: $color-brand-c; }
+.bdr-color-brand-d{ border-color: $color-brand-d; }
+.bdr-color-brand-e{ border-color: $color-brand-e; }
+.bdr-color-brand-f{ border-color: $color-brand-f; }
+.bdr-color-base-a{ border-color: $color-base-a; }
+.bdr-color-base-b{ border-color: $color-base-b; }
+.bdr-color-base-c{ border-color: $color-base-c; }
+.bdr-color-base-d{ border-color: $color-base-d; }
+.bdr-color-base-e{ border-color: $color-base-e; }
+.bdr-color-complement-a{ background-color: $color-complement-a;}
+.bdr-color-complement-b{ background-color: $color-complement-b;}
+.bdr-color-complement-c{ background-color: $color-complement-c;}
+.bdr-color-complement-d{ background-color: $color-complement-d;}
+.bdr-color-complement-e{ background-color: $color-complement-e;}
+.bdr-color-system-a{ border-color: $color-system-a; }
+.bdr-color-system-b{ border-color: $color-system-b; }
+.bdr-color-system-bdark1{ background-color: $color-system-bdark1;}
+.bdr-color-system-bdark2{ background-color: $color-system-bdark2;}
+.bdr-color-system-c{ border-color: $color-system-c; }
+.bdr-color-system-d{ border-color: $color-system-d; }
+.bdr-color-system-e{ border-color: $color-system-e; }
+.bdr-color-system-edark1{ background-color: $color-system-edark1;}
+.bdr-color-system-edark2{ background-color: $color-system-edark2;}
+.bdr-color-system-f{ border-color: $color-system-f; }
+/* Text (txt) Colors */
+.txt-color-brand-a{ color: $color-brand-a; }
+.txt-color-brand-b{ color: $color-brand-b; }
+.txt-color-brand-c{ color: $color-brand-c; }
+.txt-color-brand-d{ color: $color-brand-d; }
+.txt-color-brand-e{ color: $color-brand-e; }
+.txt-color-brand-f{ color: $color-brand-f; }
+.txt-color-base-a{ color: $color-base-a; }
+.txt-color-base-b{ color: $color-base-b; }
+.txt-color-base-c{ color: $color-base-c; }
+.txt-color-base-e{ color: $color-base-d; }
+.txt-color-base-f{ color: $color-base-e; }
+.txt-color-complement-a{ background-color: $color-complement-a;}
+.txt-color-complement-b{ background-color: $color-complement-b;}
+.txt-color-complement-c{ background-color: $color-complement-c;}
+.txt-color-complement-d{ background-color: $color-complement-d;}
+.txt-color-complement-e{ background-color: $color-complement-e;}
+.txt-color-system-a{ color: $color-system-a; }
+.txt-color-system-b{ color: $color-system-b; }
+.txt-color-system-c{ color: $color-system-c; }
+.txt-color-system-d{ color: $color-system-d; }
+.txt-color-system-e{ color: $color-system-e; }
+.txt-color-system-f{ color: $color-system-f; }
+/* .txt-color-system-2-2{ color: $color-system-2-2; } */
+
+/*doc
+---
+title: Colors
+name: colors
+category: Styles
+---
+
+The Compact Appliance colors should be predominatly neutral to allow feature content to be the center focus. Primary Call to Actions (CTA) to take center stage and grab attention. 
+The brand colors should be used sparingly with ratio of mainly base and system colors.
+
+*/

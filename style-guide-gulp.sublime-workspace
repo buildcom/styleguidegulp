@@ -31,7 +31,7 @@
 			"file": "gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 1912,
+				"buffer_size": 2009,
 				"line_ending": "Unix"
 			}
 		}
@@ -83,17 +83,21 @@
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/CA",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/Keg",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/Shared",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/Keg"
 	],
 	"file_history":
 	[
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/doc_assets/Keg/_header.html",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Destination/CA/styles.html",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Destination/Keg/styles.html",
+		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA/_colors-system.scss",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/Keg/theme.scss",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA/theme.scss",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/Keg/_colors.scss",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA/_colors.scss",
-		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/CA/_colors-system.scss",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Working/Keg/_colors-system.scss",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/Source/Shared/theme.scss",
 		"/Users/jpage/Documents/Git Repositories/styleguidegulp/hologram_config.yml",
@@ -115,7 +119,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -132,6 +136,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"brand-color",
 			"demand",
 			"_header.html",
 			"brands",
@@ -222,15 +227,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1912,
+						"buffer_size": 2009,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1407,
-								1407
+								75,
+								75
 							]
 						],
 						"settings":
@@ -240,7 +245,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 114.0,
+						"translation.y": 30.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
