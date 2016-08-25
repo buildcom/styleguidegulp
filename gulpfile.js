@@ -25,13 +25,19 @@ var paths = {
         src: './Source/Keg',
         work: './Working/Keg',
         holo: './hologram_config_keg.yml'
-    }
+    },
+    ld: {
+        src: './Source/LD',
+        work: './Working/LD',
+        holo: './hologram_config_ld.yml'
+    }    
 }
 
 var onError = function (err) {  
   gutil.beep();
   console.log(err);
 };
+
 //Build AAA
 gulp.task('aaholo', ['copyaa'], function() {
     //Build the CSS from the working directory
@@ -77,16 +83,32 @@ gulp.task('copykeg', function() {
         .pipe(gulp.dest('./Destination/Keg'));        
 });
 
+//Build LD
+gulp.task('ldholo', ['copyld'], function() {
+    //Build the CSS from the working directory  
+    gulp.src( paths.ld.holo )
+    .pipe( hologram({logging:true}) );
+});
+
+//Copy all necessary Keg files to the working directory
+gulp.task('copyld', function() {
+    return gulp.src( [paths.shared.src + "/**/*.scss", paths.ld.src + "/**/*.scss"] )
+        .pipe( gulp.dest( paths.ld.work ) )
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/LD'));
+});
+
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch( paths.shared.src, ['caholo','kegholo','aaholo']);
+    gulp.watch( paths.shared.src, ['aaholo','caholo','kegholo','ldholo']);
     gulp.watch( paths.aa.src, ['aaholo']);
     gulp.watch( paths.ca.src, ['caholo']);
     gulp.watch( paths.keg.src, ['kegholo']);
+    gulp.watch( paths.ld.src, ['ldholo']);
     gulp.watch('Source/**/*.scss',['styles']);
 });
 
 //default task that runs with command 'gulp' and calls other tasks specified
 gulp.task('default', function() {
-    gulp.start('caholo','kegholo','aaholo');
+    gulp.start('aaholo','caholo','kegholo','ldholo');
 });
