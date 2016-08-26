@@ -1,12 +1,12 @@
 /* Background (bg) Colors */
 .bg-color-brand-a {
-  background-color: #FFFFFF; }
+  background-color: #F1FFF5; }
 
 .bg-color-brand-b {
-  background-color: #5eb9c2; }
+  background-color: #21B260; }
 
 .bg-color-brand-c {
-  background-color: #3F8EA0; }
+  background-color: #089746; }
 
 .bg-color-brand-d {
   background-color: #267d92; }
@@ -21,34 +21,34 @@
   background-color: #ffffff; }
 
 .bg-color-base-b {
-  background-color: #f3f3f3; }
+  background-color: #f2f2f2; }
 
 .bg-color-base-c {
-  background-color: #b4b6b6; }
+  background-color: #e6e6e6; }
 
 .bg-color-base-d {
-  background-color: #898d8d; }
+  background-color: #909090; }
 
 .bg-color-base-e {
-  background-color: #535d5f; }
+  background-color: #303030; }
 
 .bg-color-complement-a {
-  background-color: white; }
+  background-color: #ededed; }
 
 .bg-color-complement-b {
-  background-color: #c2675e; }
+  background-color: #ABAAAA; }
 
 .bg-color-complement-c {
-  background-color: #a0513f; }
+  background-color: #7F7E7E; }
 
 .bg-color-complement-d {
-  background-color: #923b26; }
+  background-color: #666666; }
 
 .bg-color-complement-e {
-  background-color: #76301f; }
+  background-color: #494949; }
 
 .bg-color-complement-f {
-  background-color: #592417; }
+  background-color: #222222; }
 
 .bg-color-system-a {
   background-color: #ff9900; }
@@ -82,13 +82,13 @@
 
 /* Border (bdr) Colors */
 .bdr-color-brand-a {
-  border-color: #FFFFFF; }
+  border-color: #F1FFF5; }
 
 .bdr-color-brand-b {
-  border-color: #5eb9c2; }
+  border-color: #21B260; }
 
 .bdr-color-brand-c {
-  border-color: #3F8EA0; }
+  border-color: #089746; }
 
 .bdr-color-brand-d {
   border-color: #267d92; }
@@ -103,31 +103,31 @@
   border-color: #ffffff; }
 
 .bdr-color-base-b {
-  border-color: #f3f3f3; }
+  border-color: #f2f2f2; }
 
 .bdr-color-base-c {
-  border-color: #b4b6b6; }
+  border-color: #e6e6e6; }
 
 .bdr-color-base-d {
-  border-color: #898d8d; }
+  border-color: #909090; }
 
 .bdr-color-base-e {
-  border-color: #535d5f; }
+  border-color: #303030; }
 
 .bdr-color-complement-a {
-  background-color: white; }
+  background-color: #ededed; }
 
 .bdr-color-complement-b {
-  background-color: #c2675e; }
+  background-color: #ABAAAA; }
 
 .bdr-color-complement-c {
-  background-color: #a0513f; }
+  background-color: #7F7E7E; }
 
 .bdr-color-complement-d {
-  background-color: #923b26; }
+  background-color: #666666; }
 
 .bdr-color-complement-e {
-  background-color: #76301f; }
+  background-color: #494949; }
 
 .bdr-color-system-a {
   border-color: #ff9900; }
@@ -161,13 +161,13 @@
 
 /* Text (txt) Colors */
 .txt-color-brand-a {
-  color: #FFFFFF; }
+  color: #F1FFF5; }
 
 .txt-color-brand-b {
-  color: #5eb9c2; }
+  color: #21B260; }
 
 .txt-color-brand-c {
-  color: #3F8EA0; }
+  color: #089746; }
 
 .txt-color-brand-d {
   color: #267d92; }
@@ -182,31 +182,31 @@
   color: #ffffff; }
 
 .txt-color-base-b {
-  color: #f3f3f3; }
+  color: #f2f2f2; }
 
 .txt-color-base-c {
-  color: #b4b6b6; }
+  color: #e6e6e6; }
 
 .txt-color-base-e {
-  color: #898d8d; }
+  color: #909090; }
 
 .txt-color-base-f {
-  color: #535d5f; }
+  color: #303030; }
 
 .txt-color-complement-a {
-  background-color: white; }
+  background-color: #ededed; }
 
 .txt-color-complement-b {
-  background-color: #c2675e; }
+  background-color: #ABAAAA; }
 
 .txt-color-complement-c {
-  background-color: #a0513f; }
+  background-color: #7F7E7E; }
 
 .txt-color-complement-d {
-  background-color: #923b26; }
+  background-color: #666666; }
 
 .txt-color-complement-e {
-  background-color: #76301f; }
+  background-color: #494949; }
 
 .txt-color-system-a {
   color: #ff9900; }

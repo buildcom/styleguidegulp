@@ -119,7 +119,7 @@ gulp.task('copywcd', function() {
 });
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch( paths.shared.src, ['aaholo','caholo','kegholo','ldholo','wcd']);
+    gulp.watch( paths.shared.src, ['aaholo','caholo','kegholo','ldholo','wcdholo']);
     gulp.watch( paths.aa.src, ['aaholo']);
     gulp.watch( paths.ca.src, ['caholo']);
     gulp.watch( paths.keg.src, ['kegholo']);
