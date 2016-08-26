@@ -30,7 +30,12 @@ var paths = {
         src: './Source/LD',
         work: './Working/LD',
         holo: './hologram_config_ld.yml'
-    }    
+    },
+    wcd: {
+        src: './Source/Wine',
+        work: './Working/Wine',
+        holo: './hologram_config_wcd.yml'
+    }        
 }
 
 var onError = function (err) {  
@@ -90,7 +95,7 @@ gulp.task('ldholo', ['copyld'], function() {
     .pipe( hologram({logging:true}) );
 });
 
-//Copy all necessary Keg files to the working directory
+//Copy all necessary LD files to the working directory
 gulp.task('copyld', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.ld.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.ld.work ) )
@@ -98,17 +103,32 @@ gulp.task('copyld', function() {
         .pipe(gulp.dest('./Destination/LD'));
 });
 
+//Build Wine
+gulp.task('wcdholo', ['copywcd'], function() {
+    //Build the CSS from the working directory  
+    gulp.src( paths.wcd.holo )
+    .pipe( hologram({logging:true}) );
+});
+
+//Copy all necessary Wine files to the working directory
+gulp.task('copywcd', function() {
+    return gulp.src( [paths.shared.src + "/**/*.scss", paths.ld.src + "/**/*.scss"] )
+        .pipe( gulp.dest( paths.wcd.work ) )
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/Wine'));
+});
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch( paths.shared.src, ['aaholo','caholo','kegholo','ldholo']);
+    gulp.watch( paths.shared.src, ['aaholo','caholo','kegholo','ldholo','wcd']);
     gulp.watch( paths.aa.src, ['aaholo']);
     gulp.watch( paths.ca.src, ['caholo']);
     gulp.watch( paths.keg.src, ['kegholo']);
     gulp.watch( paths.ld.src, ['ldholo']);
+    gulp.watch( paths.ld.src, ['wcdholo']);
     gulp.watch('Source/**/*.scss',['styles']);
 });
 
 //default task that runs with command 'gulp' and calls other tasks specified
 gulp.task('default', function() {
-    gulp.start('aaholo','caholo','kegholo','ldholo');
+    gulp.start('aaholo','caholo','kegholo','ldholo','wcdholo');
 });
