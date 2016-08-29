@@ -1,5 +1,5 @@
 // File: Rules
-// Description: These are the styles that are needed to change the theme for this site.
+// Description: These are the styles that are shared by all themes
 // Version: 0.1.0
 // ------------------------------------------------------------
 
@@ -9,9 +9,6 @@
 // ------------------------------
 
 @import "animations";
-@import "colors-brand";
 @import "colors-gui";
 @import "colors-system";
-@import "fonts";
-@import "headings";
 @import "helper-classes";
