@@ -1,6 +1,7 @@
 # IGNORE DIRECTORIES
 # ===================
 node_modules
+Destination
 
 # IGNORE FILES
 # ===================
