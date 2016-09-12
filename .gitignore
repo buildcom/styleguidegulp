@@ -1,3 +1,9 @@
+# IGNORE DIRECTORIES
+# ===================
 node_modules
+
+# IGNORE FILES
+# ===================
 *.sublime-project
 *.sublime-workspace
+.DS_store
