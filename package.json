@@ -4,14 +4,13 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-plumber": "^1.0.1",
+    "browser-sync": "^2.15.0",
     "gulp": "^3.9.0",
     "gulp-hologram": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.3.2",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5"
-  },
-  "devDependencies": {
-    "gulp-sass": "^2.3.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
