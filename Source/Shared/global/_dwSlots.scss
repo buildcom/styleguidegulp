@@ -1,0 +1,20 @@
+/* 5 column layout - THIS IS STRAIGHT FROM CREATIVE AND WILL NOT WORK CORRECTLY WITH DEFAULT BOOTSTRAP CLASSES - Todo: Fix this*/
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths { position:relative; min-height:1px; padding-right:10px; padding-left:10px; }
+.col-xs-5ths { width:20%; float:left; }
+@media (min-width: 768px) {
+  .col-sm-5ths { width:20%; float:left; }
+}
+@media (min-width: 992px) {
+    .col-md-5ths { width:20%; float:left; }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths { width:20%; float:left; }
+}
+/* END 5 column layout */
+.ld-noUnderline { border-bottom:none; }
+.ld-rowPadding-short { padding-bottom:15px; }
+.ld-rowPadding-standard { padding-bottom:30px; }
+.ld-rowPadding-tall { padding-bottom:45px; }

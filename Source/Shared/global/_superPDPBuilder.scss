@@ -1,0 +1,117 @@
+#bsb-container {
+
+    .title-row,
+    .one-col-hero-txt,
+    .one-col-hero-three-col-txt,
+    .one-col-hero-three-col-img-over-txt,
+    .one-col-hero-four-col-txt,
+    .one-col-hero-four-col-img-over-txt,
+    .two-col-img-txt,
+    .two-col-txt-img,
+    .two-col-img-over-txt,
+    .two-col-img-over-txt-upsell,
+    .three-col-img-over-txt,
+    .three-col-img-over-txt-upsell,
+    .four-col-img-txt-img-txt {
+        p {
+            padding-top: 5px;
+        }
+            
+        h4 {
+            margin-bottom: 5px;
+        }
+        
+        img {
+            margin-bottom: 15px;
+        }
+        
+        hr {  
+            padding-top: 0;
+            margin-top: 0;
+        }
+    }
+}
+
+$bg-circle-grey: #333333;
+$super-pdp-grey: #ccc;
+$super-pdp-img-border-radius: 4px;
+$super-pdp-h3-font-size: 16px;
+$super-pdp-medium-spacer: 15px;
+$super-pdp-large-spacer: 30px;
+
+#descriptionRow {
+  #air-purifier.super-pdp,
+  #commercial-kegerator.super-pdp,
+  #dehumidifier.super-pdp,
+  #washer-dryer-combo.super-pdp,
+  #portable-air-conditioner.super-pdp,
+  #kegerator.super-pdp,
+  #wine-cooler.super-pdp,
+  #built-in-bev.super-pdp{
+    img, .img-responsive {
+      border-radius: $super-pdp-img-border-radius;
+      margin-bottom: $super-pdp-medium-spacer;
+    }
+    h1,h2,h3,h4,h5,h6 {
+      padding: 0;
+      margin: 0;
+    }
+    h3 {
+      font-size: $super-pdp-h3-font-size;
+      margin-bottom: $super-pdp-medium-spacer;
+    }
+    p {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: $super-pdp-medium-spacer;
+    }
+    ol, ul {
+      list-style-type: none;
+      li {
+        padding-bottom: $super-pdp-medium-spacer;
+      }
+    }
+    hr {
+      padding: 0;
+      margin: $super-pdp-large-spacer 0;
+    }
+    .vidCTA, .videoCTA, 
+    .vidCTA img, .videoCTA img {
+      width: 100%;
+      max-width: 100%;
+    }
+    .videoTitle {
+      display: none;
+    }
+    .img-thumbnail {
+      margin-bottom: $super-pdp-medium-spacer;
+      border: none;
+      padding: 0;
+    }
+    .btn {
+      margin-bottom: $super-pdp-medium-spacer;
+    }
+    .marginTop {
+      margin-top: $super-pdp-medium-spacer;
+    }
+    .marginBottom {
+      margin-bottom: $super-pdp-medium-spacer;
+    }
+    .underlineItem {
+      border-bottom: 1px $super-pdp-grey solid;
+    }
+    .bg-circle {
+      width: 30px;
+      background-color: $bg-circle-grey;
+      border-radius: 50%;
+      color: #fff;
+      display: inline-block;
+      font-weight: bold;
+      height: 30px;
+      line-height: 30px;
+      margin: .5rem;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+}

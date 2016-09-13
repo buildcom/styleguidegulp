@@ -1,0 +1,41 @@
+// wine cooler direct site specific color variables.
+
+//purple 
+$brand-a:     #850325;
+$brand-b:     #850325;
+$brand-c:     #850325;
+$brand-e:     #850325;
+$brand-d:     lighten($brand-e, 7%);
+$brand-edark1: darken($brand-e, 7%);
+$brand-edark2: darken($brand-e, 14%);
+$brand-f:     #660322;
+
+//golds
+$complementary-a:     #fefaef;
+$complementary-b:     #f4ebd1;
+$complementary-c:     #eadbb3;
+$complementary-d:     #dfcc95;
+$complementary-e:     #d5bc77;
+$complementary-edark1: darken($complementary-e, 7%);
+$complementary-edark2: darken($complementary-e, 14%);
+$complementary-f:     #dead52;
+
+//greys
+$base-a:     #fff;
+$base-b:     #f2f2f2;
+$base-c:     #e6e6e6;
+$base-d:     #909090;
+$base-e:     #303030;
+$base-f:     #212121;
+
+$system-a:     #ff9900; //emphasis or warning
+$system-b:     #168e60; //add to cart
+$system-bdark1: darken($system-b, 7%);
+$system-bdark2: darken($system-b, 14%);
+$system-c:     #60b760; //success
+$system-d:     #bd4b4b; //error
+$system-e:     #cc0000; //discount or savings
+$system-edark1: darken($system-e, 7%);
+$system-edark2: darken($system-e, 14%); 
+$system-f:     #990000; //final price
+

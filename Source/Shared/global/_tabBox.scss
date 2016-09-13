@@ -1,0 +1,43 @@
+.tabBox {
+  //tabs and pane styling
+  margin-bottom:30px;
+  .tabTitle {
+    border: none;
+    display: inline;
+    line-height: 2;
+  }
+  .nav-tabs { 
+    border-bottom: 1px solid $color-title-h2-BottomLine;
+    >li {
+      float:right;
+      
+      >a {
+        border: none; 
+        background: none; 
+        color: $bodyColor; 
+      }
+    }
+    >li.active,
+    >li:hover {
+      >a {
+        border: none; 
+        border-bottom:2px solid $linkColor; 
+        color: $linkColor; 
+        background: transparent;
+      }
+    }
+  }
+  .tab-pane { 
+    padding: 10px 0; 
+  }
+  .shopAll {
+    width:100%;
+    text-align:center;
+    padding:5px 0;
+    margin-top:10px;
+    border-top:1px dashed $color-tabBox-shopAll;
+  }  
+}
+
+
+

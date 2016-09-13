@@ -1,0 +1,413 @@
+#pt_checkout {
+    #cartTop {
+        margin:20px 0 0;
+        
+        .cartHeaderSteps {
+            padding-left:0px;
+            display: inline;
+            float:left;
+            width:100%;
+            color:#A1A1A1;
+            border-bottom: 1px solid $checkoutCartHeaderBottomBorder; margin:0 0 20px;
+            
+            h4 {font-family:Arial,Verdana,Helvetica,sans-serif;color:#A1A1A1;}
+            
+            .checkoutSteps {
+                display:inline; float:right;margin-bottom:10px;
+            
+                h4 {font-size:14px;display:inline-block;padding:15px 20px 0;margin-bottom:0;font-weight:bold;}
+            }
+
+            .cartHeader {
+                display:inline; float: left; padding-left:0;
+                h1 {margin:10px 0 0;padding:0 15px;border:none;}            
+                
+            }
+            
+            .currentStep h4 {font-weight:bold;color:#525252;}
+            .currentStep .stepCircle {background-color:$checkoutCurrentStepCircleBg; border:1px solid $checkoutCurrentStepCircleBorder;}
+
+        }
+    }
+}
+
+#cartTop .cartHeaderSteps .stepCircle {line-height:1em;border-radius:50%;border:1px solid $checkoutStepCircleBorder;display:inline-block;width:20px;height:20px;position:relative;top:5px;left:-3px;}
+#cartTop .cartHeaderSteps .stepNumber {position:absolute;top:2px;left:5px;}
+
+.checkoutHeader {background-color:$checkoutHeaderBg;text-align:left;padding:1px 0;margin:0 -15px;}
+.checkoutHeader h1 {border:none;font-size:18px;padding-left:15px;}
+.checkoutHeader.billingHeader h2 {font-size: 18px; padding-left:15px;border:none;}
+.checkoutHeader .termsNote {margin:5px 15px;font-size:11px;color:#A1A1A1;font-style:italic;}
+
+.checkoutContent .checkoutHeader { margin: 0 -15px 10px -15px; }
+
+/* field css */
+.checkoutContent {padding:15px;}
+.checkoutContent .addressNote {margin-bottom:15px;}
+.checkoutContent #shippingAddress {margin-top:10px;}
+.checkoutContent .field label {margin-bottom:0;}
+.checkoutContent .field input, .checkoutContent .field select {margin:0 0 10px 0;padding:5px;width:100%;}
+.checkoutContent .field.emailCheckBox {margin-bottom:10px;}
+.checkoutContent .field.emailCheckBox input {width:auto;margin:5px 0 0 0;vertical-align:top;}
+.checkoutContent .field.emailCheckBox label {width:100%; font-weight:normal; display:inline;text-align:left;}
+
+.checkoutContent .has-error span {color:#bd4b4b;padding-left: 5px;}
+.checkoutContent .help-block.form-error {margin:0;}
+.checkoutContent input.valid {background: url("../../images/formvalidation/icon-ok.png") no-repeat scroll right center;border-color: #60B760 !important;box-shadow: 0px 0px 3px 0px rgba(96,183,96,0.3);}
+.checkoutContent input.error {background: url("../../images/formvalidation/icon-fail.png") no-repeat scroll right center;border-color: #bd4b4b !important;box-shadow: 0px 0px 3px 0px rgba(189,75,75,0.3);}
+.checkoutContent .address2 label {display:inline;}
+/*payment specific field css*/
+.checkoutContent .addressNote .note {padding-left:0;}
+.checkoutContent .ccRadios {display:none;}
+.checkoutContent .expireDate, .checkoutContent .cvn input {display:block;}
+.checkoutContent .field .expireDate select, .checkoutContent .cvn .field input {width:auto;}
+.checkoutContent .expireDate .errorCaption {margin-left:0;}
+.checkoutContent .addressCheckBox {margin-bottom:10px;}
+.checkoutContent .addressCheckBox label {display:inline;}
+.checkoutContent .addressCheckBox .field {display: inline-block;}
+.checkoutContent .addressCheckBox .field input#sameAddress {
+    margin: 0;
+    min-height: 0;
+    padding: 0;
+    width: 20px;
+}
+.checkoutContent .addressCheckBox .has-feedback {display:inline-block;}
+
+/*order summary*/
+#orderSummaryContent {padding:15px 0;}
+.checkoutContent .summaryBlock {margin:10px 0;}
+.checkoutContent .summaryBlock h3 {font-weight:bold;font-size:14px;line-height:25px;border-bottom: 1px solid checkoutOrderSummaryBottomBorder;margin-bottom:10px;}
+.checkoutContent .summaryBlock h3 .summaryEdit {float:right;}
+.orderSummary {margin-top:20px;}
+.checkoutRow {margin:20px 0;}
+#pt_checkout  .checkoutRow .secureCheckout {text-align:right;padding:10px 0x;}
+#pt_checkout  .checkoutRow .secureCheckout .checkoutButton,
+#pt_checkout  .checkoutRow .secureCheckout .changePayment {font-size:16px;height:38px;width:100%;}
+#pt_checkout  .checkoutRow .secureCheckout .checkoutButton.disabled {cursor:not-allowed;}
+.itemPrice { text-align:right;}
+.cartFooter {margin-top:15px;padding: 15px 0;}
+.cartFooter .priceTotals .total {font-weight: bold;}
+.cartFooter .rightBottomCart {text-align: right;}
+.cartFooter .cartTotalLeft, .cartFooter .cartTotalRight {padding-right:0;}
+
+/* right column checkout and mini login */
+.loginInline {margin-bottom:10px;}
+.loginInline h3 {border:none;}
+.loginInline .loginText {font-size:1.2em;}
+.loginInline .loginText .fa-plus {font-size:.8em;color:$checkoutLoginLinks;cursor:pointer;}
+.loginInline .loginText .fa-minus {font-size:.8em;color:$checkoutLoginLinks;cursor:pointer;}
+.loginInline .loginText .loginClick {text-decoration:underline;font-weight:bold;cursor:pointer;color:$checkoutLoginLinks;}
+.loginInline .loginContent {margin-top:15px;}
+.loginInline .miniLogin {padding:15px;}
+.miniLogin .miniWelcome {font-weight:bold;}
+.miniLogin .field {margin-bottom:5px;}
+.miniLogin label {margin-bottom:0;font-weight:normal;}
+.miniLogin .loginBtn {margin-top:10px;}
+.checkoutRightColumn {margin:15px 0;}
+.checkoutRightColumn .panel .panel-heading h3 {text-align:center;border:none;}
+.checkoutRightColumn #rightColumnMiniCart .loaderImg {margin-left:35px;display:none;}
+.checkoutRightColumn #rightColumnMiniCart {border-bottom:2px solid #ccc;}
+.checkoutRightColumn .rightColumnMiniCartTable { width:100%;border-spacing: 10px 20px;}
+.checkoutRightColumn .rightColumnMiniCartTable {
+
+    .productImage.miniCartImage {
+        width: 40px;
+    }
+
+    .shipmentseparator {
+        border-bottom: 1px solid $checkoutOrderSummaryShipmentBorder;
+    }
+
+    .checkoutSummaryKitImage {
+        vertical-align: top;
+    }
+
+    .KitItemHeader {
+        background: $checkoutKitHeaderBg;
+        padding: 7px;
+        border-radius: 3px;
+        text-align: center;
+        font-family: Open Sans Condensed, Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        border: 1px solid $checkoutKitBorder;
+    }
+}
+.checkoutRightColumn .rightColumnMiniCartTable td {padding:10px 3px;}
+.checkoutRightColumn .rightColumnShippingAddress {text-transform:capitalize;padding:15px;}
+.checkoutRightColumn .rightColumnOrderTotal .miniSummaryLine {padding:3px 0;}
+.checkoutRightColumn .rightColumnOrderTotal .miniTotal {font-weight:bold;}
+.checkoutRightColumn .rightColumnOrderTotal .miniSummaryLine .miniSummaryRight {float:right;}
+
+/* orderSummary list */
+#pt_checkout .lineItem { margin-left:0;border-bottom: none; padding-top:10px; padding-bottom:20px;}
+#pt_checkout .lineItem .productImage {min-width: 80px; padding:0;text-align:center;}
+#pt_checkout .lineItem .productImage img {height:80px;width:80px;}
+#pt_checkout .lineItemDetails {padding-right:0;text-align:right;float:right;}
+#pt_checkout .lineItemDetails .details {text-align:left;}
+#pt_checkout .lineItemDetails .row .col-xs-6 {padding:0 5px;}
+#pt_checkout .lineItemDetails .itemPrice, .lineItemDetails .quantity { padding-right:0; }
+#pt_checkout .lineItemDetails .itemPrice .row { margin-right:0; }
+#pt_checkout .lineItem .ourPrice, .lineItem .subtotalPrice {padding:0;} 
+#pt_checkout .orderSummary .productName { background-color: $checkoutProductName; padding: 5px 15px;}
+.cartFooter .priceTotalHeader { background-color: $checkoutPriceTotalHeaderBg; text-align:left; font-weight: bold; padding: 5px 15px; margin-bottom:10px; }
+#pt_checkout {
+    .orderSummary {
+        .KitUpgrades {
+            margin-top: 10px;
+        }
+        .orderSummaryUpgrades {
+            padding-top: 15px;
+            border-top: 1px solid $checkoutKitBorder;
+            width: 100%;
+            margin-left: 0px;
+        }
+        .shipmentContainer {
+            border-top: 1px solid $checkoutKitBorder;
+            border-left: 1px solid $checkoutKitBorder;
+            border-right: 1px solid $checkoutKitBorder;
+            border-radius: 3px;
+            padding-top: 0px;
+            margin-bottom: 10px;
+            clear: both;
+            overflow: auto;
+            overflow-x: hidden;
+            position: relative;
+            top: 10px;
+            left: 0px;
+            .KitCustomizationHeader {
+                padding: 15px 30px 10px 30px;
+                border-bottom: 1px solid $checkoutKitBorder;
+                background: $checkoutKitHeaderBg;
+                color: $checkoutKitHeaderText;
+                font-weight: bold;
+                font-size: 18px;
+                font-family: Open Sans Condensed, Helvetica, Arial, sans-serif;
+                margin-bottom: 15px;
+            }
+        }
+        .shipmentContainerHide {
+            border: none;
+            clear: both;
+        }
+    }
+}
+/*X-Small Only*/
+
+/*Small Only*/
+@media (max-width: 768px){
+    #pt_checkout {
+        .orderSummary {
+            .KitUpgrades {
+                margin-top: 10px;
+                .quantityBadge {
+                    position: relative;
+                    top: -45px; 
+                    left: 65px;
+                }
+            }
+            .orderSummaryUpgrades {
+                border-top: none;
+                padding-top: 0px;
+            }
+            .shipmentContainer {
+                border-bottom: 1px solid $checkoutKitBorder;
+                margin: 15px;
+                .KitCustomizationHeader {
+                    text-align: center;
+                    background: $checkoutKitHeaderBgXS;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    #pt_checkout .lineItem .productImage {min-width: 100px; padding:0;text-align:center;}
+    #pt_checkout .lineItem .productImage img {height:100px;width:100px;}
+}
+
+/*Small and Up*/
+@media (min-width: 768px) {
+    .checkoutHeader {margin:0;}
+    .checkoutContent .field .note {margin-left:155px;}
+    .checkoutContent .field.emailCheckBox input {margin-left:160px;}
+    .checkoutContent .field.emailCheckBox label {width:380px;display:inline-block;}
+    .checkoutContent .field label {width:150px;text-align:right;font-weight:normal;}
+    .checkoutContent .field input, .checkoutContent .field select {width:400px;margin:5px;}
+    .checkoutContent .address2 label {display:inline-block;}
+    .checkoutContent .help-block.form-error {margin:0 0 10px 155px;}
+    .checkoutContent .addressCheckBox label {display:inline-block;}
+    .checkoutContent .addressCheckBox .field {display: inline-block;}
+    .checkoutContent .addressCheckBox .field input#sameAddress { margin: 0; min-height: 0; padding: 0; width: 20px;}
+    .checkoutContent .summaryBlock {margin:15px 0;}
+    .checkoutContent .expireDate, .checkoutContent .cvn input {display:inline-block;}
+    #orderSummaryContent {padding:15px;}
+
+    .checkoutRow {background-color:$checkoutRowBg;height:50px;}
+    .checkoutRow .secureCheckout {padding-top:5px; padding-bottom:5px;}
+    .checkoutRow .secureCheckout {text-align:right;padding:10px 0x;}
+
+    .miniLogin .forgotPasswordLink, .miniLogin .loginBtn {margin-left: 160px;}
+    #pt_checkout .lineItem { clear: both; padding: 10px 0 20px 0; border-bottom: 1px solid $checkoutLineItemBottomBorder;}
+    #pt_checkout .lineItem .productImage img {height:100px;width:100px;}
+}
+
+@-moz-document url-prefix() {
+    fieldset { display: table-cell; }
+}
+
+.checkoutContent .form-control {
+    display: inline;
+}
+
+.paymentMethodPanel {
+
+	.paymentMethodLabel {
+		width: calc(100% - 32px);
+		border: 1px solid #000;
+		border-top-left-radius: 0;
+		margin:0;
+		padding:5px;
+		
+		.paymentMethodImage {
+			max-width: 3.4em;
+			vertical-align: baseline;
+		}
+	}
+	
+	.paymentMethodRadio {
+		float: left;
+		height: 16px;
+		width: 16px;
+		margin: 8px;
+	}
+	
+	.payment-method {
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .5s ease;
+		padding: 0;
+	}
+	
+	.affirm-payment-method-description {
+	  text-align: center;
+	}
+	
+	br {
+		display: none;
+	}
+}
+.paymentMethodForm {
+	padding: 15px;
+}
+.paymentMethodRadio:checked ~ .payment-method {
+	max-height: 400px;
+}
+
+@media (min-width: 768px) {
+	.paymentMethodPanel {
+		br {
+			display: block;
+		}
+	}
+}
+
+/**************** START ONE PAGE CHECKOUT ****************/
+
+#onePageCheckoutAccordion {
+
+    margin-top: -5px;
+
+    #checkoutShipping,
+    #checkoutPayment,
+    #checkoutReview {
+        padding: 0;
+        
+        #checkoutShippingTitle,
+        #checkoutPaymentTitle,
+        #checkoutReviewTitle {
+            display: block;
+            padding: 10px 15px;
+        }
+        
+        h1 {
+            display: inline-block; 
+            border-bottom: 0px;
+        }
+    }
+
+    .form-control {
+        display: inline;
+    }
+    .form-group {
+        margin-bottom: 0px;
+    }
+    
+    .form-control-feedback {
+      position: initial;
+      z-index: 2;
+      display: inline;
+      width: 34px;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      margin-left: -25px;
+    }
+    
+    .termsNote {
+        margin-bottom: 20px;
+    }
+    
+    .termsList {
+        ul {
+            list-style-position: outside;
+        }
+    }
+    
+    .panelConfirmation {
+        float: right;
+        
+        .fa-check {
+            color: #48874a;
+        }
+        
+        .fa-info-circle {
+            color: #bd4b4b;
+        }
+    }
+}
+
+#onePageCheckoutMiniSection {
+    .panelActive {
+        position: relative;
+    }
+    
+    .panelActive:before {
+        content:"\A";
+        border-style: solid;
+        border-width: 10px 15px 10px 0;
+        border-color: transparent #ddd transparent transparent;
+        position: absolute;
+        left: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .panelActive:after {
+        content:"\A";
+        border-style: solid;
+        border-width: 9px 14px 9px 0;
+        border-color: transparent #fff transparent transparent;
+        position: absolute;
+        left: -14px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.notYetValid {
+    opacity : .3;
+    transition: opacity .5s ease-in-out;
+}
+
+/***************** END ONE PAGE CHECKOUT *****************/

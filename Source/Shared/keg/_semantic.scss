@@ -1,0 +1,86 @@
+//base
+$linkColor: $brand-e;
+$linkColorHover: $brand-f;
+$primaryColor: $brand-d;
+  
+//horizontal nav 
+$horizontalNavItem: $base-e;
+$horizontalNavItemBg: $base-a;
+$horizontalNavItemHover:$brand-f;
+$horizontalNavItemHoverBg: $base-b;
+$horizontalNavItemBorder: $base-c;
+$horizontalNavDropdownBorder: $base-e;
+$horizontalNavDropdownItem: $base-e;
+$horizontalNavDropdownItemBg:  $base-a;
+$horizontalNavDropdownItemHoverBg: $base-b;
+$horizontalNavDropdownItemHover: $brand-f;
+$horizontalNavDropdownItemBorder: $base-c;
+$horizontalNavDropdownItemBorderMdLg: $base-c;
+$horizontalNavBgMdLg: $brand-d;
+$horizontalNavItemMdLg: $base-a;
+$horizontalNavDropdownBorderMdLg: $base-e;
+$horizontalNavDropdownItemBgMdLg: $base-a;
+$horizontalNavDropdownItemHoverBgMdLg: $base-e;
+
+//header
+$headerLearningCenterItem: $brand-e;
+$headerLearningCenterItemBg: $complementary-a;
+$headerLearningCenterItemHoverBg:$brand-f;
+$headerIconContainerDropdownItemMdLg: $base-e;
+$headerIconContainerDropdownItemHoverBgMdLg: $base-b;
+$headerIconContainerDropdownItemHoverMdLg: $brand-f;
+
+
+//footer
+$footerBarBg: $brand-d;
+$footerMenuBorder: $brand-c;
+$footerMenuItemBg: $base-a;
+$footerMenuItemHoverBg: $base-b;
+
+//buttons
+$buttonCompCtaBg: $complementary-c; 
+$buttonCompCtaBorder: $complementary-e;
+$buttonCompCtaHoverBg: $complementary-d;
+
+//pdp
+$pdpFeatureReviewIcon: $brand-d;
+$pdpWriteReviewLink: $brand-d;
+$pdpDetailsAltOpenBox: $brand-d;
+$pdpFoldMenuTopBottomBorder: $brand-d;
+$pdpFoldMenuTitle: $brand-d;
+$pdpDescriptionFoldMenuBottomBorder: $brand-d;
+
+
+$productPriceBlockEstDeliveryTitleIcon: $brand-d;
+$productPriceBlockEstDeliveryLocationText: $brand-d;
+
+//sliders
+$sliderIcon: $brand-d;
+  
+//verticalNav
+$color-verticalNav-listGroupItem:$base-e;
+$color-verticalNav-listGroupItem-Hover: $brand-f;
+$color-verticalNav-listGroupItem-Active: $brand-f;  
+$color-verticalNav-linkGroup-Hover: $brand-f;
+$color-verticalNav-linkGroup-Hover-Bg: $base-b;
+$color-pdpNav-listGroupItem-Hover-Bg: $base-b;
+$color-verticalNav-listItem-Hover-Bg: $base-b;
+$color-pdpNav-listGroupItem: $base-e;
+$color-pdpNav-listGroupItem: $base-e;
+
+//packery
+$packeryContentTag: $brand-e;
+$packeryContentTagBg: rgba($complementary-a, .9);
+$packerySubContentTag: $base-a;
+$packerySubContentTagBg: rgba($base-e, .8);
+
+//cat callout
+$color-catCallout-contentTag: $packeryContentTag;
+$color-catCallout-contentTag-Bg: $packeryContentTagBg;
+
+
+//pdpNav
+$color-pdpNav-listGroupItem: $brand-d;
+
+//tab box
+$color-tabBox-navTab: $brand-d;

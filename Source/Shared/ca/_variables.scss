@@ -1,0 +1,41 @@
+// compact appliance site specific color variables.
+
+//blue 
+$brand-a:     #69ADBD;
+$brand-b:     #5eb9c2;
+$brand-c:     #3F8EA0;
+$brand-d:     #267d92;
+$brand-e:     #267d92;
+$brand-edark1: darken($brand-e, 7%);
+$brand-edark2: darken($brand-e, 14%);
+$brand-f:     #065365;
+
+//supporting blue
+$complementary-a:     #eff5f8;
+$complementary-b:     #c0ebf4;
+$complementary-c:     #AAE7ED;
+$complementary-d:     #79D1D9;
+$complementary-e:     #4fb7c2;
+$complementary-edark1: darken($complementary-e, 7%);
+$complementary-edark2: darken($complementary-e, 14%);
+$complementary-f:     #138A95;
+
+//greys
+$base-a:     #fff;
+$base-b:     #f5f1e8;
+$base-c:     #e8e4db;
+$base-d:     #999690;
+$base-e:     #555350;
+$base-f:     #212121;
+
+$system-a:     #ff9900; //emphasis or warning
+$system-b:     #168e60; //add to cart
+$system-bdark1: darken($system-b, 7%);
+$system-bdark2: darken($system-b, 14%);
+$system-c:     #60b760; //success
+$system-d:     #bd4b4b; //error
+$system-e:     #cc0000; //discount or savings
+$system-edark1: darken($system-e, 7%);
+$system-edark2: darken($system-e, 14%); 
+$system-f:     #990000; //final price
+

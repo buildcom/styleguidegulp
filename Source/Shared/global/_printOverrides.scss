@@ -1,0 +1,46 @@
+@media print {
+  .BVRRDisplayContentHeader,
+  .BVRRReviewSocialLinksContainer {
+    display:none !important;
+  }
+  
+  .productPriceBlock {
+    .addToCartButton,
+    .callToOrderButton,
+    iframe,
+    .wishlistBtn,
+    .shippingDetails {
+      display:none !important;
+    }
+    .estimatedDeliveryTitle:after,
+    .estimatedDeliveryLocation:after,
+    .promoCallout a:after {
+      content: '' !important;
+    }
+  }
+  
+  .foldMenuContent {
+    display:block !important;
+  }
+  
+  .printHeader {
+    text-align:center;
+    .logoContainer {
+      display:inline-block;
+    }
+    .phoneNumberContainer {
+      display:inline-block;
+      vertical-align:top;
+      margin-left:10px;
+	  .phoneNumber {
+	    padding-top:15px;
+	    font-size:26px;
+	    font-family: Open Sans Condensed, Helvetica, Arial, sans-serif;
+	  }
+    }
+    .userCode {
+      display:inline-block;
+      font-weight:bold;
+    }
+  }
+}

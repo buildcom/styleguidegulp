@@ -1,0 +1,159 @@
+.prodDisplayInclude {
+  cursor:pointer;
+  box-sizing:border-box;
+  padding:5px;
+  
+  .imageContainer img {
+    display:block;
+    margin:0px auto;
+    width:100%;
+    length:auto;
+  }
+  
+  .prodName a {
+    color:$productDisplay;
+  }
+  
+  .ratingContainer {
+    padding:5px 0px;
+
+    img {
+      display:block;
+      margin:0px auto;
+      width:50%;
+      max-width:80px;
+      length:auto;
+    }
+  }
+  
+  .bulletPoints {
+    list-style-type:disc;
+    list-style-position:inside;
+    font-size:12px;
+    padding:5px 0px 5px 5px;
+    
+    li {
+      padding:2.5px 0px;
+    }
+  }
+  
+  .salePrice {
+    color:$productSalePrice;
+  }
+  
+  &:hover {
+    .imageContainer {
+      opacity:0.8;
+    }
+    
+    .prodName a {
+      color:$productDisplayHover;
+      text-decoration:underline;
+    }
+  }
+}
+
+.largeProductCard {
+  width:290px;
+  display:block;
+  padding:15px;
+  
+  a {
+    text-decoration:none;
+  }
+  
+  a:hover {
+    text-decoration:underline;
+  }
+  
+  .productImage {
+    text-align:center;
+    
+    img {
+      max-width:100%;
+      height:auto;
+    }
+  }
+  
+  .productRating {
+    text-align:center;
+  }
+  
+  .productBulletPoints {
+    color:#525252;
+    list-style:disc outside;
+    
+    ul {
+      padding-left:1em;
+      margin:0 0 10px 0;
+    }
+  }
+  
+  .finalPrice {
+    color:#900;
+  }
+}
+
+.midSizedCard {
+  .productCard {
+    border-radius:4px;
+    border:1px solid #efefef;
+    padding:0 10px;
+    text-align:left;
+  }
+  .productRating {
+    height:1.2em;
+    text-align:center;
+    overflow:hidden;
+    margin-bottom:5px;
+  }
+  .productImage {
+    width:65%;
+    height:0;
+    padding-bottom:65%;
+    margin:5px auto;
+  }
+  .productBrand {
+    font-size:12px;
+  }
+  .productName {
+    margin-bottom:10px;
+    line-height:1.2em;
+    height:2.4em;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .salePrice {
+    color: $productSalePrice;
+    font-size:18px;
+    font-weight:bold;
+    line-height:1.5em;
+    height:1.5em;
+    overflow:hidden;
+    margin-bottom:5px;
+  }
+  .bulletPoints {
+    li {
+      font-size:.9em;
+      line-height:1.2em;
+      height:2.4em;
+      overflow:hidden;
+      margin-bottom:5px;
+    }
+  }
+  .moreDetails,
+  .addToCart {
+    margin-left: -10px;
+    margin-right: -10px;
+    
+    .btn {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      width: 100%;
+      font-weight: 300;
+    }
+  }
+}

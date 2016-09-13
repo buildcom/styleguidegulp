@@ -1,0 +1,41 @@
+/************ Add to Cart Modal *****************/
+#addToCartModal .modal-content, 
+#addToCartModal .modal-title, 
+#addToCartModal .modal-body, 
+#addToCartModal .productCard, 
+#addToCartModal .suggestedProductCard, 
+#addToCartModal .navigationButtons {overflow: hidden;}
+#addToCartModal.progress1 .modal-title:after { content: "Adding to Cart..."; }
+#addToCartModal.error1 .modal-title:before {  font-family: 'FontAwesome';  content: "\f00d";  color: $addToCartModalError;  font-size: 24px;  padding-right: 5px;}
+#addToCartModal.error1 .modal-title:after { content: "Error Adding to Cart";}
+#addToCartModal.success1 .modal-title:before {  font-family: 'FontAwesome';  content: "\f058";  color: $addToCartModalSuccess;  font-size: 24px;  padding-right: 5px;}
+#addToCartModal.success1 .modal-title:after { content: "Item(s) Added to Cart";}
+#addToCartModal .close {margin-top:0;}
+#addToCartModal .productCard {  margin-bottom: 10px;}
+#addToCartModal .productCard .productImage {  padding: 5px 0;}
+#addToCartModal .productCard .productDescription { display: block; padding: 10px 0;}
+#addToCartModal .productCard .productBrand { color :$addToCartModalProductBrand; display: block; font-size: 12px;}
+#addToCartModal .productCard .productName { color: $addToCartModalProductTitle; display: block; padding-bottom: 10px; font-size: 14px;}
+#addToCartModal .productCard .productPrice { color: $addToCartModalProductPrice; font-weight: bold; margin-bottom: 10px;}
+#addToCartModal .productInfoNavButtons .viewCartButton, 
+#addToCartModal .navigationButtons .continueShoppingButton { margin-bottom: 10px;}
+#addToCartModal .suggestedProducts {  display: block;  overflow: hidden;  margin-bottom: 10px;  -webkit-transition: box-shadow .2s;  transition: box-shadow .2s;  border: 1px solid #efefef;  border-radius: 4px;}
+#addToCartModal .suggestedProducts:hover {  text-decoration: none;  -webkit-box-shadow: inset 0px 0px 10px 5px #eee;  -moz-box-shadow: inset 0px 0px 10px 5px #eee;  box-shadow: inset 0px 0px 10px 5px #eee;}
+#addToCartModal .suggestedProducts .productName {  line-height: 1.5em;  height: 3.2em;  overflow: hidden;  padding-bottom:10px;}
+#addToCartModal .suggestedProducts .productImage img { padding: 10px 5px;  width: 115px; max-width:100%; }
+#addToCartModal .suggestedProducts .productPrice { color: $addToCartModalSuggestedProductPrice;  padding-bottom:10px;  font-weight: bold;}
+#addToCartModal .suggestedProducts .productDescription {  padding: 10px;}
+#addToCartModal .suggestedProducts > .suggestedProductCard:nth-child(3) { transition-delay: .1s;}
+#addToCartModal .suggestedProducts > .suggestedProductCard:nth-child(4) { transition-delay: .3s;}
+#addToCartModal .suggestedProductsHeading { margin-bottom: 15px;}
+ 
+ @media(min-width:768px) {
+  #addToCartModal .cartSummary { border: none; }
+  #addToCartModal .suggestedProducts {  text-align: center; }
+}
+
+ @media(min-width:992px) {
+  #addToCartModal .productCard .productBrand {font-size: 14px; }
+  #addToCartModal .productCard .productName {font-size: 16px; }
+}
+/************ END Add to Cart Modal *****************/

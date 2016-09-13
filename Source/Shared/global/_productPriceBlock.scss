@@ -1,0 +1,149 @@
+.productPriceBlock { text-align:center; margin-top:10px; margin-bottom:10px; }
+.productPriceBlock .panel-heading { color:$productPriceBlockPanelHeading; }
+.productPriceBlock .mapNotification { padding:0px 30px; font-size:24px; color:$producPriceBlockMapNotification; line-height:1.2em; }
+.productPriceBlock .mapNotification:after { content:"\f05a"; font-family:"FontAwesome"; padding-left:.2em; }
+.productPriceBlock .discontinuedDescription { color:$productPriceBlockDiscontinuedDesc; font-size:24px; font-weight:bold; }
+.productPriceBlock .listPrice,
+.productPriceBlock .preRebatePrice { text-decoration:line-through; color:$productPriceBlockListPrice; }
+.productPriceBlock .listPrice.noTextDecoration { text-decoration:none; }
+.popover .popover-title { text-align:center; }
+.popover .discount { color:$productPriceBlockPopoverDiscount; }
+.popover .discount .discountAmount:before{ content:"-"; }
+.popover .price { color:$productPriceBlockPopoverPrice; }
+.popover .price:last-child { border-top:1px solid $productPriceBlockPopoverPriceBorder; color:$productPriceBlockPopoverPrice; font-size:18px; }
+.discountName,
+.discountAmount { width:50%; display:inline-block; }
+.discountName { padding-right:5px; text-align:right; }
+.discountAmount { padding-right:5px; }
+.productPriceBlock .promoCallout { color:$productPriceBlockPromoCallout; }
+.productPriceBlock .finalPrice { font-size:30px; color:$productPriceBlockFinalPrice; }
+.productPriceBlock .shippingCost { font-weight:bold; margin-bottom:15px; }
+.productPriceBlock .productVariations { padding:10px 20px 15px; font-weight:bold; }
+.productPriceBlock .productVariations select { width:100%; border:1px solid $productPriceBlockColorVariationSelected; font-weight:normal; }
+.productPriceBlock .colorVariation { border-radius: 4px; font-weight: normal; border: 1px solid $base-c; background-color:$base-b;}
+.productPriceBlock .addToCartButton { margin-bottom:15px; width:100%; }
+.productPriceBlock .addToCartButton.progressSpinner { background-color:$productPriceBlockAddToCartBtnSpinnerBg; }
+.productPriceBlock #emailMe { margin:15px; }
+.productPriceBlock #emailMe .emailMessage { font-weight:bold; }
+.productPriceBlock #emailMe #bisnEmail { width:100%; padding:5px; margin:5px 0px 8px; color:$productPriceBlockBackInStockEmailText; border:1px solid; }
+.productPriceBlock #emailMe #bisnEmail:focus { color:$productPriceBlockBackInStockEmailTextFocus; }
+.productPriceBlock #emailMe .submitButton { background:$productPriceBlockEmailMeSubmitBtnBg; color:$productPriceBlockEmailMeSubmitBtn; cursor:pointer; width:100%; border:none; padding:10px 0px; font-size:24px; border-radius:3px; }
+.productPriceBlock #emailMe .submitButton:hover { opacity:0.7; text-decoration:none; color:$productPriceBlockEmailMeSubmitBtnHover; }
+.productPriceBlock .bisnError { color:$productPriceBlockBackInStockError; padding:10px; font-weight:bold; background:$productPriceBlockBackInStockErrorBg; }
+.productPriceBlock .bisnSuccess { color:$productPriceBlockBackInStockSuccess; padding:10px; font-weight:bold; background:$productPriceBlockBackInStockSuccessBg; margin-top:15px; }
+.productPriceBlock .paymentOptions { margin-bottom:15px; }
+.productPriceBlock .paymentOptions .price { font-weight:bold; }
+.productPriceBlock .paymentOptions .optionsJumpLink { font-size:10px; cursor:pointer; display:block; }
+.productPriceBlock .paymentOptions .optionsJumpLink:hover { text-decoration:none; }
+.productPriceBlock .callToOrderButton,
+.productPriceBlock .saveProductButton { width:100%; font-size:12px; }
+.productPriceBlock .callToOrderButton:before { content:"\f095"; font-family:"FontAwesome"; padding-right:5px; }
+.productPriceBlock .saveProductButton:before { content:"\f0c7"; font-family:"FontAwesome"; padding-right:5px; }
+.productPriceBlock .estimatedDelivery { text-align:center; }
+.productPriceBlock .estimatedDelivery #loaderImg {display:none;}
+.productPriceBlock .estimatedDelivery .deliveryNote { cursor:pointer; }
+.productPriceBlock .estimatedDelivery .deliveryNote:hover .estimatedDeliveryLocation { text-decoration:underline; }
+.productPriceBlock .estimatedDeliveryTitle,
+.productPriceBlock .freightDeliveryTitle { font-weight:bold; }
+.productPriceBlock .estimatedDeliveryTitle:after { content:"\f05a"; font-family:"FontAwesome"; padding-left:.2em; color:$productPriceBlockEstDeliveryTitleIcon; display:inline-block; }
+.productPriceBlock .estimatedDeliveryTitle:hover:after { text-decoration:none;cursor:pointer; }
+.productPriceBlock .estimatedDeliveryLocation { color:$productPriceBlockEstDeliveryLocationText; }
+.productPriceBlock .estimatedDeliveryLocation:after { content:"\f040"; font-family:"FontAwesome"; padding-left:.2em; display:inline-block; }
+.productPriceBlock .zipcode { display:none; padding-bottom:5px; }
+.productPriceBlock .estimatedDelivery .text { width:58%; margin-right:2%; height:34px; }
+.productPriceBlock .estimatedDelivery .applyButton { width:38%; margin-left:-.4em; height:34px; }
+.productPriceBlock .shippingDetails { font-size:10px; cursor:pointer; display:block; text-transform:uppercase; }
+.productPriceBlock .shippingMethod .shippingDetails:hover { text-decoration:none; }
+.productPriceBlock .wishlistBtn { margin-bottom:10px; }
+.productPriceBlock .deliveryException { background: #FFCFC9 !important; } 
+#shippingDetailsModal table { margin-bottom:10px; }
+#shippingDetailsModal table th { background-color:$productPriceBlockShippingDetailsModalBg;  }
+#shippingDetailsModal table th,
+#shippingDetailsModal table td { border:1px solid; padding:0px 5px; }
+#shippingDetailsModal .shipMethod { min-width:150px; }
+#shippingDetailsModal .shipCost { min-width:100px; }
+
+.productPriceBlock {
+  .loyaltyPointsCallout {
+    margin-bottom: 10px;
+    font-weight:300;
+    display:block;
+    cursor:pointer;
+  }
+  .productVariations {
+    .variantSwatch {
+      font-size:11px;
+      display:block;
+      padding:5px;
+      margin:5px 0px 5px 0px;
+      font-weight:bold;
+      text-align:center;
+      &:hover {
+        text-decoration:none;
+      }
+      .variantDisplayName {
+        text-align: center;
+      }
+    }
+    .variantSwatchImage {
+      margin:0 auto;
+      padding-bottom:5px;
+      width:100px;
+    }
+    .selectedVariant {
+      color:$base-e;
+      outline:2px solid $base-c;
+    }
+    .unselectedVariant {
+      &:hover {
+        outline:2px solid $base-c;
+      }
+    }
+    .colorVariation {
+      margin: 10px 10px 0px 10px;
+        .colorVariantCol {
+           padding: 5px;
+        }
+        .btn-colorVariation {
+           border-radius:4px; 
+           width:100%; 
+           padding:3px;
+           background-color:$productPriceBlockColorVariationDropdownBtnBackground; 
+           color:$base-e; 
+           font-weight:bold; 
+           font-size:11px;  
+           font-family:Helvetica, Arial, sans-serif; 
+           text-align:left;
+        }
+        .caretFloat { 
+          vertical-align:middle; 
+          line-height:100%; 
+          float:right;
+          .caret { 
+          float:none;
+          } 
+        } 
+        .dropdown-menu { 
+          position:relative; 
+          padding:10px 0px 10px 0px; 
+          margin:-3px 0px 0px -1px; 
+          width:100.7%; 
+          border-radius:0px 0px 3px 3px; 
+          border:1px solid $productPriceBlockColorVariationDropdownBorder; 
+          box-shadow:none;
+        }
+    } 
+  }
+  .viewDetails {
+    margin-bottom:15px;
+  }
+}
+
+@media (min-width: 768px){
+  .productPriceBlock {
+    .paymentOptions,
+    .viewDetails { 
+      margin-bottom:0; 
+     }
+  }
+}

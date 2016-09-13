@@ -1,0 +1,41 @@
+// kegerator site specific color variables.
+
+//orange 
+$brand-a:     #fff;
+$brand-b:     #dd3300;
+$brand-c:     #dd3300;
+$brand-d:     #dd3300;
+$brand-e:     #cc3300;
+$brand-edark1: darken($brand-e, 7%);
+$brand-edark2: darken($brand-e, 14%);
+$brand-f:     #bb3300;
+
+//light hue orange
+$complementary-a:     #f8faee;
+$complementary-b:     #f9f8eb;
+$complementary-c:     #bdb39c;
+$complementary-d:     #dfcc95;
+$complementary-e:     #7b6f5f;
+$complementary-edark1: darken($complementary-e, 7%);
+$complementary-edark2: darken($complementary-e, 14%);
+$complementary-f:     #f6f4d9;
+
+//greys
+$base-a:     #fff;
+$base-b:     #f2f2f2;
+$base-c:     #e6e6e6;
+$base-d:     #8a8989;
+$base-e:     #303030;
+$base-f:     #212121;
+
+$system-a:     #ff9900; //emphasis or warning
+$system-b:     #168e60; //add to cart
+$system-bdark1: darken($system-b, 7%);
+$system-bdark2: darken($system-b, 14%);
+$system-c:     #60b760; //success
+$system-d:     #bd4b4b; //error
+$system-e:     #cc0000; //discount or savings
+$system-edark1: darken($system-e, 7%);
+$system-edark2: darken($system-e, 14%); 
+$system-f:     #990000; //final price
+

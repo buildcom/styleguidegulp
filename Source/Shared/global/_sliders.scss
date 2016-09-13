@@ -1,0 +1,9 @@
+/************ OVERRIDE SLICK CAROUSEL STYLING ************/
+.recommendedProducts{display:none;}
+.slick-prev,
+.slick-next { width:25px; height:25px; margin-top:-12.5px; }
+.slick-prev:before,
+.slick-next:before { font-family:"FontAwesome" !important; color:$sliderIcon !important; line-height:25px !important; font-size:25px !important; }
+.slick-prev:before { content:"\f053" !important; }
+.slick-next:before { content:"\f054" !important; }
+/************ END - OVERRIDE SLICK CAROUSEL STYLING ************/

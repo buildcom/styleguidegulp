@@ -1,0 +1,47 @@
+.ld-panel-navigation .list-group-item {
+  color: $color-verticalNav-listGroupItem;
+}
+.ld-panel-navigation .list-group-item:hover {
+  text-decoration: none;
+}
+.ld-panel-navigation .list-group-item:hover,
+.ld-panel-navigation .list-group-item:focus {
+  color: $color-verticalNav-listGroupItem-Hover;
+}
+.ld-panel-navigation .panel-heading {
+  color: $color-verticalNav-panelHeading;
+}
+.ld-panel-navigation .list-group-item {
+  border-top: none;
+  border-bottom: none;
+}
+.ld-panel-navigation .list-group-item:first-child {
+  border-bottom: none;
+}
+.ld-panel-navigation .list-group-item:last-child {
+  border-top: none;
+}
+.ld-panel-navigation .list-group-item:not(:first-child):not(:last-child) {
+  border-top:none; border-bottom:none;
+}
+.ld-panel-navigation .list-group-item.active {
+  color: $color-verticalNav-listGroupItem-Active;
+  background-color: $color-verticalNav-listGroupItem-Active-Bg;
+  border-color: $color-verticalNav-listGroupItem-Active-Border;
+  font-weight:bold;
+}
+
+
+a.list-group-item:hover, a.list-group-item:focus {
+  background-color: $color-verticalNav-listItem-Hover-Bg;
+  
+}
+
+
+/* Link Group - Based on list-group (Eg. Vertical Nav in PDP Description)*/
+.ld-link-group a { color:$color-verticalNav-linkGroup; }
+.ld-link-group a:hover,
+.ld-link-group a:focus { color:$color-verticalNav-linkGroup-Hover; text-decoration:none; background-color:$color-verticalNav-linkGroup-Hover-Bg }
+.ld-link-group .list-group-item:first-child { border-bottom:none; }
+.ld-link-group .list-group-item:not(:first-child):not(:last-child) { border-top:none; border-bottom:none; }
+.ld-link-group .list-group-item:last-child { border-top:none; }

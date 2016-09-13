@@ -1,0 +1,21 @@
+.pwaCartRecommendations {
+    .recommendedProducts {
+        margin-top:20px; 
+        padding-bottom:30px;
+      
+        .recommendedCarouselTitle { 
+            margin-bottom:10px; 
+        }
+        .recommendedCarousel { 
+            margin:0px 25px; 
+            
+            .slick-slide { text-align:center; padding:5px; }  
+
+            .slick-prev:before,
+            .slick-next:before { 
+                color:$pdpRecommendedCarouselNextPrev; 
+            }
+
+        }
+    }
+}

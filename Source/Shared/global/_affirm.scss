@@ -1,0 +1,80 @@
+  #affirm-learn-more {
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      
+      .cta {
+      	text-decoration: underline;
+      }
+    }
+
+    .titleLine {
+      border-bottom: 1px solid;
+      text-align: center;
+      font-size: 1.15em;
+    }
+  
+    .infoLine {
+      text-align: center;
+      padding-top: 5px;
+      
+      .affirmLogo {
+        width: 20%;
+        max-width: 80px;
+        vertical-align: baseline;
+        padding-right: 5px;
+      }
+    }
+
+    .priceMessaging {    
+      display: inline-block;
+    
+      .price {
+        font-size: 1.9em;
+      
+        &:before {
+          content: '$';
+          font-size: .5em;
+          vertical-align: text-top;
+        }
+      }
+    }
+  
+    .cta {
+      border-left: 1px solid;
+      display: inline-block;
+      font-weight: bold;
+      padding: 0 5px;
+    }
+  }
+  @media (min-width: 768px) {
+    .cartContent {
+	    #affirm-learn-more {
+	  	  font-size: 9px;
+	  	}
+  	}
+  }
+  @media (min-width: 992px) {
+  	.cartContent {
+	    .affirmContainer {
+	  	  border-right: 1px solid $affirmBorderColor;
+	  	}
+  	}
+  	#affirm-learn-more {
+  	  font-size: 9px;
+  	}
+  }
+  @media (min-width: 1200px) {
+    .cartContent {
+	    #affirm-learn-more {
+	  	  font-size: 12px;
+	  	}
+  	}
+    #affirm-learn-more {
+  	  font-size: 12px;
+  	}
+  }

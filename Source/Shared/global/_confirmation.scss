@@ -1,0 +1,45 @@
+#pt_orderconfirmation ul.messageContent {list-style-type:none;padding:10px;}
+#pt_orderconfirmation ul.messageContent .messageTitle {font-weight: bold;padding-bottom:15px;font-size:1.2em;display:inline-block;}
+#pt_orderconfirmation ul.messageContent li {margin-bottom:10px; width:100%;}
+#pt_orderconfirmation ul.messageContent li.iconBullet:before{font-family: FontAwesome;display:inline-block;color:$confirmationItemIconBullet;font-size:32px;width:1.2em;}
+#pt_orderconfirmation ul.messageContent li#thanks:before {content: '\f05d'; }
+#pt_orderconfirmation ul.messageContent li#checkEmail:before {content: '\f0e0'; }
+#pt_orderconfirmation ul.messageContent li#createAccount:before {content: '\f007';}
+
+#pt_orderconfirmation .itemList { list-style:disc outside none; padding-left:1.3em; }
+
+#complete_id {background: $confirmationCompleteIdBg; border-bottom: 1px solid $confirmationCompleteIdBottomBorder; box-shadow: 0 4px 3px $confirmationBoxShadowColor;
+    font-weight: bold;padding: 4px 0 4px 7px;text-shadow: 0 1px 1px $confirmationTextShadowColor;}
+#pt_orderconfirmation .orderSummary {margin: 15px 0 0 15px; padding-left: 45px;}
+#pt_orderconfirmation .orderSummary ul {list-style: disc outside none;padding: 10px 0 0 30px;}
+#pt_orderconfirmation .orderSummary .itemName {font-weight: bold;}
+#pt_orderconfirmation .orderSummary .estDelivery {font-style: italic;}
+#pt_orderconfirmation .orderMessage {margin: 15px 0 0 15px;padding-left: 45px;}
+#pt_orderconfirmation .orderMessage .email {font-weight: bold;}
+#pt_orderconfirmation .messageBox {box-sizing:border-box;padding:20px 20px;background:$confirmationMessageBoxBg;border:1px solid $confirmationMessageBoxBorder;box-shadow:1px 1px 3px $confirmationMessageBoxShadowColor;color:$confirmationMessageBox;
+	font-size:1.6em;font-weight:bold;text-align:center;margin:20px 0px;width:200px;}
+#pt_orderconfirmation #createAccountContainer {color: $confirmationCreateAccountContainer;padding-left: 45px;}
+#pt_orderconfirmation #createAccount .imageContainer{margin:20px 0px;text-align:center;}
+#pt_orderconfirmation #orderDetails, #pt_orderconfirmation #orderHide {display: none;}
+#pt_orderconfirmation #accountInfoContainer .field input{max-width:300px;}
+#pt_orderconfirmation #accountInfoContainer input[type="radio"] {width:auto;}
+#pt_orderconfirmation #accountInfoContainer .fbDivider {border-top:1px solid $confirmationAccountInfoContainerFbDividerBorder;margin:20px 0;}
+#pt_orderconfirmation .bizrateBanner, #pt_orderconfirmation .maskLayer{display:none;}
+/*Small and Up*/
+@media (min-width: 768px) {
+	#pt_orderconfirmation li.iconBullet{margin-left:50px;font-size:1em;display:inline-block;}
+	#pt_orderconfirmation li.iconBullet:before{display: inline-block;width:1.2em;margin-left:-1.2em;}
+	#pt_orderconfirmation .messageContent .messageTitle {font-size:2.0em;}
+	#pt_orderconfirmation .bizrateBanner, #pt_orderconfirmation .maskLayer{display:block;}
+}
+
+@media print {
+    #pt_orderconfirmation #footerRow {display:none;}
+    #pt_orderconfirmation #fluidFooterBackground{display:none;}
+    #pt_orderconfirmation #footerTop{display:none;}
+}
+
+/* field css */
+#pt_orderconfirmation .passwordField {margin-top:20px;}
+#pt_orderconfirmation .passwordField .field label {margin-bottom:0;display:block;}
+#pt_orderconfirmation .passwordField .field input {margin:0 0 10px 0;padding:5px;width:80%;}

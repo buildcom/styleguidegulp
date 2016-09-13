@@ -1,0 +1,19 @@
+/* Link Group - Based on list-group */
+.pdpNav .list-group-item {
+  color: $color-pdpNav-listGroupItem;
+}
+.pdpNav .list-group-item:hover,
+.pdpNav .list-group-item:focus {
+  color: $color-pdpNav-listGroupItem-Hover;
+  background-color: $color-pdpNav-listGroupItem-Hover-Bg;
+}
+.pdpNav .list-group-item:first-child {
+  border-bottom:none;
+}
+.pdpNav .list-group-item:not(:first-child):not(:last-child) {
+  border-top:none;
+  border-bottom:none;
+}
+.pdpNav .list-group-item:last-child {
+  border-top:none;
+}

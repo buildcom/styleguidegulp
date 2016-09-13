@@ -1,0 +1,20 @@
+body { color:$bodyColor; font-family:Helvetica, Arial, sans-serif; font-size:14px; font-style:normal; }
+a { color:$linkColor; outline:medium none; text-decoration:none; }
+a:hover { color:$linkColorHover; } 
+a:focus { color:$linkColorHover; }
+a img { border:medium none; }
+h1 { font-size:30px; font-weight:normal; font-family:Open Sans Condensed, Helvetica, Arial, sans-serif; color:$h1Color; margin:0; border-bottom:1px solid $h1Border; margin-top:1rem; margin-bottom:1rem; }
+h2 { font-size:24px; font-weight:normal; font-family:Open Sans Condensed, Helvetica, Arial, sans-serif; color:$h2Color; margin:0; border-bottom:1px solid $h2Border; margin-top:1rem; margin-bottom:1rem; }
+h3 { font-size:18px; font-weight:normal; font-family:Open Sans Condensed, Helvetica, Arial, sans-serif; color:$h3Color; margin:0; border-bottom:1px solid $h3Border; }
+h4 { font-size:16px; font-weight:normal; font-family:Open Sans Condensed, Helvetica, Arial, sans-serif; color:$h4Color; margin:0; }
+h5 { font-size:14px; font-weight:normal; font-family:Open Sans Condensed, Helvetica, Arial, sans-serif; color:$h5Color; margin:0; }
+h6 { font-size:12px; font-weight:normal; font-family:Open Sans Condensed, Helvetica, Arial, sans-serif; color:$h6Color; margin:0; }
+p { font-size:14px; line-height:1.5em; font-family:Helvetica, Arial, sans-serif; color:$bodyColor; padding-top:1em; padding-bottom:1em; margin:0; }
+ol, ul { list-style:disc inside none; padding:0; } 
+.btn { transition: background-color .5s ease; }
+.list-group .list-group-item { transition: background-color .4s ease; }
+.primary-color{color:$primaryColor;}
+input, select, textarea {border:1px solid $inputBorderColor; border-radius:4px;transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;padding:5px;}
+input:focus, input:active, select:focus, select:active, textarea:active {box-shadow: 0px 0px 3px 0px rgba(62,181,243,0.3);}
+select.form-control { font-size: 16px; }
+.pageType { width:100%; overflow:hidden; z-index:1000; position:relative; }

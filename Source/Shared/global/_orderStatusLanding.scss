@@ -1,0 +1,145 @@
+#orderStatusLanding {
+    .orderCancelled {
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .statusDetailHeader {
+        margin-top: 15px;
+    }
+
+    .exception, 
+    .orderProgressBar .progressStatus.exception {
+        color:$system-d;
+    }
+    
+    .recentStatus {
+        margin-bottom:20px;
+        color:$system-c;
+        font-weight:bold;
+        font-size:20px;
+        
+        .deliveryDate {
+            color:$bodyColor;
+            font-weight:normal;
+        }
+        
+        .exceptionDescription {
+            color:$bodyColor;
+            font-weight:normal;
+            font-size:16px;
+        }
+    }
+    
+    .fa {
+        font-size:22px;
+        margin-right:5px;
+    }
+    
+    .orderProgressBar {
+        margin-bottom:20px;
+
+        .progress {
+            margin-bottom: 5px;
+
+            .progress-bar {
+                width:10%;
+            }
+        }
+
+        .progressStatus {
+            position: relative;
+            display:block;
+            width:100%;
+            font-weight:bold;
+            font-size:16px;
+            color:$system-c;
+            min-height:1em;
+
+            .itemDelivered {
+                position:absolute;
+                right:0;
+                text-align:right;
+                
+                .destination {
+                    font-weight: normal;
+                }
+            }
+            
+            .itemShipped {
+                position:absolute;
+                left:25%;
+            }
+            
+            .itemInTransit {
+                position:absolute;
+                left:55%;
+            }
+
+        }
+    }
+
+    .productImageBlock {
+        margin-bottom: 10px;
+        .itemRow {
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .productImage img {
+            width: 100px;
+        }
+    }
+
+    .trackingNumber, 
+    .shipStatus {
+        margin-top:10px;
+    }
+    
+    .statusDetail {
+        .showLess {
+            display: none;
+        }
+        
+        .showMore,
+        .showLess {
+            .fa {
+                position: relative;
+                left: 4px;
+                top: 3px;
+            }
+            
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        
+        .in + a.moreDetail {
+            .showMore { display: none; }
+            .showLess { display: block; }
+        }
+        
+        .eventStatusRow {
+            padding:10px; 
+        
+            &:nth-child(odd) {
+                background-color:$base-c;
+            }
+        }
+        
+        .hiddenStatus {
+            overflow: hidden;
+            width: 100%;
+        }
+    }
+    
+    h2.orderHistory {
+        margin-top: 30px;
+    }
+}
+
+/*Small Only*/
+@media (min-width: 768px) and (max-width: 991px){
+   .orderProgressBar .progressStatus { font-size:14px; }
+}   

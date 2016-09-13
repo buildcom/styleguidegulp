@@ -1,0 +1,143 @@
+.loginContainer {padding:15px;}
+#passThanksBox {margin-top:20px;}
+.message {margin:20px 0;font-weight:bold;}
+
+/* field css */
+.accountMsg {text-align:center;}
+.loginPageContent .note {margin-top:10px;text-align:center;}
+.loginPageContent .field {margin:5px 0;}
+.loginPageContent fieldset {margin-top:15px;}
+.loginPageContent .field label {margin-bottom:0;display:block;}
+.loginPageContent .field input.text {margin:0 0 10px 0;padding:5px;width:100%;border: 1px solid $accountLoginInputBorder;}
+.loginPageContent .field.checkBox {margin:4px 0 15px 0;}
+.loginPageContent .field.checkBox input {width:auto;vertical-align:top;margin-bottom:0;}
+.loginPageContent .field.checkBox label {width:100%; font-weight:normal; display:inline;text-align:left;}
+.loginPageContent .forgotPasswordLink {margin:10px 0;}
+.loginPageContent .loginBtn,
+.loginPageContent .fbLogin {width:100%;}
+.loginPageContent .field.accountType {margin:0 0 15px 0;}
+.orderStatusContent {margin-top:15px;}
+
+.accountLogout {margin:20px;}
+.accountContent .completeList {display:inline-block;float:right;}
+.accountContent .completeList a {font-weight:bold;margin:15px 15px 0;display:block;}
+.accountContent.paymentInstruments .field label {font-weight:bold;}
+.accountContent .passwordLinks {margin:15px 0;}
+.accountContent .field.accountType label {display:block;}
+.accountContent .field.accountType input {width:auto;}
+.accountContent .profileLeft {font-weight:bold;}
+.accountContent .leftButton {margin-top:15px;}
+.accountContent label[for=optinNewsletter] {font-weight: normal;}
+.accountContent input#optinNewsletter {margin-bottom:15px;}
+
+.panel-account { padding:15px 0; }
+.panel-account .accountEntry { padding:15px; margin:10px 0; border: 1px solid $accountLoginInputBorder; }
+.panel-account a .accountEntry { 
+    -webkit-transition: background-color 0.5s ease; 
+    -moz-transition: background-color 0.5s ease; 
+    -o-transition: background-color 0.5s ease; 
+    transition: background-color 0.5s ease; }
+.panel-account a .accountEntry:hover { background-color: $accountPanelAccountAccountEntryHoverBg; }
+.panel-account .add { text-align:center;font-size:1.2em; }
+.panel-account .options .btn { display: inline;float: left;margin:10px 15px 0 0; }
+
+/*order summary*/
+#recentOrders {margin:0;}
+#order {margin:15px -15px;}
+#orderDetails, #orderLinks {margin:0;}
+#orderLinks a {font-weight:bold;}
+.accountContent {margin:15px;}
+.accountContent .summaryBlock {margin:15px 0;}
+.accountContent .summaryBlock h3 {line-height:25px;margin-bottom:10px;}
+.accountContent .listHeader {text-align:center;}
+.accountContent .orderListItem {padding:10px 0;display:inline-block;text-align:center;}
+.accountContent .orderListItem:not(:last-child) {border-bottom:1px solid $accountOrderListItemBottomBorder;}
+
+/* orderSummary list */
+#pt_account .lineItem { margin-left:0;border-bottom: none; padding-top:10px; padding-bottom:20px;}
+#pt_account .lineItem .productImage {min-width: 80px; padding:0;text-align:center;}
+#pt_account .lineItem .productImage img {height:80px;width:80px;}
+#pt_account .lineItemDetails {padding-right:0;text-align:right;}
+#pt_account .lineItemDetails .details {text-align:left;}
+#pt_account .lineItemDetails .row .col-xs-6 {padding:0 5px;}
+#pt_account .lineItemDetails .itemPrice, 
+#pt_account .lineItemDetails .quantity { padding-right:0; }
+#pt_account .lineItemDetails .itemPrice .row { margin-right:0; }
+#pt_account .lineItem .ourPrice {padding:0;} 
+#pt_account .lineItem .productName { background-color: $accountOrderSummaryLineItemProductNameBg; padding: 5px 15px;}
+#pt_account .priceTotalHeader { background-color: $accountOrderSummarPriceTotalHeaderBg; text-align:left; font-weight: bold; padding: 5px 15px; margin-bottom:10px; }
+.cartFooter {margin-top:15px;padding: 15px 0;}
+.cartFooter .priceTotals .total {font-weight: bold;}
+.cartFooter .rightBottomCart {text-align: right;}
+.cartFooter .cartTotalLeft, 
+.cartFooter .cartTotalRight {padding-right:0;}
+
+
+/* form css */
+.accountContent .field label {margin-bottom:0;}
+.accountContent .field input, 
+.accountContent .field select {margin:0 0 10px 0;padding:5px;width:100%;border: 1px solid $accountContentFieldBorder;display:inline-block;}
+.accountContent .field.emailCheckBox {margin-bottom:10px;}
+.accountContent .field.emailCheckBox input {width:auto;margin:5px 0 0 0;vertical-align:top;}
+.accountContent .field.emailCheckBox label {width:100%; font-weight:normal; display:inline;text-align:left;}
+.accountContent .address2 label {display:inline;}
+.accountContent .field.ccRadios {margin-bottom:5px;}
+.accountContent .field .expireDate, 
+.accountContent .field.ccRadios .ccInputs {display:block;}
+.accountContent .field.ccRadios input, 
+.accountContent .field.ccRadios label {width:auto;}
+.accountContent .field .expireDate select, 
+.accountContent .cvn .field input {width: auto;}
+.accountContent .field.ccRadios label[for="cardType"] {width:150px;}
+.accountContent .cardSubmit {margin:10px 0 0;}
+
+/*Small and Up*/
+@media (min-width: 768px) {
+.loginContainer .submitButton {margin:10px 0 0 160px;}
+#pt_account .lineItem { clear: both; padding: 10px 0 20px 0; border-bottom: 1px solid $accountLineItemBottomBorderSmMdLg;}
+#pt_account .lineItem .productImage img {height:100px;width:100px;}
+
+#order {margin:15px;}
+#orderDetails, #orderLinks {margin:0;}
+.accountContent .field.emailCheckBox input {margin-left:160px;}
+.accountContent.field.emailCheckBox label {width:380px;display:inline-block;}
+.accountContent .field .note, 
+.accountContent .addressSubmit {margin-left:160px;}
+.accountContent .cardSubmit {margin:10px 0 0 160px;}
+.accountContent .field label {width:150px;text-align:right;font-weight:normal;}
+.accountContent .field input, 
+.accountContent .field select {width:400px;margin:5px;}
+.accountContent .field .expireDate,
+.accountContent .field.accountType label,
+.accountContent .address2 label, 
+.accountContent .field.ccRadios .ccInputs {display:inline-block;}
+.accountContent .rightButton {margin:15px 0 0 160px;}
+.accountContent input#optinNewsletter {margin-left: 160px;}
+}
+
+#orderStatusLanding .statusSummary {padding-bottom:15px;}
+#orderStatusLanding .panel-body {padding:15px 0;}
+#orderStatusLanding .productImageBlock img {width:100%;}
+
+
+/************ Facebook Login and Accounts *******************/
+.centered-hr {position: relative;z-index: 1;margin:15px 40px;}
+.centered-hr:before {content:" ";display: block;position: absolute;left: 0;top: calc(50% - 1px);top: -webkit-calc(50% - 1px);right: 0;
+  height: 1px;border-top: 1px solid #d4d4d4;z-index: -1;}
+.centered-hr span {z-index: 2000;background: white;display: inline-block;padding: 0 25px;color: #999;}
+.loginInline .fbForm {text-align:center;}
+.fbLogin {width:100%;border-radius:4px;background-color:#3b5998;color: white;border-color:rgba(0,0,0,0.2);height: 38px;font-weight: bold;
+    -webkit-transition: background-color 0.5s ease; 
+    -moz-transition: background-color 0.5s ease; 
+    -o-transition: background-color 0.5s ease; 
+    transition: background-color 0.5s ease; }
+.fbLogin:hover {background-color:#4568b2;}
+.fbLogin .fa-facebook {display:inline-block;font-size:20px;float:left;padding:0 10px;}
+/*Small and Up*/
+@media (min-width: 768px) {
+  .fbLogin {width:60%;}
+}
+.field input.radio {display:inline-block;}
+.field .radioLabel {margin-right: 20px;position: relative;top: -1px;left:4px;}
+.field.accountType {margin:0 0 15px 0;}
+/************ END Facebook Login and Accounts *****************/

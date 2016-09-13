@@ -1,0 +1,244 @@
+/************ Shipping Modal *****************/
+
+#shippingDetailsModal .Freight,
+#shippingDetailsModal .Ground,
+#shippingDetailsModal .USPS {
+  display:none;
+}
+
+#shippingDetailsModal.Freight .Freight {
+  display:block;
+}
+
+#shippingDetailsModal.Ground .Ground {
+  display:block;
+}
+
+#shippingDetailsModal.USPS .USPS {
+  display:block;
+}
+
+/************ END Shipping Modal *****************/
+
+.videoCTA {
+  position:relative;
+  cursor:pointer;
+  
+  .ctaOverlay {
+    opacity:.6;
+    position:absolute;
+    left:50%;
+    top:50%;
+    -webkit-transform:translate( -50%, -50% );
+    -ms-transform:translate( -50%, -50% );
+    transform:translate( -50%, -50% );
+    transition:opacity .25s ease;
+    pointer-events:none;
+  }
+  
+  &:hover {
+    
+    .ctaOverlay {
+      opacity:1;
+    }
+  }
+}
+
+#videoModal {
+  text-align: center;
+  
+  .modal-dialog {
+    display: inline-block;
+    width: auto;
+    max-width: 100%;
+    margin:0;
+    padding:10px;
+  }
+  
+  .modal-header,
+  .modal-footer {
+    background-color: #222;
+    border: none;
+  }
+  
+  .modal-header {
+    border-radius: 4px 4px 0 0;
+    
+    .close {
+      padding: 5px;
+      margin-top: -16px;
+      margin-right: -12px;
+      color: #FFF;
+      text-shadow: 0 1px 0 #AAA;
+      
+      &:hover {
+        color: #DDD;
+      }
+    }
+  }
+  
+  .modal-body {
+    position:relative;
+    background-color: #222;
+    padding: 0;
+    width:300px;
+    height:0;
+    padding-bottom:50%;
+    transition:width .5s ease, height .5s ease;
+    max-width:100%;
+    
+    video {
+      display:inline-block;
+      vertical-align:top;
+      width:100%;
+      border:none;
+      -webkit-transition:opacity .2s ease;
+      transition:opacity .2s ease;
+    }
+    
+    .loadingText {
+      position:absolute;
+      width:100%;
+      top:50%;
+      left:50%;
+      -webkit-transform:translate(-50%,-50%);
+      -ms-transform:translate(-50%,-50%);
+      transform:translate(-50%,-50%);
+      font-size:20px;
+      color:#fff;
+      opacity:0;
+      pointer-events:none;
+      -webkit-transition:opacity .2s ease;
+      transition:opacity .2s ease;
+    }
+  }
+  
+  .modal-footer {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+/************ PDP Price Block - Payment Options Modal *****************/
+#paymentPlansModal.dwPaymentsModal {
+  .modal-header {
+    font-weight:bold;
+    font-size:18px;
+    background:$pdpPaymentModalHeaderBg;
+    border-radius:4px;
+  }
+  
+  .paymentBlock {
+    overflow:hidden;
+    border-bottom:1px solid $pdpPaymentModalPaymentBlockBottomBorder;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    
+    .fa {
+      float:left;
+      font-size:135px;
+      margin-right:15px;
+      margin-left:15px;
+    }
+  }
+  
+  .planInfo {
+    color:$pdpPaymentModalPlanInfo;
+    font-size:16px;
+     
+    div:nth-child(2) {
+      font-size:42px;
+    }
+    
+    div:last-child {
+      font-size:22px;
+      padding-top:20px;
+    }
+  }
+  
+  .planCallout {
+    text-align:center;
+    font-size:18px;
+    
+    div:first-child {
+      font-weight:bold;
+      font-size:30px;
+    }
+    
+    div:last-child {
+      font-weight:bold;
+      font-size:40px;
+      padding-top:15px;
+    }
+  }
+  
+  .smallPrint {
+    font-size:11px;
+    text-align:center;
+    color:$pdpPaymentModalSmallPrint;
+  }
+}
+/************ END PDP Price Block - Payment Options Modal *****************/  
+
+
+/************ Site Network Modal *****************/
+#networkModal {
+  .siteCard {display:block; -webkit-transition: box-shadow .2s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow .2s; color:#333;}            
+  .siteCard h4 {text-align: center; color:#fff; }
+  .siteCard img {margin:0 auto; display:block;}
+  .siteCard .panel-heading {padding-bottom:0px;}
+  .siteCard:hover {text-decoration: none; -webkit-box-shadow: inset 0px 0px 10px 5px #eee;
+    -moz-box-shadow: inset 0px 0px 10px 5px #eee;
+    box-shadow: inset 0px 0px 10px 5px #eee; color:#333;}
+  .siteCard p {padding-top:.75em; padding-bottom:0;}  
+}
+
+/************ End Site Network Modal *****************/
+
+/************ Source Code Validation Modal *****************/
+#sourceCodePromoModal {
+  .modal-header {
+  	border-bottom:none;
+  }
+  #sourceCodeEntry {
+    @media ( max-width:$screen-xs-max ) {
+      margin-bottom:10px;
+    }
+  }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+}
+
+/************ Shop Socially Notification Popover *****************/
+
+#loyalty_notification { 
+	display:none;
+	p {
+		padding-top:0;
+		padding-bottom:0;
+		font-size:12px;
+	}
+}
+//only show loyalty notification on sm and up
+@media ( min-width:$screen-sm-min ) {
+	#loyalty_notification { 
+		display:block;
+	}
+}
+
+/************ Save Cart Modal *****************/
+.saveCartBody {
+  padding: 20px;
+  .saveCartForm {
+    padding: 10px;
+    #saveCartEmailEntry { 
+      width:100%; 
+    }
+    .saveCart { 
+      padding: 0px 5px 10px 5px;
+    }
+  }
+}

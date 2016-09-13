@@ -1,0 +1,73 @@
+/************ START Name Your Price *****************/
+#nameYourPriceModal .nameYourPriceModalImg {
+    width: 80%;
+}
+
+#nameYourPriceModal .panel {
+    margin-top:20px;
+    text-align:center;
+}
+
+#nameYourPriceModal .listPrice {
+    text-decoration: line-through;
+    color: $nameYourPriceListPrice;
+}
+#nameYourPriceModal .finalPrice {
+    color: $nameYourPriceFinalPrice;
+    font-size: 30px;
+    font-weight:bold;
+}
+
+#nameYourPriceModal .shippingCost {
+  font-weight: bold;
+}
+
+#nameYourPriceModal .progress {
+    display:none;
+    height:30px;
+}
+
+#nameYourPriceModal .progress-bar {
+    padding:5px;
+    font-weight:bold;
+}
+
+#nameYourPriceModal .promoCallout {
+    color: $nameYourPricePromoCallout;
+}
+
+#nameYourPriceModal .addToCart {
+    display:none;
+}
+
+.loadingProgress {
+    height:10px;
+    width:100%;
+    border-radius:0px;
+}
+
+.loadingProgress .progress-bar {
+    transition: none;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+.waitingOnLoad {
+    opacity: .5;
+    -webkit-transition: opacity .3s ease-in-out;
+        -moz-transition: opacity .3s ease-in-out;
+        -ms-transition: opacity .3s ease-in-out;
+        -o-transition: opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
+}
+
+.nameYourPriceBtn {
+    margin-bottom:10px;
+}
+
+#nameYourPriceAccepted {
+    display: none;    
+}
+/************ END Name Your Price *****************/

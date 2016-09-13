@@ -1,0 +1,41 @@
+// allergy and air direct site specific color variables.
+
+//blue 
+$brand-a:     #e7f7ff;
+$brand-b:     #59A0C6;
+$brand-c:     #358DBC;
+$brand-d:     #1476ab;
+$brand-e:     #00bcbc;
+$brand-edark1: darken($brand-e, 7%);
+$brand-edark2: darken($brand-e, 14%);
+$brand-f:     #010E16;
+
+//greens
+$complementary-a:     #EEFDD9;
+$complementary-b:     #eef2c1;
+$complementary-c:     #f0dd20;
+$complementary-d:     #8abf3f;
+$complementary-e:     #72A51F;
+$complementary-edark1: darken($complementary-e, 7%);
+$complementary-edark2: darken($complementary-e, 14%);
+$complementary-f:     #557233;
+
+//greys
+$base-a:     #fff;
+$base-b:     #f5f5f5;
+$base-c:     #e6e6e6;
+$base-d:     #909090;
+$base-e:     #303030;
+$base-f:     #212121;
+
+$system-a:     #ff9900; //emphasis or warning
+$system-b:     #168e60; //add to cart
+$system-bdark1: darken($system-b, 7%);
+$system-bdark2: darken($system-b, 14%);
+$system-c:     #60b760; //success
+$system-d:     #bd4b4b; //error
+$system-e:     #cc0000; //discount or savings
+$system-edark1: darken($system-e, 7%);
+$system-edark2: darken($system-e, 14%); 
+$system-f:     #990000; //final price
+

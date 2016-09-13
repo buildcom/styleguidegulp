@@ -1,0 +1,421 @@
+//base
+$bodyColor: $base-e;
+$linkColor: $brand-e;
+$linkColorHover: $brand-e;
+
+$h1Color: $base-e;
+$h2Color: $base-e;
+$h3Color: $base-e;
+$h4Color: $base-e;
+$h5Color: $base-e;
+$h6Color: $base-e;
+$h1Border: $base-c;
+$h2Border: $base-c;
+$h3Border: $base-c;
+
+$inputBorderColor: $base-c;
+$note: $base-e;
+$primaryColor: $brand-e;
+
+//horizontal nav 
+$horizontalNavItem: $brand-e;
+$horizontalNavItemBg: $base-b;
+$horizontalNavItemHover:$brand-e;
+$horizontalNavItemHoverBg: $base-c;
+$horizontalNavItemBorder: $base-d;
+
+$horizontalNavDropdownBorder: $base-d;
+$horizontalNavDropdownItem: $brand-e;
+$horizontalNavDropdownItemBg:  $base-b;
+$horizontalNavDropdownItemHoverBg: $base-c;
+$horizontalNavDropdownItemHover: $brand-e;
+$horizontalNavDropdownItemBorder: $base-d;
+
+$horizontalNavBgMdLg: $base-e;
+$horizontalNavItemMdLg: $base-a;
+$horizontalNavDropdownBorderMdLg: $base-d;
+$horizontalNavDropdownItemBgMdLg: $base-b;
+$horizontalNavDropdownItemHoverBgMdLg: $base-d;
+$horizontalNavDropdownItemHoverMdLg: $base-a;
+$horizontalNavDropdownItemBorderMdLg: $base-c;
+
+//header
+$headerShopNowTextXsMd: $base-a;
+$headerIconBgXsMd: $base-a;
+
+$headerLearningCenterItem: $base-e;
+$headerLearningCenterItemBg: $complementary-b;
+$headerLearningCenterItemHover: $base-a;
+$headerLearningCenterItemHoverBg:$base-d;
+
+
+$headerIconContainer: $base-d;
+$headerIconContainerBorder: $base-c;
+$headerIconContainerHoverMdLg: $base-e;
+$headerIconContainerHoverBorderMdLg: $base-c;
+$headerIconText: $base-e;
+$headerIconContainerDropdownItemMdLg: $brand-e;
+$headerIconContainerDropdownItemHoverBgMdLg: $base-c;
+$headerIconContainerDropdownItemHoverMdLg: $brand-e;
+
+$headerUserCodeBlockBorder: $base-c;
+$headerUserCodeBlockText: $brand-e;
+
+$headerPhoneNumber: $base-e;
+
+$headerCartItemCount: $base-a;
+$headerCartItemCountShadow: $base-d;
+
+$headerSearchInputText: $brand-e;
+$headerSearchInputBorder: $base-c;
+$headerSearchIcon: $base-a;
+$headerSearchIconBg: $base-d;
+$headerSearchIconHoverBg: $base-e;
+$headerSearchContainerBgXsSm: $base-c;
+$headerSearchIconText: $base-a;
+
+$headerSearchSuggestions: $brand-e;
+$headerSearchSuggestionsBg: $base-a;
+$headerSearchSuggestionsBorder: $base-c;
+$headerSearchSuggestionsUnselectedBottomBorder: $base-c;
+$headerSearchSuggestionsSelected: $brand-e;
+$headerSearchSuggestionsSelectedBg: $base-b;
+
+
+//footer 
+$footerBarBg: $brand-e;
+$footerBarTextColor: $base-a;
+$footerBoilerPlateBorder: $base-c;
+$footerBoilerPlateBg: $base-c;
+$footerFacebook: #3b5998;
+$footerTwitter: #4099ff;
+$footerYoutube: #e52d27;
+$footerInstagram: #fbad50;
+$footerLearn: $brand-e;
+
+
+//account
+$accountLoginInputBorder: $base-c;
+$accountPanelAccountAccountEntryHoverBg: $complementary-a;
+$accountOrderListItemBottomBorder: $base-c;
+$accountOrderSummaryLineItemProductNameBg: $base-b;;
+$accountOrderSummarPriceTotalHeaderBg: $base-c;
+$accountContentFieldBorder: $base-c;
+$accountLineItemBottomBorderSmMdLg: $base-c;
+
+//add to cart modal
+$addToCartModalError: $system-d;
+$addToCartModalSuccess: $system-c;
+$addToCartModalProductBrand: $base-e;
+$addToCartModalProductTitle: $base-e;
+$addToCartModalProductPrice: $system-f;
+$addToCartModalCartSubTotal: $system-f;
+$addToCartModalSuggestedProductPrice: $system-f;
+
+//affirm
+$affirmBorderColor: $base-c;
+
+//buttons
+$buttonDefaultText: $brand-e;
+$buttonDefaultBg: $base-a;
+$buttonDefaultBorder: $brand-e;
+$buttonDefaultHoverText: $brand-e;
+$buttonDefaultHoverBg: $complementary-a;
+
+$buttonPrimaryText: $base-a;
+$buttonPrimaryBg: $brand-e;
+$buttonPrimaryBorder: $brand-edark2;
+$buttonPrimaryHoverText: $base-a;
+$buttonPrimaryHoverBg: $brand-edark1;
+
+$buttonDarkText: $base-a;
+$buttonDarkBg: $base-e;
+$buttonDarkBorder: $base-f;
+$buttonDarkHoverText: $base-a;
+$buttonDarkHoverBg: $base-f;
+
+$buttonSaveCtaText: $base-a;
+$buttonSaveCtaBg: $system-e;
+$buttonSaveCtaBorder: $system-edark2;
+$buttonSaveCtaHoverText: $base-a;
+$buttonSaveCtaHoverBg: $system-edark1;
+
+$buttonCtaText: $base-a;
+$buttonCtaBg: $system-b;
+$buttonCtaBorder: $system-bdark2;
+$buttonCtaHoverText: $base-a;
+$buttonCtaHoverBg: $system-bdark1;
+
+$buttonCompCtaText: $base-e;
+$buttonCompCtaBg: $complementary-e;
+$buttonCompCtaBorder: $complementary-edark2;
+$buttonCompCtaHoverText: $base-e;
+$buttonCompCtaHoverBg: $complementary-edark1;
+
+//cart
+$cartTopSteps: $base-e;
+$cartCheckoutStepsTitle: $base-d;
+$cartCheckoutStepsCircleBorder: $base-d;
+$cartCheckoutCurrentStep: $base-e;
+$checkoutButtonText: $base-a;
+$cartEstimatedDeliveryTitle: $brand-e;
+$cartEstimatedDeliveryLocation: $brand-e;
+$cartQuantityButtons: $brand-e;
+$cartLineItemsRemoveButtons: $brand-e;
+$cartLineItemBottomBorder: $base-c;
+$cartCheckoutRowBg: $base-c;
+$cartTopStepsBottomBorderSmMdLg: $base-c;
+$cartCouponCodeBottomBorder:$base-c;
+$cartProductNameBgXs:$base-b;
+$cartPriceHeaderBgXs:$base-c;
+
+//categoryCallout
+$categoryCalloutContainerBg: $base-b;
+$categoryCalloutContainerBorder: $base-c;
+$categoryCalloutContainerTitle: $brand-e;
+$categoryCalloutContainerDesc: $base-e;
+$categoryCalloutContainerHoverBg: $base-c;
+$categoryCalloutBoxBorder: #f6f6f6;
+$categoryCalloutBoxName: $base-a;
+$categoryCalloutBoxNameBg: $brand-e;
+$categoryCalloutBoxHover: #fafafa;
+$categoryCalloutBoxImageBg: $base-a;
+
+//categoryGrid
+$gridFeaturedProductRebate: $system-e;
+$gridFeaturedProductModel: $base-d;
+$gridFeaturedProductListPrice: $base-d;
+$gridFeaturedProductCallout: $system-f;
+
+$gridProductListingBottomBorder: $base-c;
+$gridProductListingMoreProdInfo: $base-e;
+$gridProductListingMoreProdInfoBorder: $base-c;
+$gridProductListingMoreProdInfoBg: $base-b;
+$gridProductListingModel:$base-d;
+$gridProductListingFeaturePrice: $system-f;
+$gridProductListingListPrice: $base-d;
+$gridProductListingRebate: $system-e;
+$gridProductListingProdCallout: $system-e;
+
+$gridListViewProductListingBottomBorder: $base-c;
+
+$gridRefinementBg: $base-b;
+$gridRefinementBorder: $base-c;
+$gridRefinementHeader: $base-b;
+$gridRefinementHeaderBorder: $base-c;
+$gridRefinementAttribute: $brand-e;
+$gridReginementCloseIconBg: $base-b;
+
+$gridDepartmentBg: #FEE6B7;
+$gridDepartmentBorder: $base-c;
+$gridDepartmentItemHover: $base-b;
+
+$gridPagingBarBg: $base-b;
+$gridPagingBarBorder: $base-c;
+$gridFooterBg: $base-b;
+$gridFooterBorder: $base-c;
+
+$gridPagingBarButton: $base-e;
+$gridPagingBarButtonBg: $base-a;
+$gridPagingBarBorder: $base-c;
+$gridPagingBarButtonActive: $base-e;
+$gridPagingBarButtonActiveBg: $base-c;
+$gridPagingBarActiveBorder: $base-d;
+
+$gridPagination: $base-e;
+$gridPaginationBg: $base-a;
+$gridPaginationBorder: $base-c;
+$gridPaginationHover: $base-e;
+$gridPaginationHoverBg: $base-c;
+$gridPaginationHoverBorder: $base-c;
+$gridPaginationActiveBorder: $base-d;
+
+$clearfixBorder: $base-c;
+
+//categoryLanding
+$includeSingleProductSalePrice: $system-f;
+$includeFourPackTitleBorder: $base-c;
+
+//checkout
+$checkoutCartHeaderBottomBorder: $base-c;
+$checkoutCurrentStepCircleBg: $base-c;
+$checkoutCurrentStepCircleBorder: $base-e;
+$checkoutStepCircleBorder: $base-c;
+$checkoutHeaderBg: $base-b;
+$checkoutOrderSummaryBottomBorder: $base-c;
+$checkoutLoginLinks: $brand-e;
+$checkoutProductName: $base-b;
+$checkoutPriceTotalHeaderBg: $base-c;
+$checkoutRowBg:$base-c;
+$checkoutLineItemBottomBorder: $base-c;
+$checkoutKitBorder: $base-c;
+$checkoutKitHeaderBg: $base-b;
+$checkoutKitHeaderBgXS: $base-d;
+$checkoutKitHeaderText: $base-e;
+$checkoutOrderSummaryShipmentBorder: $base-c;
+
+//compare
+$compareToolbarContentBg: base-a;
+$compareToolbarTitleBg: $base-b;
+$compareToolbarTitleBorder: $base-c;
+$compareToolbarBg: $base-a;
+$compareItemBorder: $base-c;
+$compareModelItemFeaturePrice: $system-f;
+$compareModelItemListPrice: $base-d;
+$compareItemRebate: $system-e;
+
+//confirmation
+$confirmationItemIconBullet: $brand-e;
+$confirmationCompleteIdBg: linear-gradient($base-b, $base-c) repeat scroll 0 0 rgba(0, 0, 0, 0);
+$confirmationCompleteIdBottomBorder: $base-e;
+$confirmationBoxShadowColor: $base-c;
+$confirmationTextShadowColor: $base-a;
+$confirmationMessageBox: $brand-d;
+$confirmationMessageBoxBg: $base-b;
+$confirmationMessageBoxBorder: $brand-e;
+$confirmationMessageBoxShadowColor: $brand-d;
+$confirmationCreateAccountContainer: $base-d;
+$confirmationAccountInfoContainerFbDividerBorder: $base-c;
+
+//estimated delivery
+$estDelivery:$base-e;
+
+//name your price
+$nameYourPriceListPrice: $base-d;
+$nameYourPriceFinalPrice: $system-f;
+$nameYourPricePromoCallout: $system-e;
+
+//minicart
+$minicartKitBorder: $base-b;
+$minicartKitHeaderBg: $base-b;
+$minicartKitHeaderText: $base-e;
+
+//packery
+$packeryImgPlaceholder: $base-d;
+$packeryContentBg: $base-c;
+$packeryContentImg: $base-c;
+$packeryContentTag: $base-a;
+$packeryContentTagBg: rgba($brand-e, .9);
+$packerySubContentTag: $base-e;
+$packerySubContentTagBg: rgba($base-a, .8);
+
+//new category boxes
+$color-catCallout-container-border: $base-c;
+$color-catCallout-Overlay-bg: $base-a;
+$color-catCallout-contentTag: $packeryContentTag;
+$color-catCallout-contentTag-Bg: $packeryContentTagBg;
+$color-catCallout-subContentTag:$packerySubContentTag;
+
+//panels
+$panelDefaultHeaderFooter: $base-b;
+$panelDefaultHeaderFooterBorder: $base-c;
+$panelEmphasizedBorder: $complementary-b;
+$panelEmphasizedHeadingBg: $complementary-a;
+
+//pdp
+$pdpRecommendedCarouselNextPrev: $base-d;
+$relatedProductsTitle: $brand-f;
+$pdpRelatedProductsPanelPrice: $system-f;
+$pdpProductTitleRowBottomBorderModelNum: $base-d;
+$pdpProductTitleRowBottomBorder: $base-c;
+$pdpFeatureReviewIcon: $brand-e;
+$pdpWriteReviewLink: $brand-e;
+$pdpDetailsAltPayOptionBorder: $base-c;
+$pdpDetailsAltOpenBox: $brand-e;
+$pdpPaymentModalHeaderBg: $base-b;
+$pdpPaymentModalPlanInfo: $system-b;
+$pdpPaymentModalSmallPrint: $base-d;
+$pdpPaymentModalPaymentBlockBottomBorder: $base-c;
+$pdpFoldMenuTopBottomBorder: $brand-e;
+$pdpFoldMenuTitle: $brand-e;
+$pdpFoldMenuTitleBottomBorder: $base-c;
+$pdpFoldMenuHoverBg: $complementary-a;
+$pdpDescriptionFoldMenuBottomBorder: $brand-e;
+$pdpProductSpecsOddRowBgXS: $complementary-a;
+$pdpProductSpecsOddRowBg: $complementary-a;
+
+//product media block
+$productMediaBlockSliderNextPrevIcon: $base-d;
+$productMediaBlockInvodoCtaBorder: $base-c;
+$pdpDescriptionRowTitle: $base-e;
+
+//product include
+$productDisplay: $brand-e;
+$productDisplayHover: $brand-e;
+$productSalePrice: $system-f;
+
+//product price block
+$productPriceBlockPanelHeading: $system-e;
+$producPriceBlockMapNotification: $brand-e;
+$productPriceBlockDiscontinuedDesc: $base-d;
+$productPriceBlockPromoCallout: $system-e;
+$productPriceBlockListPrice: $base-d;
+$productPriceBlockFinalPrice: $system-f;
+$productPriceBlockPopoverDiscount: $system-e;
+$productPriceBlockPopoverPriceBorder: $base-c;
+$productPriceBlockPopoverPrice: $system-f;
+$productPriceBlockAddToCartBtnSpinnerBg: $system-b;
+$productPriceBlockBackInStockEmailText: $base-d;
+$productPriceBlockBackInStockEmailTextFocus: $base-e;
+$productPriceBlockEmailMeSubmitBtnBg: $system-b;
+$productPriceBlockEmailMeSubmitBtn: $base-a;
+$productPriceBlockEmailMeSubmitBtnHover: $base-a;
+$productPriceBlockBackInStockError: $base-a;
+$productPriceBlockBackInStockErrorBg: $system-d;
+$productPriceBlockBackInStockSuccess: $base-a;
+$productPriceBlockBackInStockSuccessBg: $system-c;
+$productPriceBlockEstDeliveryTitleIcon: $brand-e;
+$productPriceBlockEstDeliveryLocationText: $brand-e;
+$productPriceBlockShippingDetailsModalBg: $base-c;
+$productPriceBlockColorVariationDropdownBtnBackground: $base-b;
+$productPriceBlockColorVariationDropdownBorder: $base-c;
+$productPriceBlockColorVariationSelected: $base-d;
+
+//scrollToTop
+$color-scrollToTop: $base-a;
+$color-scrollToTop-Bg: $base-d;
+$color-scrollToTop-Hover: $base-a;
+
+//sliders
+$sliderIcon: $brand-e;
+
+//verticalNav
+$color-verticalNav-listGroupItem: $brand-e;
+$color-verticalNav-listGroupItem-Hover: $brand-e;
+$color-verticalNav-listGroupItem-Active: $brand-edark1;
+$color-verticalNav-listGroupItem-Active-Border: $brand-edark1;
+$color-verticalNav-listGroupItem-Active-Bg: $base-a;
+$color-verticalNav-panelHeading: $base-e;
+$color-verticalNav-linkGroup: $brand-e;
+$color-verticalNav-linkGroup-Hover: $brand-e;
+$color-verticalNav-linkGroup-Hover-Bg: $base-b;
+$color-verticalNav-listItem-Hover-Bg: $base-b;
+
+//pdpNav
+$color-pdpNav-listGroupItem: $brand-e;
+$color-pdpNav-listGroupItem-Hover: $brand-edark2;
+$color-pdpNav-listGroupItem-Hover-Bg: $base-b;
+
+//titles
+$color-title-h1-BottomLine: $base-c;
+$color-title-h2-BottomLine: $base-c;
+
+//typography
+$finalPrice: $system-f;
+$savings: $system-e;
+$purchase: $system-b;
+$red: $system-d;
+$error:$system-d; 
+
+//tabBox
+$color-tabBox-navTab: $brand-e;
+$color-tabBox-navTab-Bg: $base-b;
+$color-tabBox-navTab-Border: $base-c;
+$color-tabBox-navTab-Hover-Bg: $base-c;
+$color-tabBox-navTab-Active: $base-e;
+$color-tabBox-navTab-Active-Border: $base-c;
+$color-tabBox-navTab-Active-Bg: $base-a;
+$color-tabBox-shopAll: $base-c;
+
+//wishlist
+$color-addedSuccess: $system-c;

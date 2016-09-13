@@ -1,0 +1,62 @@
+/************ START Product Media Block CSS ******************/
+#productMediaBlock { margin-left:auto; margin-right:auto; }
+#productMediaBlock .overlayPosition { position:relative; }
+#productMediaBlock .overlayHelper { position:absolute; top:0; right:15px; bottom:0; left:15px; pointer-events:none; visibility:hidden; }
+#productMediaBlock .overlay { position:relative; width:100%; height:100%; }
+#productMediaBlock .products { margin-left:20px; margin-right:20px; visibility:hidden; }
+#productMediaBlock .products .imageContainer.slick-slide { cursor:zoom-in; }
+#productMediaBlock #productMedia { display:none; }
+#productMediaBlock .slick-dots { bottom:auto; padding-top:5px; }
+#productMediaBlock .slick-dots li { margin:0px; width:15px; }
+#productMediaBlock .slick-dots li button:before { font-size:13px; }
+#productMediaBlock .slick-prev:before,
+#productMediaBlock .slick-next:before { color:$productMediaBlockSliderNextPrevIcon; }
+#productMediaBlock .productThumbnails { display:none; margin-bottom:0px; visibility:hidden; }
+#productMediaBlock .productThumbnails .imageContainer { cursor:pointer; padding:1px; transition:opacity .25s ease; }
+#productMediaBlock .productThumbnails .imageContainer:hover { opacity:0.7; }
+#productMediaBlock .productThumbnails .imageContainer img { width:100%; height:auto; padding:1px; border:1px solid $productMediaBlockInvodoCtaBorder; }
+#productMediaBlock .products .imageContainer img { width:100%; height:auto; }
+#productMediaBlock .productThumbnails .videoOverlayContainer { position:absolute; left:50%; top:50%; -ms-transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%); border:none; transition:opacity .25s ease; }
+#productMediaBlock .productThumbnails .videoOverlayContainer img { border:none; }
+#productMediaBlock .videoTitle { display:none; }
+#productMediaBlock .energyStar { position:absolute;bottom:10px;right:10px; }
+#productMediaBlock #scratchDent,
+#productMediaBlock #openBox,
+#productMediaBlock #expertPick,
+#productMediaBlock #clearance,
+#productMediaBlock #reManufactured,
+#productMediaBlock #freeReturns { position:absolute; top:-5px; left:-2px; width:125px; height:140px; }
+#productMediaBlock #scratchDent{ background:url('../pdpimages/sprite.png') 0 -258px ; }
+#productMediaBlock #openBox{ background:url('../pdpimages/sprite.png') -125px -258px ; }
+#productMediaBlock #expertPick{ background:url('../pdpimages/sprite.png') -250px -258px ; } 
+#productMediaBlock #clearance{ background:url('../pdpimages/sprite.png') -376px -258px ; }
+#productMediaBlock #reManufactured{ background:url('../pdpimages/sprite.png') -633px -258px ; } 
+#productMediaBlock #freeReturns{ background:url('../pdpimages/sprite.png') -759px -258px ; }
+#productMediaBlock .promoOverlay { position:absolute; bottom:0; right:0; height:33%; width:33%; text-align:right; }
+#productMediaBlock .promoOverlay img { height:auto; width:auto; max-height:100%; max-width:100%; }
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close { cursor: pointer; }
+
+@media all and (min-width:768px) {
+  #productMediaBlock .products { margin:0px; }
+  #productMediaBlock .overlayHelper { right:0; left:0; }
+  #productMediaBlock .productThumbnails.showArrows { display:block; margin:15px 25px 0px; }
+  #productMediaBlock .productThumbnails.hideArrows { display:block; margin:15px 0px 0px; }
+  #productMediaBlock .products .slick-prev,
+  #productMediaBlock .products .slick-next { display:none !important; }
+  #productMediaBlock .products .slick-dots { display:none !important; }
+  #productMediaBlock .products { margin-bottom:0px; } 
+  
+  #productMediaBlock #scratchDent,
+  #productMediaBlock #openBox,
+  #productMediaBlock #expertPick,
+  #productMediaBlock #clearance,
+  #productMediaBlock #reManufactured,
+  #productMediaBlock #freeReturns { left:-7px; }
+}
+/* View Larger Image */
+@media all and (min-width:1199px) {
+  .mfp-arrow-right { right: 30%; }  
+  .mfp-arrow-left  { left: 30%; }
+  
+}
+/************ END Product Media Block CSS ******************/

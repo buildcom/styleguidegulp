@@ -1,0 +1,59 @@
+#titleRow,
+#learningCenterTitleRow {
+  position:relative;
+}
+#titleRow .titleSlot,
+#learningCenterTitleRow .titleSlot {
+  position:absolute;
+  right:0%;
+  bottom:0%;
+  margin-right:15px;
+}
+.title {
+    display:table;
+    width:100%;
+    margin-bottom:1rem;
+    
+    h1, h2 {
+        border:none;
+        margin-bottom:0px; 
+    }
+    
+    .h1Title {
+        border-bottom:1px solid $color-title-h1-BottomLine;
+    }
+    
+    .h2Title {
+        border-bottom:1px solid $color-title-h2-BottomLine;
+    }
+    
+    .h1Title,
+    .h2Title div {
+      display:table-cell;
+    }
+    
+    .titleText {
+      width:100%;
+    }
+    
+    .linkText {
+      vertical-align:bottom;
+    }
+    
+    .backToTopLink {
+      font-size:12px;
+      font-family:Helvetica, Arial, sans-serif;
+      white-space:nowrap;
+    }
+    
+    .backToTopLink:after {
+      content:"\f077";
+      font-family:"FontAwesome";
+      padding-left:.2em;
+      display:inline-block;
+    }
+    
+    .backToTopLink:hover:after {
+      text-decoration:none;
+    }
+}

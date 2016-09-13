@@ -1,0 +1,36 @@
+#scrollToTop.show {
+  opacity:.6;
+  
+  &:hover, 
+    &:active,
+    &:focus {
+      text-decoration:none;
+      color: $color-scrollToTop-Hover;
+      opacity:1;
+    }
+  
+}
+
+#scrollToTop{
+    padding:10px; 
+    text-align:center; 
+    background: $color-scrollToTop-Bg;
+    color: $color-scrollToTop;
+    text-decoration: none;
+    position:fixed;
+    right:15px;
+    bottom:65px;
+    display:block;
+    opacity:0;
+    transition: .5s ease;
+    border-radius:4px;
+    z-index:1040;
+
+    &:before {
+      content: "\f077";
+      font-family: FontAwesome;
+      font-size:18px;
+    }
+      
+}
+

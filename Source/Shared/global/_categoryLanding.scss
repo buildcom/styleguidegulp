@@ -1,0 +1,33 @@
+.title { margin-bottom:1rem; }
+.title h1,
+.title h2 { margin-bottom:0px; }
+
+#verticalNavContainer,
+#learningCenterNavContainer { margin-bottom:5px; }
+
+/* Four Pack Category Include */
+.fourPack { 
+  margin-bottom:30px; 
+  
+  .fourPackTitle { 
+    border-bottom:1px solid $includeFourPackTitleBorder; 
+    display:inline-block;
+    width:100%;
+    
+    h3 {
+      font-size:1.6em;
+      display:inline;
+      float:left;
+      border:none;
+    }
+    
+    .viewAll {
+      display:inline;
+      float:right;
+      padding-top:4px;
+    }
+  }
+}
+
+.seoTextRow { padding-top:10px; }
+

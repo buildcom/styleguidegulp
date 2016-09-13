@@ -1,0 +1,98 @@
+
+
+/* navbar menu */
+#header .ld-navbar-header { border-radius:0; border:none; min-height:0; margin-bottom:0px; padding:0 15px;background-color:$horizontalNavBgMdLg; }
+#header .ld-navbar-header .navbar-nav { margin:0; }
+#header .ld-navbar-header .navbar-nav .navLinkOverlay { position:absolute;top:0;right:0;bottom:0;left:0;font-size:100px;overflow:hidden; }
+#header .ld-navbar-header .navbar-nav > li { background-color:$horizontalNavItemBg; border-bottom:1px solid $horizontalNavItemBorder; } 
+#header .ld-navbar-header .navbar-nav > li:last-child { border-bottom:1px solid $horizontalNavItemBorder; }
+#header .ld-navbar-header .navbar-nav > li:hover > a { background-color:$horizontalNavItemHoverBg; color:$horizontalNavItemHover; }
+#header .ld-navbar-header .navbar-nav > li > a { color:$horizontalNavItem; font-size:16px;}
+#header .ld-navbar-header .navbar-nav > li a:after { content:"\f0da";font-family:"FontAwesome";float:right; }
+#header .ld-navbar-header .navbar-nav > .open > a:after { content: "\f0d7";;font-family:"FontAwesome";float:right; }
+#header .ld-navbar-header .navbar-nav > li > a,
+#header .ld-navbar-header .navbar-nav > .open > a,
+#header .ld-navbar-header .navbar-nav > .open > .learningCenterItemnk { transition:background-color .5s ease, color .5s ease; }
+#header .ld-navbar-header .navbar-nav > li > .dropdown-menu { border:none; padding:0; }
+#header .ld-navbar-header .navbar-nav > li > .dropdown-menu li { border-top:1px solid $horizontalNavDropdownItemBorder; }
+#header .ld-navbar-header .navbar-nav > li > .dropdown-menu li > a { color:$horizontalNavDropdownItem; padding:10px 30px;font-size:16px; }
+#header .ld-navbar-header .navbar-nav > li > .dropdown-menu li > a:after { content:none; }
+#header .ld-navbar-header .navbar-nav > li > .dropdown-menu li > a:hover { background-color:$horizontalNavDropdownItemHoverBg; color:$horizontalNavDropdownItemHover; }
+#header .ld-navbar-header .navbar-nav > li > .learningCenterLink { background-color:$headerLearningCenterItemBg; color:$headerLearningCenterItem }
+#header .ld-navbar-header .navbar-nav > li:hover > .learningCenterLink { background-color:$headerLearningCenterItemHoverBg; color:$headerLearningCenterItemHover }
+#header .ld-navbar-header .navbar-nav > li > .learningCenterLink:before { font-family:"icomoon"; content:"\e600"; padding-right:0.2em; line-height:1em; font-size:16px; font-weight:normal; }
+
+/* navbar collapsed */
+#header .ld-navbar-header .navbar-collapse { border:none; padding: 0; margin: 0 -15px; }
+#header .ld-navbar-header .collapsedText,
+#header .ld-navbar-header .shopText { color:$headerShopNowTextXsMd; font-size:20px; font-family:Open Sans Condensed, Helvetica, Arial, sans-serif; }
+#header .ld-navbar-header .collapsedText .phoneText { float: right;margin-top:5px; }
+#header .ld-navbar-header .collapsedText .phoneText a { color:$headerShopNowTextXsMd; }
+#header .ld-navbar-header .navbar-toggle { background-color: transparent; background-image: none; border: none; float: left; margin: 0 15px 0 0; padding: 9px 0; position: relative; }
+#header .ld-navbar-header .navbar-toggle .icon-bar { background-color: $headerIconBgXsMd; border-radius:0; height:4px; width:24px; }
+#header .ld-navbar-header .navbar-toggle .icon-bar + .icon-bar { margin-top: 3px; }
+#header .ld-navbar-header .shopText { display: block; float: right; color: $headerShopNowTextXsMd; font-weight: bold; line-height: 20px; padding-left: 30px; }
+
+/* medium and up */
+@media all and (min-width:992px) {
+  .container.containerOverride { width: 970px; }
+  
+  /* navigation menu */
+  #header .ld-navbar-header { padding-left:15px; padding-right:15px;background-color:$horizontalNavBgMdLg;border:none; }
+  #header .ld-navbar-header .navbar-collapse { margin: 0; }
+  #header .ld-navbar-header .navbar-nav { float:none; display:table; width:100%; }
+  #header .ld-navbar-header .navbar-nav > li { float:none; display:table-cell; text-align:center; background-color:$horizontalNavBgMdLg; border:none; }
+  #header .ld-navbar-header .navbar-nav > li > a { color:$horizontalNavItemMdLg; font-size:12px; padding:7px 10px; }
+  #header .ld-navbar-header .navbar-nav > li a:after, 
+  #header .ld-navbar-header .navbar-nav > .open > a:after { content:none; }
+  #header .ld-navbar-header .navbar-nav > li:last-child { border:none; }
+  #header .ld-navbar-header .navbar-nav > li > .dropdown-menu { display:block; opacity:0; -ms-transform:translateY(-50%) scaleY(0); -webkit-transform:translateY(-50%) scaleY(0) translateZ(0); 
+    transform:translateY(-50%) scaleY(0) translateZ(0); overflow:hidden; transition:opacity .5s ease; border-bottom:1px solid $horizontalNavDropdownBorderMdLg; 
+    border-right:1px solid $horizontalNavDropdownBorderMdLg; border-left:1px solid $horizontalNavDropdownBorderMdLg; border-top:none; border-radius:0px; padding:0px; }
+  #header .ld-navbar-header .navbar-nav > li > .dropdown-menu li:not(:first-child) { border-top:1px solid $horizontalNavDropdownItemBorderMdLg; }
+  
+  /* Navbar - Open Dropdowns on Hover */
+  #header .ld-navbar-header .navbar-nav > li:hover > a { color:$horizontalNavDropdownItemHoverMdLg; background-color:$horizontalNavDropdownItemHoverBgMdLg; }
+  #header .ld-navbar-header .navbar-nav > li:hover > a.navLinkOverlay { background-color:transparent }
+  #header .ld-navbar-header .navbar-nav > li:hover > .dropdown-menu { opacity:1; -ms-transform:none; -webkit-transform:translateZ(0); transform:translateZ(0); }
+  #header .ld-navbar-header .navbar-nav > li > .dropdown-menu li > a { font-size:14px;padding:5px 20px; background-color:$horizontalNavDropdownItemBgMdLg }
+}
+
+@media all and (min-width:1200px) {
+  #header .ld-navbar-header .navbar-nav>li>a {font-size:14px; padding:8px 15px; } 
+}
+
+.dropdown-menu {
+  .viewAll {
+    font-family: Open Sans Condensed, Helvetica, Arial, sans-serif;
+  }
+}
+
+.dropdown-menu.columns-3 {
+  min-width: 600px;
+}
+
+.multi-column-dropdown {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.multi-column-dropdown li a {
+    display: block;
+}
+
+ 
+@media (min-width: $screen-md-min) {
+  .dropdown-menu.multi-column {
+    float:right;
+    right:0;
+    left:auto;
+    
+    div { 
+      border-right:1px dashed $base-b;
+      &:last-child {
+        border-right:none;
+      }
+    }
+  }
+}

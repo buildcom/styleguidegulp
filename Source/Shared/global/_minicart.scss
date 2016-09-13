@@ -1,0 +1,180 @@
+/* Mini Cart */
+
+/* Mini Cart Alert */
+.cartLoadedAlert {
+	border-radius: 0px;
+	margin-bottom: 0px;
+	padding: 5px;
+	z-index: 1050;
+	position: relative;
+	
+	a.viewCartCTA {
+		margin-left: 10px;
+		cursor: pointer;
+		white-space: nowrap;
+	}
+	
+	span.fa {
+		margin-left: 5px;
+	}
+	
+}
+
+$miniCartBorder: 1px solid #ddd;
+
+#miniCartContainer {
+
+	.miniCartLoadingText {
+		text-align: center;
+		font-weight: bold;
+		padding-bottom: 15px;
+		padding-top: 10px;
+	}
+	
+	.miniCartLoadingSpinner {
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	.miniCartHeader {
+	    padding: 15px;
+	    border-bottom: $miniCartBorder;
+	    
+	    a {
+	    	padding-left: 100px;
+	    }
+	}
+	
+	a {
+		outline: 0;
+	}
+	
+	
+	.miniCartItems {
+		max-height: 200px;
+    	overflow-y: auto;
+	}
+	
+	.miniCartLine {
+    	border-bottom: $miniCartBorder;
+    	padding: 10px;
+    	min-height: 48px;
+    	cursor: pointer;
+    	transition: background 0.5s ease;
+		.miniCartKitBaseItemMarker {
+    		background: $minicartKitHeaderBg;
+			padding: 5px 5px 5px 15px;
+			border-radius: 3px;
+			font-family: Open Sans Condensed, Helvetica, Arial, sans-serif;
+			color: $minicartKitHeaderText;
+			font-size: 15px;
+			margin: 0px 0px 10px 0px;
+			border: 1px solid $minicartKitBorder;
+			text-align: center;
+    	}
+	}
+	
+	.miniCartLine:hover {
+		background: $headerIconContainerDropdownItemHoverBgMdLg; 
+	}
+
+	.miniCartLine:last-child {
+		border-bottom: none;
+	}
+	
+	.miniCartLineImageContainer {
+	
+		height: 100%;
+		
+		img {
+			width: 38px;
+			height: 38px;
+		}
+	}
+	
+	.miniCartFooter {
+	    border-top: $miniCartBorder;
+	    
+	    button {
+	    	margin: 5px 0 10px 0;
+	    	width: 220px;
+	   	}
+	   	
+	   	.miniCartFooterSubtotal {
+	   		
+	   		h5 {
+	   			padding: 10px;
+	   			font-size: 18px;
+	   		}
+	   		
+	   		.subTotal {
+	   			color: $system-f;
+	   		}
+	   	}
+	}
+	
+	.miniCartLineDetailsContainer {
+		padding: 0 0 0 4px;
+		overflow: hidden;
+	}
+	
+	span.badge {
+		position: relative;
+		float: right;
+		top: -8px;;
+		font-size: 10px;
+	}
+
+	.miniCartLineProductName {
+		font-size: 12px;
+		line-height: 1.2em;
+		color: $base-e;
+		padding-top: 3px;
+		
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	
+	span.badge {
+		position: relative;
+		float: right;
+	}
+	
+	.miniCartEmptyMessage {
+		margin: 10px;
+		text-align: center;
+	}
+	
+	/* Thin scroll bar on webkit */
+	::-webkit-scrollbar
+	{
+	    width: 15px;
+	    height: 20px;
+	}
+	
+	::-webkit-scrollbar-thumb
+	{
+	    height: 6px;
+	    border: 4px solid rgba(0, 0, 0, 0);
+	    background-clip: padding-box;
+	    -webkit-border-radius: 7px;
+	    background-color: rgba(0, 0, 0, 0.15);
+	    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+	}
+	
+	::-webkit-scrollbar-button
+	{
+	    width: 0;
+	    height: 0;
+	    display: none;
+	}
+	
+	::-webkit-scrollbar-corner
+	{
+	    background-color: transparent;
+	}	
+}
+
+
+

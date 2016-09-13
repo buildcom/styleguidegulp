@@ -120,6 +120,28 @@ gulp.task('copywcd', function() {
         .pipe(gulp.dest('./Destination/Wine'));
 });
 
+// FETCH DW SCSS ==========================================
+gulp.task('fetch', function(){
+    // Global Styles
+    gulp.src('../demandwareSites/app_bootstrap/cartridge/sass/semantic/*')
+    .pipe(gulp.dest(paths.shared.src + '/global'));
+
+    gulp.src('../demandwareSites/app_app_bootstrap/cartridge/sass/semantic/siteSpecific/*')
+    .pipe(gulp.dest(paths.shared.src + '/aaa'));
+    
+    gulp.src('../demandwareSites/app_ca_bootstrap/cartridge/sass/semantic/siteSpecific/*')
+    .pipe(gulp.dest(paths.shared.src + '/ca'));
+
+    gulp.src('../demandwareSites/app_ld_bootstrap/cartridge/sass/semantic/siteSpecific/*')
+    .pipe(gulp.dest(paths.shared.src + '/ld'));
+
+    gulp.src('../demandwareSites/app_keg_bootstrap/cartridge/sass/semantic/siteSpecific/*')
+    .pipe(gulp.dest(paths.shared.src + '/keg'));
+
+    gulp.src('../demandwareSites/app_wcd_bootstrap/cartridge/sass/semantic/siteSpecific/*')
+    .pipe(gulp.dest(paths.shared.src + '/wcd'));
+});
+
 // SERVE FILES ==========================================
 gulp.task('serve', function () {
     // Serve files from the root of this project

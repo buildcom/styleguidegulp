@@ -1,0 +1,30 @@
+.starsContainer {
+  position:relative;
+  display:inline-block;
+  margin:0 auto;
+  color:#ffad00;
+  
+  .starsBG {
+    display:inline-block;
+    width:inherit;
+  }
+  
+  .stars, .fadeContainer {
+    position: absolute;
+  }
+  
+  .fadeContainer {
+    overflow:hidden;
+    height:1.3em;
+    left:0;
+    top:0;
+    width:0;
+    text-align:left;
+    white-space: nowrap;
+  }
+
+}
+
+
+
+

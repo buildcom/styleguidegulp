@@ -1,0 +1,305 @@
+/************ CAT/BRAND DISPLAY INCLUDES ************/      
+
+.subCatsCarousel {
+	.slick-slider {
+		margin-right: 25px;
+		margin-left: 25px;
+	}
+  
+	.catBoxContainer.shopByBrand {
+		margin: 10px 0;
+		height: 0;
+	  	padding-bottom: 30%;
+	  	
+	  	.content {
+	  		border: none;
+	  		
+	  		.categoryImage {
+	  			position: absolute;
+	  			top: 50%;
+	  			left: 50%;
+	  			bottom: auto;
+	  			max-width: 90%;
+	  			max-height: 90%;
+	  			min-width: auto;
+	  			width: auto;
+	  			
+	  			-webkit-transform: translate( -50%, -50% );
+	  			transform: translate( -50%, -50% );
+	  		}
+	  		
+	  		a {
+		        position:absolute;
+		        top: 0; 
+		        right: 0;
+		        bottom: 0;
+		        left: 0;
+		        background-image: url("../../images/empty.png");
+		    }
+	  	}
+	}
+}
+
+.catDisplayInclude { 
+  margin-bottom:15px; 
+  
+  h3 {
+    margin-bottom:10px; 
+    padding-bottom:4px;
+  }
+   
+  .catBoxContainer {
+    position:relative; 
+    overflow: hidden;
+    margin-bottom:15px;
+    
+    .content {
+      overflow: hidden;
+      border-radius: 4px;
+      border:1px solid $color-catCallout-container-border;
+      -webkit-transform: translateZ(0); /* Solving text anti-aliasing issue */
+      max-height:250px;  
+
+      .overlay {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: $color-catCallout-Overlay-bg;
+        opacity: 0;
+        -ms-transition: opacity .4s ease;
+        -webkit-transition: opacity .4s ease;
+        transition: opacity .4s ease;
+      }
+      
+      a {
+        position:absolute;
+        top: 0; 
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../../images/empty.png");
+      }
+      
+      img {
+        margin:5px auto;
+        min-width:70%;
+        background-color:$base-a;
+      }
+ 
+      .tagPositioner {
+        .tagContainer {
+          -ms-transition: .4s ease;
+          -webkit-transition: .4s ease;
+          transition: .4s ease;
+          position:absolute;
+          bottom:10px;
+
+          .contentTag {
+              h4 {
+                a {
+                  position: relative;
+                  display:inline-block;
+                  color: $color-catCallout-contentTag;
+                  margin: 0px 0px 0px 0px;
+                  padding: 10px;
+                  overflow: hidden;
+                  font-size: .8em;
+                  text-overflow: ellipsis;
+                  background-color: $color-catCallout-contentTag-Bg;
+                  white-space: nowrap;
+                }
+              }
+           }
+         } 
+      }
+     
+      &:hover,
+      &:focus,
+      &:active {        
+        .overlay {
+          opacity: .5;
+         }
+         
+         .tagPositioner {
+            .tagContainer {
+              -ms-transform: translateY(-10px);
+              -webkit-transform: translateY(-10px);
+              transform: translateY(-10px);
+            } 
+          }
+      }
+    }
+  }
+}
+  
+@media all and ( min-width:$screen-sm-min ) { 
+  .catDisplayInclude { 
+    .catBoxContainer { 
+      height:190px;
+      margin-bottom:10px;
+      
+      .content {
+        position:absolute;
+        top:0px;
+        right:5px;
+        bottom:5px;
+        left:0px;
+        max-height:none;
+        
+        .categoryImage {
+          position:absolute;
+          top:0;
+          left:0;
+          bottom:0;
+          width:90%;
+          margin:auto 5%;
+        }
+        
+        .overlay {
+          -ms-transition: opacity .6s ease;
+          -webkit-transition: opacity .6s ease;
+          transition: opacity .6s ease;
+        }
+      
+        .tagPositioner {  
+          .tagContainer { 
+            height:100%;
+            width:100%;
+            bottom:0;
+            -ms-transition: .6s ease;
+            -webkit-transition: .6s ease;
+            transition: .6s ease;
+                 
+            .contentTag {
+              top:140px;
+              position:absolute;
+              h4 {
+                a {
+                  font-size: .9em;
+                  padding: 7.5px 10px;
+                }
+              }
+            }
+            
+            .subContentTag {
+              position:absolute;
+              top:175px;
+              width:100%;
+              
+              p {
+                color: $color-catCallout-subContentTag;
+                margin: 0px;
+                padding: 5px 5px 5px 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position:absolute;
+                display:none;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .overlay {
+            opacity: .85;
+          }
+          .tagPositioner {
+            .tagContainer {
+              -ms-transform: trafnslateY(-130px);
+              -webkit-transform: translateY(-130px);
+              transform: translateY(-130px);
+
+              .subContentTag {                         
+                p {
+                  display:inline-block;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and ( min-width:$screen-lg-min ) { 
+  .catDisplayInclude { 
+    .catBoxContainer { 
+      height:200px;
+      
+      .content {
+        .tagPositioner {  
+          .tagContainer {       
+            .contentTag {
+              top:150px;
+              h4 {
+                a {
+                  font-size: 1em;
+                  padding: 10px;
+                }
+              }
+            }
+            .subContentTag {
+              top:185px;
+              p {
+                padding: 10px 5px 5px 10px;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          .tagPositioner {
+            .tagContainer {
+              -ms-transform: translateY(-140px);
+              -webkit-transform: translateY(-140px);
+              transform: translateY(-140px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//Specific Styling for Brand Categories
+.catBoxContainer.shopByBrand {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 15px;
+  height: 0;
+  padding-bottom: 100%;
+  
+  .content {
+    overflow: hidden;
+    border-radius: 4px;
+    border: 1px solid #e8e4db;
+    -webkit-transform: translateZ(0);
+    max-height: 250px;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    bottom: 5px;
+    left: 0px;
+    max-height: none;
+    opacity: .7;
+    
+    &:hover {
+      opacity:1;
+    }
+    
+    img {
+      min-width: 70%;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 90%;
+      margin: auto 5%;
+      
+    }
+  } 
+}

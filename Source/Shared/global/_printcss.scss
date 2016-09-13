@@ -1,0 +1,129 @@
+#footerRow {display:none;}
+#orderDetailsConfirmation {display: block;}
+#hiddenLogo {display: block;}
+#hiddenLogo {clear: both;float: left;}
+#header, #headerTop, #headerMiddle, #categoryNavigation, #rightColumn, #leftColumn, #footer, 
+	#recentlyViewedProducts, #productInfoTabs, #maintab, #addToCartContainer_btm, #tcontent4, 
+	#pageProductActionIcons, #headerBanner, div.bottomLinks, #footerBadges #checkoutProgressContainer,
+	#orderInformation, #footerBadges, #passwordCreate, .headerSearch, .headerRibbon, #prod_Warr_Title, #prodWarr
+	{visibility: hidden;display: none;}
+#addToCartBlock {margin-right: -10px;}
+
+/* Confirmation Page Print Styles */
+#cancelOrder {display: none;}
+#orderHide {display: block;}
+#orderDetails {display: block;float: left;width: 100%;font-size: 13px;color: #000;}
+#orderDetails .detail {float: left;display: inline;margin: 15px 15px 15px 30px;width: 200px;}
+#orderDetails .detail h3 {
+	font-size: 1em;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #dadada;
+	margin-bottom: 5px;
+}
+ #orderDetails .detail .title {
+	width: 72px;
+	text-align: right;
+	margin-right: 5px;
+	float: left;
+}
+ #orderList {
+	border-collapse: collapse;
+	border: 1px solid #dadada;
+	clear: both;
+	width: 100%;
+}
+ #orderList th {
+	text-align: center;
+	font-weight: bold;
+	background-color: #f0f0f0;
+	border: 1px solid #dadada;
+	padding: 3px 0;
+	color: #000;
+	font-size: 11px;
+}
+ #orderList thead th.qty {
+	width: 50px;
+}
+ #orderList thead th.description {
+	width: 215px;
+}
+ #orderList thead th.model {
+	width: 80px;
+}
+ #orderList thead th.shipping {
+	width: 215px;
+}
+ #orderList thead th.status {
+	width: 120px;
+}
+ #orderList thead th.amount {
+	width: 74px;
+}
+ #orderList td {
+	border: 1px solid #dadada;
+	padding: 6px;
+	font-size: 11px;
+}
+ #orderList td.qty,
+ #orderList td.model,
+ #orderList td.status,
+ #orderList td.amount {
+	text-align: center;
+}
+ #orderList td.status .complete {
+	color: #699769;
+}
+ #orderList tfoot td {
+	padding: 4px 6px;
+	font-size: 11px;
+	color: #000;
+}
+ #orderList tfoot td#requestReturn {
+	background-color: #ffffe8;
+	text-align: center;
+	line-height: 2;
+	border-top: 3px double #dadada;
+}
+ #orderList tfoot td#requestReturn a.go {
+	text-align: left;
+	font-family: 'Century Gothic', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1;
+	padding: 4px 0 6px 30px;
+	background: url(../../images/bg_requestReturn.gif) no-repeat 0 0;
+	color: #000;
+	text-decoration: none;
+	margin-top: 0 auto 10px;
+	position: relative;
+}
+ #orderList tfoot td#requestReturn a.terms {
+	color: #699769;
+}
+ #orderList tfoot td#requestReturn p.terms {
+	line-height: 1.1;
+	font-size: 9px;
+	color: #999;
+	margin: 0;
+}
+ #orderList tfoot th {
+	background: none;
+	text-align: right;
+	font-weight: bold;
+	padding: 4px 6px;
+	font-size: 11px;
+	color: #666;
+}
+ #orderList tfoot th.coupon,
+ #orderList tfoot td.coupon {
+	border-top: 3px double #dadada;
+	font-weight: normal;
+}
+ #orderList tfoot tr.orderTotal th,
+ #orderList tfoot tr.orderTotal td {
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #e8f0e8;
+	color: #000;
+}

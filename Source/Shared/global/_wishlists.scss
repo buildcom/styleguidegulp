@@ -1,0 +1,179 @@
+/************ WISHLIST MODAL *****************/
+#wishlistLogin {
+  .modal-header h2 {
+    margin:0;
+    border-bottom:none;
+  }
+  
+  .modal-body {
+    text-align:center;
+    padding:10px 20px 20px;
+    
+    .wishlistInstructions {
+      margin:0px;
+      h2 {
+        border-bottom:none;
+        font-size:14px;
+      }
+    }
+    .createAccount {
+      margin:20px 0;
+    }
+    .modalLogin {
+      text-align:left;
+      .field {
+        margin: 10px 0;
+      }
+      .forgotPasswordLink {
+        margin:15px 0;
+      }
+    }
+  }
+}
+
+
+@media all and (min-width:768px) {
+  #wishlistLogin {
+    .fbLogin {
+      width:100%;
+    }
+  }
+}
+
+/************ WISHLIST BUTTONS *****************/
+.gridActions {
+  .wishlistBtn {
+      margin-top:5px;    
+  }
+}
+
+.productPriceBlock {
+  .wishlistBtn {
+    margin-bottom:10px;
+  }
+}
+
+.xsLinks {
+  .wishlistBtn {
+    font-size: 12px;
+  }
+}
+
+.wishlistDropdown {
+  padding:5px;
+  text-align:center;
+  
+  .viewWishlist {
+    padding:5px;
+  } 
+  
+  .added {
+    color:$color-addedSuccess;
+    font-weight:bold;
+  }
+}
+
+/************ WISHLIST LANDING PAGE *****************/
+.wishlistItem {
+  margin-bottom:20px;
+}
+.wishlistRemove {
+    cursor:pointer;
+    transition:.5s ease;
+    font-size:12px;
+    color:$base-d;
+    margin-top:5px;
+    text-align:center;
+    
+    &:before {
+      font-family: FontAwesome;
+      content: "\f004";
+      display: inline-block; 
+      padding-right:5px;
+      font-size:13px;
+      width:15px;
+    }
+    &:hover {
+      text-decoration:none;
+      &:before {
+        content: "\f08a";   
+      }
+    }
+}
+
+/************ WISHLIST HEADER DROPDOWN *****************/
+#wishlistDropdown {
+  a:hover { text-decoration: none; }
+  .wishlistHeader {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    .wishlistSize {
+      font-weight:bold;
+    }
+  }
+  .wishlistEmpty {
+    padding: 15px;
+    text-align:center;
+    display:none;
+    .show {
+      display:block;
+    }
+  }
+  .wishlistFooter {
+    padding:10px;
+  }
+  .wishlistItems {
+    padding:0px;
+    .wishlistItem {
+      text-align:left;
+      border-bottom: 1px solid #ddd;
+      padding: 10px;
+      min-height: 48px;
+      cursor: pointer;
+      transition: background 0.5s ease;
+      .productlink {
+        &:hover {
+          text-decoration:none;
+        }
+      }
+      .productImage img {
+        margin:0;
+        height: 38px;
+        width: 38px;
+        min-height: 38px;
+      }
+      .productDetailsContainer {
+        padding:0 0 0 4px;
+        overflow:hidden;
+        .productName {
+          font-size:12px;
+          line-height:1.2em;
+          padding-top:5px;
+          white-space:nowrap;
+          text-overflow:ellipsis;
+          overflow:hidden;
+          font-weight:normal;
+          color:$base-e;
+        }
+      }
+      
+      &:hover {
+        background: $color-verticalNav-listItem-Hover-Bg;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #wishlistLogin {
+    .modal-body {
+      padding:20px;
+      .wishlistInstructions {
+        margin:20px;
+        h2 {
+          font-size:24px;
+        }
+      }
+    }
+  }
+}

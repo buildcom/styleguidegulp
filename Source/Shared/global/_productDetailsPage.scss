@@ -1,0 +1,232 @@
+#header { position:relative; z-index:1000; }
+#pageContent { position:relative; z-index:500; }
+.plaProduct {
+  .specJumpLink,
+  #hasReviewsCount,
+  .featuredReviewJumpLink
+   {
+    display:none;
+  }
+}
+	  
+#pt_productdetails, 
+.plaProduct { 
+  .title { margin-bottom:1rem; 
+      h1,
+      h2 { margin-bottom:0px; }
+  }  	
+  
+  .xsBackButton { 
+      cursor:pointer;
+      &:before { content:"\f0d9"; font-family:"FontAwesome"; padding-right:5px; }
+  }
+  .recommendedProducts { margin-top:10px; padding-bottom:30px; }
+  .recommendedCarouselTitle { margin-bottom:10px; }
+  .recommendedCarousel { 
+      margin:0px 25px; 
+      .slick-slide { padding:5px; }  
+         
+      .slick-prev:before,
+      .slick-next:before { 
+        color:$pdpRecommendedCarouselNextPrev; 
+     }
+  }
+  
+  .recommendedProducts .details,
+
+  .socialLinks {
+    padding-top:20px;
+    padding-left:0;
+    text-align:center;
+
+    > div:first-child {
+      margin-bottom:5px;
+    }
+    
+    > div {
+      display:inline-block;
+      vertical-align:top;
+    }
+    
+    .fb-like{
+      display:inline !important;
+    }
+  }
+  
+  #productTitleRow { 
+      margin-top:1rem; 
+      margin-bottom:1rem; 
+      
+      .productName { font-size:24px; border-bottom:none; display:inline; margin:0px; }
+      .productBrand { font-size:18px; font-family:Open Sans Condensed, Helvetica, Arial, sans-serif; }
+      .modelNumber { color:$pdpProductTitleRowBottomBorderModelNum; font-size:12px; font-family:Helvetica, Arial, sans-serif; }
+      .borderCanvas { height:5px; border-bottom:1px solid $pdpProductTitleRowBottomBorder; }
+      .reviewImageLink:hover { text-decoration:none; }
+
+      .xs-price-and-cta-container {
+        padding: 10px 0;
+        button {
+          line-height: 30px;
+        }
+        .final-price {
+          font-size: 1.4em;
+          font-weight: bold;
+          color: $system-f;
+          vertical-align: middle;
+        }
+      }
+  }
+  
+  #writeReview { 
+        color:$pdpWriteReviewLink; cursor:pointer;
+        &:hover { text-decoration:underline; }
+        &:after { content:"\f0da"; font-family:"FontAwesome"; padding-left:.2em; display:inline-block; }
+      }
+ 
+  #productDetailsBlock { 
+      padding-right:30px;  
+      .featuredReview { display:none; }
+      .productRating,
+      .featuredReview,
+      .shortSpecifications,
+      .paymentOptions { padding-bottom:10px; margin-bottom:10px; }
+      .productDetailsTitle { font-weight:bold; }
+      .featuredReviewText { padding:5px; box-sizing:content-box; font-style:italic; position:relative; color:$base-e;
+      	  &:before {color:$pdpFeatureReviewIcon; content: "\f10d";  font-family: "FontAwesome";  position:absolute;  right: calc( 100% + .2em );}
+      	  &:after {color:$pdpFeatureReviewIcon; content: "\f10e"; font-family: "FontAwesome"; position:absolute;  left: calc( 100% + .2em );}  }
+      ul { list-style:disc outside none; margin-left:1.2em; 
+        li { padding-bottom:5px; }
+      }
+      .shortSpecifications ul { margin-bottom:0px; }
+      .specificationsText { margin-bottom:10px; }
+      .reviewImageLink {
+        &:hover { text-decoration:none; }
+      }
+      .reviewTextContainer {padding:0 15px; margin-bottom:10px;}
+      .specJumpLink:after,
+      .featuredReviewJumpLink:after,
+      .optionsJumpLink:after { content:"\f078"; font-family:"FontAwesome"; padding-left:.2em; display:inline-block; }
+      .paymentOptions {
+        .optionsText { padding-bottom:5px; }
+        .optionsIcon { color:hotpink; float:left; margin-right:10px; font-size:70px; }
+        .phoneNumber,
+        .price { color:hotpink; font-weight:bold; font-size:18px; }
+        .price { margin-bottom:15px; }
+      }
+      .altOption { border-top:1px solid $pdpDetailsAltPayOptionBorder;border-bottom: 1px solid $pdpDetailsAltPayOptionBorder; padding:10px 0;margin:10px 0;}
+      .altOption {
+        .altOptionPrice { padding:5px 0 0;cursor:pointer;}
+        .shopNow {float:right; margin-top:5px;}
+        .openBox:after {color:$pdpDetailsAltOpenBox;content:"\f05a";display:inline-block;font-family:"FontAwesome";padding-left: 0.2em;}
+      }
+  }
+
+  .foldMenuTop { border-bottom:1px solid $pdpFoldMenuTopBottomBorder; }
+  .foldMenuTitle { font-size:16px; color:$pdpFoldMenuTitle; cursor:pointer; padding-top:10px; padding-bottom:10px; border-bottom:1px solid $pdpFoldMenuTitleBottomBorder; transition:background-color .5s ease; 
+    &:hover { background-color:$pdpFoldMenuHoverBg; } 
+    &:after { font-family:"FontAwesome"; float:right; }
+  }
+  .foldMenuInactive {
+    .foldMenuTitle {
+      &:after { content:"\f078"; }
+    }
+  }
+  .foldMenuActive {
+    .foldMenuTitle
+      &:after { content:"\f077"; }
+  }
+  .foldMenuItem > .foldMenuContent:last-child,
+  #descriptionRow .foldMenuContent { border-bottom:1px solid $pdpDescriptionFoldMenuBottomBorder; }
+  .foldMenuActive .foldMenuTitle { margin-bottom:10px; }
+  
+  .jumpLinksPanel ul,
+  .dimensionsPanel ul,
+  .manualsPanel ul { margin-bottom:0px; }
+  .dimensionsPanel ul { list-style:none outside none; }
+  .dimensionsPanel h3 { border-bottom:none; font-size:14px; }
+  
+  .reviewLink { overflow:auto; }
+  .reviewLinkText { display:inline-block; float:left; padding-top:2px; text-decoration:inherit; }
+  .starsContainer { display:inline-block; margin-left:3px; }
+  
+  .relatedProduct {
+    margin-bottom:15px;
+    h3 {
+      margin-bottom:5px;
+    }
+    .relatedProductCard {
+      margin-bottom:10px;
+    }
+    .relatedProductsJumpLink { 
+      display:block; 
+      text-align:center; 
+      
+      &:after {
+        content:"\f078"; 
+        font-family:"FontAwesome"; 
+        padding-left:.2em; 
+        display:inline-block;
+      }
+      
+      &:hover {
+        text-decoration:none;
+      }
+    }
+  }
+  
+  #learningCenterRow {
+    .foldMenuContent:last-child { padding-bottom:15px; }
+  }
+  
+  #productSpecs ul { list-style:none; }
+  #productSpecs ul li div:nth-child(odd) { background:$pdpProductSpecsOddRowBgXS; }
+  #productSpecs ul li div { vertical-align:top; padding:4px 5px; }
+  
+  #descriptionRow {
+    ul { list-style:none outside none; }
+    h2 { font-size:18px; font-weight:normal; color:$pdpDescriptionRowTitle; margin:0; border-bottom:0px; }
+    h3 { font-size:16px; font-weight:normal; color:$pdpDescriptionRowTitle; margin:0; border-bottom:0px; }
+    h4 { font-size:14px; font-weight:normal; color:$pdpDescriptionRowTitle; margin:0; }
+  } 
+  
+  /* OVERRIDING BAZAAR VOICE STYLING (TODO:When no longer using old cartridges, move these styles to BV) */
+  .BVRRQuickTakeSection,
+  .BVRRDisplayContent { width:100% !important; }
+  /* END BAZAAR VOICE STYLING */
+  
+  @media all and (min-width:$screen-sm-min) {
+    .socialLinks {
+      padding-left:25px;
+      text-align:left;
+    }
+    
+  	#aboveFoldContentRow { padding-bottom:25px; }
+  	
+  	#productTitleRow h1 { font-size:30px; }
+  	#productTitleRow .productName { display:inline-block; }
+  	#productTitleRow .modelNumber { padding-left:5px; font-size:14px; }
+  	
+  	.productPriceBlock .alert { margin-top:20px; }
+  	
+  	.foldMenuTop { display:none; }
+  	.foldMenuContent { display:block !important; border:none; }
+  	#mobileReviewsSection { display:none !important; }
+  	
+  	#productSpecs ul li { padding:4px 5px; overflow:hidden; }
+  	#productSpecs ul li div { width:50%; display:inline-block; padding-bottom:5000%; margin-bottom:-5000%; }
+  	#productSpecs ul li div:nth-child(odd) { background:none; width:49%; margin-right:1%; }
+  	#productSpecs ul li:nth-child(odd) div { background:$pdpProductSpecsOddRowBg; }
+  
+  	#learningCenterRow .foldMenuContent:last-child { padding-bottom:0px; }
+  	.foldMenuItem > .foldMenuContent:last-child,
+  	#descriptionRow .foldMenuContent { border-bottom:none; }
+  }
+  /* Mobile Reviews */
+  #mobileReviewsSection .mobileReview { margin-bottom:20px; }
+  #mobileReviewsSection .mobileReviewText { line-height:1.5em; } 
+  #mobileReviewsSection .mobileReviewStars { display:block; margin:5px 0px; }     
+  
+  @media all and (min-width:$screen-md-min) {
+  	#productTitleRow .modelNumber { padding-left:0px; }
+  }
+}

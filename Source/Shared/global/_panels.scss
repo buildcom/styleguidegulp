@@ -1,0 +1,7 @@
+.panel-default > .panel-heading { font-weight:bold; background-color: $panelDefaultHeaderFooter; border-color:$panelDefaultHeaderFooterBorder; }
+.panel-default > .panel-footer { background-color: $panelDefaultHeaderFooter; border-color:$panelDefaultHeaderFooterBorder; }
+
+/* Emphasized Panel - Based on panel-default */
+.ld-panel-emphasized { border-color:$panelEmphasizedBorder }
+.ld-panel-emphasized .panel-heading { background-color:$panelEmphasizedHeadingBg; border-color:$panelEmphasizedBorder; }
+
