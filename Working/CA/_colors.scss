@@ -9,30 +9,34 @@
 // Standardized Variable Names for Colors 
 // Brand Colors
 // ---------------
-$color-brand-a : #FFFFFF;			// Site Background Color
+$color-brand-a : #69ADBD;			// Site Background Color
 $color-brand-b : #5eb9c2;			// Primary Brand Colour
 $color-brand-c : #3F8EA0;			// Border for $ice;		Hover Background for $ice
 $color-brand-d : #267d92;			// Primary Background Color (dark blue primary)
-$color-brand-e : darken($color-brand-d, 7%);	// Border for $teal; 	Hover Background for $teal
-$color-brand-f : darken($color-brand-d, 14%);	// Link version of $teal
+$color-brand-e : #267d92;			// Border for $teal; 	Hover Background for $teal
+$color-brand-edark1: darken($color-brand-e, 7%);
+$color-brand-edark2: darken($color-brand-e, 14%);
+$color-brand-f : #065365;			// Link version
+
+// Complementary Colors: For adding rich experience	
+// ---------------
+$color-complement-a : #eff5f8;			
+$color-complement-b : #c0ebf4;		// Default Complement Color (light)
+$color-complement-c : #AAE7ED;		// Default Default Complement Color
+$color-complement-d : #79D1D9;		// Default Default Complement Color
+$color-complement-e : #4fb7c2;		// Default Complement Color
+$color-complement-edark1: darken($color-complement-e, 7%);
+$color-complement-edark2: darken($color-complement-e, 14%);
+$color-complement-f : #138A95;		// Default Complement Color
 
 // Base Colors: Base UI colors for 
 // ---------------
 $color-base-a : #ffffff;		// Was $white	
-$color-base-b : #f3f3f3;		// Default Background (Was $ash)
-$color-base-c : #b4b6b6;		// Default Border for (was $dark-ash);		Hover Background for $ash
-$color-base-d : #898d8d;		// Default Background Color ($silver);
-$color-base-e : #535d5f;		// Headings;	Border for $slate ; 		Hover Background for $slate
-$color-base-f : #1D2425;		// Paragraph Copy $dark-slate
-
-// Complementary Colors: For adding rich experience	
-// ---------------
-$color-complement-a : complement($color-brand-a);			
-$color-complement-b : complement($color-brand-b);		// Default Complement Color (light)
-$color-complement-c : complement($color-brand-c);		// Default Default Complement Color
-$color-complement-d : complement($color-brand-d);		// Default Default Complement Color
-$color-complement-e : complement($color-brand-e);		// Default Complement Color
-$color-complement-f : complement($color-brand-f);		// Default Complement Color
+$color-base-b : #f5f1e8;		// Default Background (Was $ash)
+$color-base-c : #e8e4db;		// Default Border for (was $dark-ash);		Hover Background for $ash
+$color-base-d : #999690;		// Default Background Color ($silver);
+$color-base-e : #555350;		// Headings;	Border for $slate ; 		Hover Background for $slate
+$color-base-f : #212121;		// Paragraph Copy $dark-slate
 
 // System Colors: Warnings, Alerts, and Star Ratings
 // ---------------

@@ -12,9 +12,22 @@
 $color-brand-a : #F1FFF5;			// Site Background Color
 $color-brand-b : #21B260;			// Primary Brand Colour
 $color-brand-c : #089746;			// Border for $ice;		Hover Background for $ice
-$color-brand-d : #267d92;			// Primary Background Color (dark blue primary)
-$color-brand-e : darken($color-brand-d, 7%);	// Border for $teal; 	Hover Background for $teal
-$color-brand-f : darken($color-brand-d, 14%);	// Link version of $teal
+$color-brand-d : #007733;			// Primary Background Color (dark blue primary)
+$color-brand-e : #007733;			// Border for $teal; 	Hover Background for $teal
+$color-brand-edark1: darken($color-brand-e, 7%);
+$color-brand-edark2: darken($color-brand-e, 14%);
+$color-brand-f : #002E14;			// Link version of $teal
+
+// Complementary Colors: For adding rich experience	
+// ---------------
+$color-complement-a : #ededed;			
+$color-complement-b : #ABAAAA;		// Default Complement Color (light)
+$color-complement-c : #7F7E7E;		// Default Default Complement Color
+$color-complement-d : #666666;		// Default Default Complement Color
+$color-complement-e : #494949;		// Default Complement Color
+$color-complement-edark1: darken($color-complement-e, 7%);
+$color-complement-edark2: darken($color-complement-e, 14%);
+$color-complement-f : #222222;		// Default Complement Color
 
 // Base Colors: Base UI colors for 
 // ---------------
@@ -24,15 +37,6 @@ $color-base-c : #e6e6e6;		// Default Border for (was $dark-ash);		Hover Backgrou
 $color-base-d : #909090;		// Default Background Color ($silver);
 $color-base-e : #303030;		// Headings;	Border for $slate ; 		Hover Background for $slate
 $color-base-f : #212121;		// Paragraph Copy $dark-slate
-
-// Complementary Colors: For adding rich experience	
-// ---------------
-$color-complement-a : #ededed;			
-$color-complement-b : #ABAAAA;		// Default Complement Color (light)
-$color-complement-c : #7F7E7E;		// Default Default Complement Color
-$color-complement-d : #666666;		// Default Default Complement Color
-$color-complement-e : #494949;		// Default Complement Color
-$color-complement-f : #222222;		// Default Complement Color
 
 // System Colors: Warnings, Alerts, and Star Ratings
 // ---------------
