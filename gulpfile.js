@@ -1,13 +1,12 @@
 'use strict';
 
 var gulp = require('gulp'),
-	watch = require('gulp-watch'),
-	plumber = require('gulp-plumber'),
 	gutil = require('gulp-util'),
+    plumber = require('gulp-plumber'),
     sass = require('gulp-sass'),
     hologram = require('gulp-hologram'),
-    browserSync = require('browser-sync').create(),
-    reload = browserSync.reload;
+    bs = require('browser-sync').create(),
+    reload = bs.reload;
 
 var paths = {
     shared: {
@@ -49,7 +48,7 @@ var onError = function (err) {
 gulp.task('aaholo', ['copyaa'], function() {
     // Build the CSS from the working directory
     gulp.src( paths.aa.holo )
-    .pipe( hologram({logging:true}) );
+    .pipe(hologram({logging:true}));
 });
 
 // Copy all necessary AAA files to the working directory
@@ -57,14 +56,15 @@ gulp.task('copyaa', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.aa.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.aa.work ) )
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/AAA'));
+        .pipe(gulp.dest('./Destination/AAA'))
+        .pipe(bs.stream());
 });
 
 // BUILD CA ==========================================
 gulp.task('caholo', ['copyca'], function() {
     // Build the CSS from the working directory
     gulp.src( paths.ca.holo )
-    .pipe( hologram({logging:true}) );
+    .pipe(hologram({logging:true}));
 });
 
 // Copy all necessary CA files to the working directory
@@ -72,14 +72,15 @@ gulp.task('copyca', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.ca.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.ca.work ) )
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/CA'));
+        .pipe(gulp.dest('./Destination/CA'))
+        .pipe(bs.stream());
 });
 
 // BUILD KEG ==========================================
 gulp.task('kegholo', ['copykeg'], function() {
     //Build the CSS from the working directory  
     gulp.src( paths.keg.holo )
-    .pipe( hologram({logging:true}) );
+    .pipe(hologram({logging:true}));
 });
 
 //Copy all necessary Keg files to the working directory
@@ -87,14 +88,15 @@ gulp.task('copykeg', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.keg.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.keg.work ) )
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/Keg'));        
+        .pipe(gulp.dest('./Destination/Keg'))
+        .pipe(bs.stream());        
 });
 
 // BUILD LD ==========================================
 gulp.task('ldholo', ['copyld'], function() {
     // Build the CSS from the working directory  
     gulp.src( paths.ld.holo )
-    .pipe( hologram({logging:true}) );
+    .pipe(hologram({logging:true}));
 });
 
 // Copy all necessary LD files to the working directory
@@ -102,53 +104,45 @@ gulp.task('copyld', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.ld.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.ld.work ) )
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/LD'));
+        .pipe(gulp.dest('./Destination/LD'))
+        .pipe(bs.stream());
 });
 
 // BUILD WINE ==========================================
 gulp.task('wcdholo', ['copywcd'], function() {
     // Build the CSS from the working directory  
     gulp.src( paths.wcd.holo )
-    .pipe( hologram({logging:true}) );
+    .pipe(hologram({logging:true}));
 });
 
 // Copy all necessary Wine files to the working directory
 gulp.task('copywcd', function() {
-    return gulp.src( [paths.shared.src + "/**/*.scss", paths.ld.src + "/**/*.scss"] )
+    return gulp.src( [paths.shared.src + "/**/*.scss", paths.wcd.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.wcd.work ) )
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/Wine'));
+        .pipe(gulp.dest('./Destination/Wine'))
+        .pipe(bs.stream());
 });
 
-// SERVE FILES ==========================================
-gulp.task('serve', function () {
-    // Serve files from the root of this project
-    browserSync.init({
+// SERVE FILES => BROWSERSYNC ==========================================
+gulp.task('serve', ['aaholo','caholo','kegholo','ldholo','wcdholo'], function () {
+    // Serve files from the Destinaion folder
+    bs.init({
         server: {
-            baseDir: "Destination/CA/"
+            baseDir: "Destination",
+            directory: true
         }
     });
-    gulp.watch('./Source/**').on("change", reload);
-});
 
-// BUILD SYLES ==========================================
-// Task copies files and runs hologram for each site.
-gulp.task('styles', ['aaholo','caholo','ldholo','kegholo','wcdholo']);
+    gulp.watch( paths.shared.src + '/*', ['aaholo','caholo','kegholo','ldholo','wcdholo']);
+    gulp.watch( paths.aa.src     + '/*', ['aaholo']);
+    gulp.watch( paths.ca.src     + '/*', ['caholo']);
+    gulp.watch( paths.keg.src    + '/*', ['kegholo']);
+    gulp.watch( paths.ld.src     + '/*', ['ldholo']);
+    gulp.watch( paths.wcd.src    + '/*', ['wcdholo']);
+    gulp.watch("./Destination/**/*.html").on('change', bs.reload);
 
-// ==========================================
-
-// Watch Files For Changes
-gulp.task('watch', function() {
-    gulp.watch( paths.shared.src, ['aaholo','caholo','kegholo','ldholo','wcdholo']);
-    gulp.watch( paths.aa.src, ['aaholo']);
-    gulp.watch( paths.ca.src, ['caholo']);
-    gulp.watch( paths.keg.src, ['kegholo']);
-    gulp.watch( paths.ld.src, ['ldholo']);
-    gulp.watch( paths.ld.src, ['wcdholo']);
-    gulp.watch('Source/**/*.scss',['styles']);
 });
 
 // Default task that runs with command 'gulp' and calls other tasks specified
-gulp.task('default', function() {
-    gulp.start('aaholo','caholo','kegholo','ldholo','wcdholo','watch');
-});
+gulp.task('default', ['serve']);
