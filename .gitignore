@@ -2,6 +2,7 @@
 # ===================
 node_modules
 Destination
+Source/.DS_Store
 
 # IGNORE FILES
 # ===================
