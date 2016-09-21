@@ -33,8 +33,8 @@ var paths = {
         holo: './hologram_config_ld.yml'
     },
     wcd: {
-        src: './Source/Wine',
-        work: './Working/Wine',
+        src: './Source/WCD',
+        work: './Working/WCD',
         holo: './hologram_config_wcd.yml'
     }        
 }
@@ -108,20 +108,24 @@ gulp.task('copyld', function() {
         .pipe(bs.stream());
 });
 
-// BUILD WINE ==========================================
+// BUILD WCD ==========================================
 gulp.task('wcdholo', ['copywcd'], function() {
     // Build the CSS from the working directory  
     gulp.src( paths.wcd.holo )
     .pipe(hologram({logging:true}));
 });
 
-// Copy all necessary Wine files to the working directory
+// Copy all necessary WCD files to the working directory
 gulp.task('copywcd', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.wcd.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.wcd.work ) )
         .pipe(sass().on('error', sass.logError))
+<<<<<<< HEAD
+        .pipe(gulp.dest('./Destination/WCD'));
+=======
         .pipe(gulp.dest('./Destination/Wine'))
         .pipe(bs.stream());
+>>>>>>> master
 });
 
 // SERVE FILES => BROWSERSYNC ==========================================

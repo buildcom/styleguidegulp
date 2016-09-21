@@ -2,15 +2,15 @@
 # All paths should be relative to there
 
 # The directory containing the source files to parse recursively
-source: ./Working/Wine
+source: ./Working/WCD
 
 # The directory that hologram will build to
-destination: ./Destination/Wine
+destination: ./Destination/WCD
 
 # The assets needed to build the docs (includes header.html,
 # footer.html, etc)
 # You may put doc related assets here too: images, css, etc.
-documentation_assets: ./doc_assets/Wine
+documentation_assets: ./doc_assets/WCD
 
 # Allow SCSS & Markdown files to be parsed
 custom_extensions:
