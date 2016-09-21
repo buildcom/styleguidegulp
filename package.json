@@ -1,6 +1,10 @@
 {
   "name": "styleguidegulp",
   "version": "1.0.0",
+  "repository" : { 
+   "type" : "git",
+   "url" : "https://github.com/livingdirect/styleguidegulp.git"
+  },
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
