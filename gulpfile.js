@@ -44,8 +44,7 @@ var paths = {
         keg: '../demandwareSites/app_keg_bootstrap/cartridge/sass/semantic',
         wcd: '../demandwareSites/app_wcd_bootstrap/cartridge/sass/semantic',
         shared: '../demandwareSites/app_bootstrap/cartridge/sass/semantic'
-    },
-    test: '/Users/sdavis/Desktop/test'
+    }
 }
 
 var onError = function (err) {  
