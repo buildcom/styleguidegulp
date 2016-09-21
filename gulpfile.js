@@ -120,12 +120,8 @@ gulp.task('copywcd', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.wcd.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.wcd.work ) )
         .pipe(sass().on('error', sass.logError))
-<<<<<<< HEAD
         .pipe(gulp.dest('./Destination/WCD'));
-=======
-        .pipe(gulp.dest('./Destination/Wine'))
         .pipe(bs.stream());
->>>>>>> master
 });
 
 // SERVE FILES => BROWSERSYNC ==========================================
