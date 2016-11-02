@@ -36,13 +36,53 @@ var paths = {
         src: './Source/WCD',
         work: './Working/WCD',
         holo: './hologram_config_wcd.yml'
-    }        
+    },
+    dw: {
+        aaa: '../demandwareSites/app_app_bootstrap/cartridge/sass/semantic',
+        ca: '../demandwareSites/app_ca_bootstrap/cartridge/sass/semantic',
+        ld: '../demandwareSites/app_ld_bootstrap/cartridge/sass/semantic',
+        keg: '../demandwareSites/app_keg_bootstrap/cartridge/sass/semantic',
+        wcd: '../demandwareSites/app_wcd_bootstrap/cartridge/sass/semantic',
+        shared: '../demandwareSites/app_bootstrap/cartridge/sass/semantic'
+    }
 }
 
 var onError = function (err) {  
   gutil.beep();
   console.log(err);
 };
+
+// Import from Demandware Sites repo
+gulp.task('import', function(){
+    // AAA
+    gulp.src(paths.dw.aaa + '/**').pipe(gulp.dest(paths.aa.src));
+    // CA
+    gulp.src(paths.dw.ca + '/**').pipe(gulp.dest(paths.ca.src));
+    // LD
+    gulp.src(paths.dw.ld + '/**').pipe(gulp.dest(paths.ld.src));
+    // KEG
+    gulp.src(paths.dw.keg + '/**').pipe(gulp.dest(paths.keg.src));
+    // WCD
+    gulp.src(paths.dw.wcd + '/**').pipe(gulp.dest(paths.wcd.src));
+    // SHARED
+    gulp.src(paths.dw.shared + '/**').pipe(gulp.dest(paths.shared.src));
+});
+
+// Export to Demandware Sites repo
+gulp.task('export', function(){
+    // AAA
+    gulp.src(paths.aa.src + '/**').pipe(gulp.dest(paths.dw.aaa));
+    // CA
+    gulp.src(paths.ca.src + '/**').pipe(gulp.dest(paths.dw.ca));
+    // LD
+    gulp.src(paths.ld.src + '/**').pipe(gulp.dest(paths.dw.ld));
+    // KEG
+    gulp.src(paths.keg.src + '/**').pipe(gulp.dest(paths.dw.keg));
+    // WCD
+    gulp.src(paths.wcd.src + '/**').pipe(gulp.dest(paths.dw.wcd));
+    // SHARED
+    gulp.src(paths.shared.src + '/**').pipe(gulp.dest(paths.dw.shared));
+});
 
 // BUILD AAA ==========================================
 gulp.task('aaholo', ['copyaa'], function() {
