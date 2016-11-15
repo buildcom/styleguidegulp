@@ -1,9 +1,9 @@
 {
   "name": "styleguidegulp",
   "version": "1.0.0",
-  "repository" : { 
-   "type" : "git",
-   "url" : "https://github.com/livingdirect/styleguidegulp.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/livingdirect/styleguidegulp.git"
   },
   "description": "",
   "main": "gulpfile.js",
@@ -20,5 +20,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.2"
+  }
 }

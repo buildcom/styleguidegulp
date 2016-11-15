@@ -6,16 +6,17 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     hologram = require('gulp-hologram'),
     bs = require('browser-sync').create(),
-    reload = bs.reload;
+    reload = bs.reload,
+    del = require('del');
 
 var paths = {
     shared: {
         src: './Source/Shared'
     },
-    aa: {
+    aaa: {
         src: './Source/AAA',
         work: './Working/AAA',
-        holo: './hologram_config_aa.yml'
+        holo: './hologram_config_aaa.yml'
     },    
     ca: {
         src: './Source/CA',
@@ -23,8 +24,8 @@ var paths = {
         holo: './hologram_config_ca.yml'
     },
     keg: {
-        src: './Source/Keg',
-        work: './Working/Keg',
+        src: './Source/KEG',
+        work: './Working/KEG',
         holo: './hologram_config_keg.yml'
     },
     ld: {
@@ -55,7 +56,7 @@ var onError = function (err) {
 // Import from Demandware Sites repo
 gulp.task('import', function(){
     // AAA
-    gulp.src(paths.dw.aaa + '/**').pipe(gulp.dest(paths.aa.src));
+    gulp.src(paths.dw.aaa + '/**').pipe(gulp.dest(paths.aaa.src));
     // CA
     gulp.src(paths.dw.ca + '/**').pipe(gulp.dest(paths.ca.src));
     // LD
@@ -71,7 +72,7 @@ gulp.task('import', function(){
 // Export to Demandware Sites repo
 gulp.task('export', function(){
     // AAA
-    gulp.src(paths.aa.src + '/**').pipe(gulp.dest(paths.dw.aaa));
+    gulp.src(paths.aaa.src + '/**').pipe(gulp.dest(paths.dw.aaa));
     // CA
     gulp.src(paths.ca.src + '/**').pipe(gulp.dest(paths.dw.ca));
     // LD
@@ -85,16 +86,16 @@ gulp.task('export', function(){
 });
 
 // BUILD AAA ==========================================
-gulp.task('aaholo', ['copyaa'], function() {
+gulp.task('aaaholo', ['copyaaa'], function() {
     // Build the CSS from the working directory
-    gulp.src( paths.aa.holo )
+    gulp.src( paths.aaa.holo )
     .pipe(hologram({logging:true}));
 });
 
 // Copy all necessary AAA files to the working directory
-gulp.task('copyaa', function() {
-    return gulp.src( [paths.shared.src + "/**/*.scss", paths.aa.src + "/**/*.scss"] )
-        .pipe( gulp.dest( paths.aa.work ) )
+gulp.task('copyaaa', function() {
+    return gulp.src( [paths.shared.src + "/**/*.scss", paths.aaa.src + "/**/*.scss"] )
+        .pipe( gulp.dest( paths.aaa.work ) )
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./Destination/AAA'))
         .pipe(bs.stream());
@@ -128,7 +129,7 @@ gulp.task('copykeg', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.keg.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.keg.work ) )
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/Keg'))
+        .pipe(gulp.dest('./Destination/KEG'))
         .pipe(bs.stream());        
 });
 
@@ -164,8 +165,19 @@ gulp.task('copywcd', function() {
         .pipe(bs.stream());
 });
 
+// REMOVE OLD FILES ===================================
+gulp.task('clean', function () {
+  return del([
+    // Obliterate these files
+    'Destination/**/*',
+    'Working/**/*',
+    // Save these files
+    '!index.md'
+  ]);
+});
+
 // SERVE FILES => BROWSERSYNC ==========================================
-gulp.task('serve', ['aaholo','caholo','kegholo','ldholo','wcdholo'], function () {
+gulp.task('serve', ['aaaholo','caholo','kegholo','ldholo','wcdholo'], function () {
     // Serve files from the Destinaion folder
     bs.init({
         server: {
@@ -174,8 +186,8 @@ gulp.task('serve', ['aaholo','caholo','kegholo','ldholo','wcdholo'], function ()
         }
     });
 
-    gulp.watch( paths.shared.src + '/*', ['aaholo','caholo','kegholo','ldholo','wcdholo']);
-    gulp.watch( paths.aa.src     + '/*', ['aaholo']);
+    gulp.watch( paths.shared.src + '/*', ['aaaholo','caholo','kegholo','ldholo','wcdholo']);
+    gulp.watch( paths.aaa.src     + '/*', ['aaaholo']);
     gulp.watch( paths.ca.src     + '/*', ['caholo']);
     gulp.watch( paths.keg.src    + '/*', ['kegholo']);
     gulp.watch( paths.ld.src     + '/*', ['ldholo']);
@@ -183,6 +195,9 @@ gulp.task('serve', ['aaholo','caholo','kegholo','ldholo','wcdholo'], function ()
     gulp.watch("./Destination/**/*.html").on('change', bs.reload);
 
 });
+
+// COMPILE ==========================================
+gulp.task('compile', ['aaaholo','caholo','kegholo','ldholo','wcdholo']);
 
 // Default task that runs with command 'gulp' and calls other tasks specified
 gulp.task('default', ['serve']);
