@@ -181,7 +181,7 @@ gulp.task('serve', ['aaaholo','caholo','kegholo','ldholo','wcdholo'], function (
     // Serve files from the Destinaion folder
     bs.init({
         server: {
-            baseDir: "Destination",
+            baseDir: "./",
             directory: true
         }
     });
