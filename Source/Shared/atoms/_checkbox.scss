@@ -2,9 +2,21 @@
 ---
 title: Checkboxes
 name: checkboxes
-category: Atoms
+parent: select-fields
 ---
 
 Document checkboxes here.
+
+
+```html_example
+
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+
+```
 
 */

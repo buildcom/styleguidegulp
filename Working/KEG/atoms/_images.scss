@@ -5,6 +5,14 @@ name: images
 category: Atoms
 ---
 
-Document images here.
+Images use `<img data-search="/">` attr with added classes `cld-pre cld-responsive img-responsive` for helper filters.
+
+
+
+```html_example
+
+<img class="cld-pre cld-responsive img-responsive" data-src="bucket/sub-bucket/file-name.jpg" />
+
+```
 
 */
