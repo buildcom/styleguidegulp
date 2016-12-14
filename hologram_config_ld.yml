@@ -10,7 +10,7 @@ destination: ./Destination/LD
 # The assets needed to build the docs (includes header.html,
 # footer.html, etc)
 # You may put doc related assets here too: images, css, etc.
-documentation_assets: ./doc_assets/LD
+documentation_assets: ./doc-templates/LD
 
 # Allow SCSS & Markdown files to be parsed
 custom_extensions:

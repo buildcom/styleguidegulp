@@ -94,10 +94,10 @@ gulp.task('aaaholo', ['copyaaa'], function() {
 
 // Copy all necessary AAA files to the working directory
 gulp.task('copyaaa', function() {
-    return gulp.src( [paths.shared.src + "/**/*.scss", paths.aaa.src + "/**/*.scss"] )
-        .pipe( gulp.dest( paths.aaa.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/AAA'))
+    return gulp.src([paths.shared.src + "/**/*.scss", paths.aaa.src + "/**/*.scss"])
+        .pipe(gulp.dest( paths.aaa.work))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/AAA/style'))
         .pipe(bs.stream());
 });
 
@@ -110,42 +110,42 @@ gulp.task('caholo', ['copyca'], function() {
 
 // Copy all necessary CA files to the working directory
 gulp.task('copyca', function() {
-    return gulp.src( [paths.shared.src + "/**/*.scss", paths.ca.src + "/**/*.scss"] )
-        .pipe( gulp.dest( paths.ca.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/CA'))
+    return gulp.src( [paths.shared.src + "/**/*.scss", paths.ca.src + "/**/*.scss"])
+        .pipe(gulp.dest(paths.ca.work))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/CA/style'))
         .pipe(bs.stream());
 });
 
 // BUILD KEG ==========================================
 gulp.task('kegholo', ['copykeg'], function() {
     //Build the CSS from the working directory  
-    gulp.src( paths.keg.holo )
+    gulp.src(paths.keg.holo)
     .pipe(hologram({logging:true}));
 });
 
 //Copy all necessary Keg files to the working directory
 gulp.task('copykeg', function() {
-    return gulp.src( [paths.shared.src + "/**/*.scss", paths.keg.src + "/**/*.scss"] )
-        .pipe( gulp.dest( paths.keg.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/KEG'))
+    return gulp.src( [paths.shared.src + "/**/*.scss", paths.keg.src + "/**/*.scss"])
+        .pipe(gulp.dest(paths.keg.work))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/KEG/style'))
         .pipe(bs.stream());        
 });
 
 // BUILD LD ==========================================
 gulp.task('ldholo', ['copyld'], function() {
     // Build the CSS from the working directory  
-    gulp.src( paths.ld.holo )
+    gulp.src(paths.ld.holo)
     .pipe(hologram({logging:true}));
 });
 
 // Copy all necessary LD files to the working directory
 gulp.task('copyld', function() {
-    return gulp.src( [paths.shared.src + "/**/*.scss", paths.ld.src + "/**/*.scss"] )
-        .pipe( gulp.dest( paths.ld.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/LD'))
+    return gulp.src( [paths.shared.src + "/**/*.scss", paths.ld.src + "/**/*.scss"])
+        .pipe(gulp.dest(paths.ld.work))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/LD/style'))
         .pipe(bs.stream());
 });
 
@@ -158,10 +158,10 @@ gulp.task('wcdholo', ['copywcd'], function() {
 
 // Copy all necessary WCD files to the working directory
 gulp.task('copywcd', function() {
-    return gulp.src( [paths.shared.src + "/**/*.scss", paths.wcd.src + "/**/*.scss"] )
-        .pipe( gulp.dest( paths.wcd.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/WCD'))
+    return gulp.src( [paths.shared.src + "/**/*.scss", paths.wcd.src + "/**/*.scss"])
+        .pipe(gulp.dest(paths.wcd.work))
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('./Destination/WCD/style'))
         .pipe(bs.stream());
 });
 
@@ -192,8 +192,7 @@ gulp.task('serve', ['aaaholo','caholo','kegholo','ldholo','wcdholo'], function (
     gulp.watch( paths.keg.src    + '/**/*', ['kegholo']);
     gulp.watch( paths.ld.src     + '/**/*', ['ldholo']);
     gulp.watch( paths.wcd.src    + '/**/*', ['wcdholo']);
-    gulp.watch( "./Destination/**/*.html").on('change', bs.reload);
-
+    // gulp.watch( "./Destination/**/*.html").on('change', bs.reload);
 });
 
 // COMPILE ==========================================
