@@ -5,6 +5,60 @@ name: buttons
 category: Atoms
 ---
 
-I'm the button description
+If your button performs an action, such as submitting a form or triggering some javascript event, then use a `<button>` element. A Primary button should only be used economically as per one primary cta is best per page, default and complementary buttons can be used secondary cta.  
 
-*/
+```html_example
+<button class="btn ld-btn-defaultCta" href="#">Default</button>
+<button class="btn ld-btn-primaryCta" href="#">Primary</button>
+<button class="btn ld-btn-compCta" href="#">Complementary</button>
+```
+
+*/ 
+
+/* CTA Buttons - Based on btn  */
+.ld-btn-defaultCta { color:$buttonDefaultText; background-color:$buttonDefaultBg; border-color:$buttonDefaultBorder; }
+.ld-btn-defaultCta:hover,
+.ld-btn-defaultCta:focus,
+.ld-btn-defaultCta:active,
+.ld-btn-defaultCta.active { color:$buttonDefaultHoverText; background-color:$buttonDefaultHoverBg; }
+
+/* CTA Primary - Based on btn  */
+.ld-btn-primaryCta { color:$buttonPrimaryText; background-color:$buttonPrimaryBg; border-color:$buttonPrimaryBorder; }
+.ld-btn-primaryCta:hover,
+.ld-btn-primaryCta:focus,
+.ld-btn-primaryCta:active,
+.ld-btn-primaryCta.active { color:$buttonPrimaryHoverText; background-color:$buttonPrimaryHoverBg; }
+
+/* CTA Default - Based on btn  */
+.ld-btn-defaultCtaDark { color:$buttonDarkText; background-color:$buttonDarkBg; border-color:$buttonDarkBorder; }
+.ld-btn-defaultCtaDark:hover,
+.ld-btn-defaultCtaDark:focus,
+.ld-btn-defaultCtaDark:active,
+.ld-btn-defaultCtaDark.active { color:$buttonDarkHoverText; background-color:$buttonDarkHoverBg; }
+
+/* CTA Primary - Based on btn  */
+.ld-btn-saveCta { color:$buttonSaveCtaText; background-color:$buttonSaveCtaBg; border-color:$buttonSaveCtaBorder; }
+.ld-btn-saveCta:hover,
+.ld-btn-saveCta:focus,
+.ld-btn-saveCta:active
+.ld-btn-saveCta.active { color:$buttonSaveCtaHoverText; background-color:$buttonSaveCtaHoverBg; }
+
+.ld-btn-cta { color:$buttonCtaText; background-color:$buttonCtaBg; border-color:$buttonCtaBorder; }
+.ld-btn-cta:hover,
+.ld-btn-cta:focus,
+.ld-btn-cta:active,
+.ld-btn-cta.active { color:$buttonCtaHoverText; background-color:$buttonCtaHoverBg; }
+
+.ld-btn-compCta { color:$buttonCompCtaText; background-color:$buttonCompCtaBg; border-color:$buttonCompCtaBorder; }
+.ld-btn-compCta:hover,
+.ld-btn-compCta:focus,
+.ld-btn-compCta:active,
+.ld-btn-compCta.active { color:$buttonCompCtaHoverText; background-color:$buttonCompCtaHoverBg; }
+
+.orderFromLDButton {
+  margin-bottom:15px;
+  img {
+    margin:0 auto;
+    width:150px;
+  }
+}

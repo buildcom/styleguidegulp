@@ -2,10 +2,17 @@
 ---
 title: Text Fields
 name: text-fields
-category: Atoms
-parent: select-field
+parent: select-fields
 ---
 
 Document text fields here.
+
+```html_example
+
+
+ <input type="text" class="form-control" placeholder="input text" aria-describedby="sizing-addon2">
+
+
+```
 
 */

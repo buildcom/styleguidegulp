@@ -186,13 +186,13 @@ gulp.task('serve', ['aaaholo','caholo','kegholo','ldholo','wcdholo'], function (
         }
     });
 
-    gulp.watch( paths.shared.src + '/*', ['aaaholo','caholo','kegholo','ldholo','wcdholo']);
-    gulp.watch( paths.aaa.src     + '/*', ['aaaholo']);
-    gulp.watch( paths.ca.src     + '/*', ['caholo']);
-    gulp.watch( paths.keg.src    + '/*', ['kegholo']);
-    gulp.watch( paths.ld.src     + '/*', ['ldholo']);
-    gulp.watch( paths.wcd.src    + '/*', ['wcdholo']);
-    gulp.watch("./Destination/**/*.html").on('change', bs.reload);
+    gulp.watch( paths.shared.src + '/**/*', ['aaaholo','caholo','kegholo','ldholo','wcdholo']);
+    gulp.watch( paths.aaa.src    + '/**/*', ['aaaholo']);
+    gulp.watch( paths.ca.src     + '/**/*', ['caholo']);
+    gulp.watch( paths.keg.src    + '/**/*', ['kegholo']);
+    gulp.watch( paths.ld.src     + '/**/*', ['ldholo']);
+    gulp.watch( paths.wcd.src    + '/**/*', ['wcdholo']);
+    gulp.watch( "./Destination/**/*.html").on('change', bs.reload);
 
 });
 

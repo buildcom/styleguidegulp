@@ -1,0 +1,30 @@
+/*doc
+---
+title: Grids
+name: grids
+category: Atoms
+---
+
+The grid system is an aid, not a guarantee. It permits a number of possible uses and each designer. The grid system is based on Bootstaps 12 column grid. All grids must be divisible by an even integer to maintain 12 column grid structure. There are many ways to use the grid including various media breakpoints and helping classes. See full documentation <a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a>
+
+```html_example
+
+<div class="row">
+  <div class="col-md-1">.col-1</div>
+  <div class="col-md-1">.col-2</div>
+  <div class="col-md-1">.col-3</div>
+  <div class="col-md-1">.col-4</div>
+  <div class="col-md-1">.col-5</div>
+  <div class="col-md-1">.col-6</div>
+  <div class="col-md-1">.col-7</div>
+  <div class="col-md-1">.col-8</div>
+  <div class="col-md-1">.col-9</div>
+  <div class="col-md-1">.col-10</div>
+  <div class="col-md-1">.col-11</div>
+  <div class="col-md-1">.col-12</div>
+</div>
+
+
+```
+
+*/
