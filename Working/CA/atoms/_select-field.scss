@@ -1,10 +1,18 @@
 /*doc
 ---
-title: Select Field
-name: select-field
+title: Select Fields
+name: select-fields
 category: Atoms
 ---
 
-Document select field here.
+Document select field here. See [text field documentation] [text-field] for more info.
+
+```html_example
+
+
+ <input type="text" class="form-control" placeholder="User input" aria-describedby="sizing-addon2">
+
+
+```
 
 */

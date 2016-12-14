@@ -5,6 +5,12 @@ name: links
 category: Atoms
 ---
 
-Document links here.
+Document `<a>` href text links here.
+
+```html_example
+
+<p>Lorem ipsum dolor sit amet <a href="/">Text Link <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+
+```
 
 */

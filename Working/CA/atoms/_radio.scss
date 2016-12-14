@@ -2,9 +2,21 @@
 ---
 title: Radio
 name: radio
-category: Atoms
+parent: select-fields
 ---
 
 Document radio buttons here.
+
+```html_example
+
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+
+```
+
 
 */
