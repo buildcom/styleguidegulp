@@ -1,5 +1,5 @@
 // File: STYLE GUIDE CSS
-// Description: This specifically for the styling of the document not intendent for themes
+// Description: This specifically for the styling of the document
 // Version: 0.1.0
 // ------------------------------------------------------------
 
@@ -34,6 +34,12 @@ footer {
   overflow-y: auto;
 }
 
+/* HEADINGS SECTIONS */
+
+h3.styleguide, h1.styleguide{
+  border-bottom: solid thin #ccc;
+  margin-top: 45px;
+}
 p.styleguide{
   padding: 0 0 1rem;
 }
@@ -145,9 +151,16 @@ table, table tr, table td, table th {
 table th {
   font-weight: bold;
 }
+/* GLYPH SECTION */
+.glyphsContainer{
+  margin-top: -1em;
+}
+.glyphs {
+  font-size: 140px;
+}
 
-/* Color Cards */
 
+/* CARDS COLOR SECTION */
 .card{
   border: 1px solid #999;
   border-radius:4px;
@@ -184,14 +197,7 @@ table th {
   margin:0 0 5px;
 }
 
-/* Question Style */
-.question {color: orange;}
-
-/* ZeroClipboard Styling Button */
-.copy-button {
-  position:absolute;
-  top:-1px;
-  right:-1px;
+#logoSvg .svgContainer{
+    padding: 15px;
+    border-radius: 4px;
 }
-
-.copy-button.zeroclipboard-is-hover { background-color: #cfedf3; }
