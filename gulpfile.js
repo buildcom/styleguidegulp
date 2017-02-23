@@ -16,35 +16,32 @@ var paths = {
     aaa: {
         src: './Source/AAA',
         work: './Working/AAA',
-        holo: './hologram_config_aaa.yml'
+        holo: './hologram_config_aaa.yml',
+        dest: './Destination/AAA'        
     },    
     ca: {
         src: './Source/CA',
         work: './Working/CA',
-        holo: './hologram_config_ca.yml'
+        holo: './hologram_config_ca.yml',
+        dest: './Destination/CA'        
     },
     keg: {
         src: './Source/KEG',
         work: './Working/KEG',
-        holo: './hologram_config_keg.yml'
+        holo: './hologram_config_keg.yml',
+        dest: './Destination/KEG'
     },
     ld: {
         src: './Source/LD',
         work: './Working/LD',
-        holo: './hologram_config_ld.yml'
+        holo: './hologram_config_ld.yml',
+        dest: './Destination/LD'        
     },
     wcd: {
         src: './Source/WCD',
         work: './Working/WCD',
-        holo: './hologram_config_wcd.yml'
-    },
-    dw: {
-        aaa: '../demandwareSites/app_app_bootstrap/cartridge/sass/semantic',
-        ca: '../demandwareSites/app_ca_bootstrap/cartridge/sass/semantic',
-        ld: '../demandwareSites/app_ld_bootstrap/cartridge/sass/semantic',
-        keg: '../demandwareSites/app_keg_bootstrap/cartridge/sass/semantic',
-        wcd: '../demandwareSites/app_wcd_bootstrap/cartridge/sass/semantic',
-        shared: '../demandwareSites/app_bootstrap/cartridge/sass/semantic'
+        holo: './hologram_config_wcd.yml',
+        dest: './Destination/WCD'
     }
 }
 
@@ -53,115 +50,118 @@ var onError = function (err) {
   console.log(err);
 };
 
-// Import from Demandware Sites repo
-gulp.task('import', function(){
-    // AAA
-    gulp.src(paths.dw.aaa + '/**').pipe(gulp.dest(paths.aaa.src));
-    // CA
-    gulp.src(paths.dw.ca + '/**').pipe(gulp.dest(paths.ca.src));
-    // LD
-    gulp.src(paths.dw.ld + '/**').pipe(gulp.dest(paths.ld.src));
-    // KEG
-    gulp.src(paths.dw.keg + '/**').pipe(gulp.dest(paths.keg.src));
-    // WCD
-    gulp.src(paths.dw.wcd + '/**').pipe(gulp.dest(paths.wcd.src));
-    // SHARED
-    gulp.src(paths.dw.shared + '/**').pipe(gulp.dest(paths.shared.src));
-});
-
-// Export to Demandware Sites repo
-gulp.task('export', function(){
-    // AAA
-    gulp.src(paths.aaa.src + '/**').pipe(gulp.dest(paths.dw.aaa));
-    // CA
-    gulp.src(paths.ca.src + '/**').pipe(gulp.dest(paths.dw.ca));
-    // LD
-    gulp.src(paths.ld.src + '/**').pipe(gulp.dest(paths.dw.ld));
-    // KEG
-    gulp.src(paths.keg.src + '/**').pipe(gulp.dest(paths.dw.keg));
-    // WCD
-    gulp.src(paths.wcd.src + '/**').pipe(gulp.dest(paths.dw.wcd));
-    // SHARED
-    gulp.src(paths.shared.src + '/**').pipe(gulp.dest(paths.dw.shared));
-});
-
 // BUILD AAA ==========================================
-gulp.task('aaaholo', ['copyaaa'], function() {
+gulp.task('aaaholo', ['aaasass'], function() {
     // Build the CSS from the working directory
     gulp.src( paths.aaa.holo )
     .pipe(hologram({logging:true}));
 });
 
+// Sass build to css for export
+gulp.task('aaasass',['copyaaa'], function() {
+    return gulp.src(paths.aaa.work + '/theme.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(paths.aaa.dest));
+}); 
+
 // Copy all necessary AAA files to the working directory
 gulp.task('copyaaa', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.aaa.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.aaa.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/AAA'))
+//        .pipe(sass().on('error', sass.logError))
+//        .pipe(gulp.dest('./Destination/AAA'))
         .pipe(bs.stream());
 });
 
 // BUILD CA ==========================================
-gulp.task('caholo', ['copyca'], function() {
+gulp.task('caholo', ['casass'], function() {
     // Build the CSS from the working directory
     gulp.src( paths.ca.holo )
     .pipe(hologram({logging:true}));
 });
 
+// Sass build to css for export
+gulp.task('casass',['copyca'], function() {
+    return gulp.src(paths.ca.work + '/theme.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(paths.ca.dest));
+}); 
+
 // Copy all necessary CA files to the working directory
 gulp.task('copyca', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.ca.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.ca.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/CA'))
+//        .pipe(sass().on('error', sass.logError))
+//        .pipe(gulp.dest('./Destination/CA'))
         .pipe(bs.stream());
 });
 
 // BUILD KEG ==========================================
-gulp.task('kegholo', ['copykeg'], function() {
+gulp.task('kegholo',['kegsass'], function() {
     //Build the CSS from the working directory  
     gulp.src( paths.keg.holo )
     .pipe(hologram({logging:true}));
 });
 
+// Sass build to css for export
+gulp.task('kegsass',['copykeg'], function() {
+    return gulp.src(paths.keg.work + '/theme.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(paths.keg.dest));
+}); 
+
 //Copy all necessary Keg files to the working directory
 gulp.task('copykeg', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.keg.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.keg.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/KEG'))
+//        .pipe(sass().on('error', sass.logError))
+//        .pipe(gulp.dest(paths.keg.dest))
         .pipe(bs.stream());        
 });
 
 // BUILD LD ==========================================
-gulp.task('ldholo', ['copyld'], function() {
+gulp.task('ldholo', ['ldsass'], function() {
     // Build the CSS from the working directory  
     gulp.src( paths.ld.holo )
     .pipe(hologram({logging:true}));
 });
 
+// Sass build to css for export
+gulp.task('ldsass',['copyld'], function() {
+    return gulp.src(paths.ld.work + '/theme.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(paths.ld.dest));
+}); 
+
 // Copy all necessary LD files to the working directory
 gulp.task('copyld', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.ld.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.ld.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/LD'))
+//        .pipe(sass().on('error', sass.logError))
+//        .pipe(gulp.dest('./Destination/LD'))
         .pipe(bs.stream());
 });
 
 // BUILD WCD ==========================================
-gulp.task('wcdholo', ['copywcd'], function() {
+gulp.task('wcdholo', ['wcdsass'], function() {
     // Build the CSS from the working directory  
     gulp.src( paths.wcd.holo )
     .pipe(hologram({logging:true}));
 });
 
+// Sass build to css for export
+gulp.task('wcdsass',['copywcd'], function() {
+    return gulp.src(paths.wcd.work + '/theme.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest(paths.wcd.dest));
+}); 
+
 // Copy all necessary WCD files to the working directory
 gulp.task('copywcd', function() {
     return gulp.src( [paths.shared.src + "/**/*.scss", paths.wcd.src + "/**/*.scss"] )
         .pipe( gulp.dest( paths.wcd.work ) )
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./Destination/WCD'))
+//        .pipe(sass().on('error', sass.logError))
+//        .pipe(gulp.dest('./Destination/WCD'))
         .pipe(bs.stream());
 });
 
@@ -172,7 +172,7 @@ gulp.task('clean', function () {
     'Destination/**/*',
     'Working/**/*',
     // Save these files
-    '!index.md'
+    '!index.md',
   ]);
 });
 

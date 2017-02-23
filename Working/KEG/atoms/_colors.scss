@@ -5,7 +5,7 @@ name: colors
 category: Atoms
 ---
 
-These are the **primary** theme colors that make up the web color pallet. There are additional colors available that are used to add depth and enrich this experience. Within the complementary, system and base color pallet you can extend the primary brand colors.
+These are the **primary** theme colors that make up the web color pallet. There are additional colors available that are used to add depth and enrich this experience. Within the complementary, system and base color pallet you can extend the primary colors.
 
 <div class="row">
     <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
@@ -61,8 +61,6 @@ These are the **primary** theme colors that make up the web color pallet. There 
 */
 
 // kegerator site specific color variables.
-
-//orange 
 $brand-a:     #fff;
 $brand-b:     #dd3300;
 $brand-c:     #dd3300;
@@ -90,6 +88,7 @@ $base-d:     #8a8989;
 $base-e:     #303030;
 $base-f:     #212121;
 
+//alerts
 $system-a:     #ff9900; //emphasis or warning
 $system-b:     #168e60; //add to cart
 $system-bdark1: darken($system-b, 7%);
@@ -100,3 +99,31 @@ $system-e:     #cc0000; //discount or savings
 $system-edark1: darken($system-e, 7%);
 $system-edark2: darken($system-e, 14%); 
 $system-f:     #990000; //final price
+
+//base mapping
+.bg-color-base-a  { background-color: $base-a;} 
+.bdr-color-base-b, .bg-color-base-b  { border-color: $base-b; background-color: $base-b;} 
+.bdr-color-base-c   {  border-color: $base-c;}
+.bg-color-base-c    {  background-color:$base-c;}
+.bdr-color-base-d, .bg-color-base-d { border-color: $base-d; background-color:$base-d;}
+.bdr-color-base-e, .bg-color-base-e { border-color: $base-e; background-color:$base-e;}
+.bdr-color-base-f, .bg-color-base-f { border-color: $base-f; background-color:$base-f;}
+
+//brand mapping
+.color-brand-a, .bg-color-brand-a  { color: $brand-a; background-color: $brand-a;} 
+.color-brand-b, .bg-color-brand-b  { color: $brand-b; background-color: $brand-b;} 
+.color-brand-c, .bg-color-brand-c  { color: $brand-c; background-color:$brand-c;}
+.color-brand-d, .bg-color-brand-d  { color: $brand-d; background-color:$brand-d;}
+.color-brand-e, .bg-color-brand-e  { color: $brand-e; background-color:$brand-e;}
+.color-brand-f, .bg-color-brand-f  { color: $brand-f; background-color:$brand-f;}
+
+//system mapping
+.color-system-a, .bg-color-system-a  { color: $system-a; background-color: $system-a;} 
+.color-system-b, .bg-color-system-b  { color: $system-b; background-color: $system-b;} 
+.color-system-c, .bg-color-system-c  { color: $system-c; background-color:$system-c;}
+.color-system-d, .bg-color-system-d  { color: $system-d; background-color:$system-d;}
+.color-system-e, .bg-color-system-e  { color: $system-e; background-color:$system-e;}
+.color-system-f, .bg-color-system-f  { color: $system-f; background-color:$system-f;}
+
+
+

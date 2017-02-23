@@ -1,0 +1,53 @@
+/*doc
+---
+title: Fonts
+name: font-families
+parent: typography
+---
+
+Using web font `font-face` rule, you can specify a non "web-safe" font for the designated use of branded sites. We 
+organize font families by rules of Typography. See <a class="styleguide" 
+href="https://fonts.google.com/specimen/Roboto+Condensed">Google Fonts</a>.
+
+<h3 class="brandFontA">Robot Condensed</h3>
+
+<p class="brandFontA">
+A B C D E F G H I J K L M N O P Q R S T U V X Y Z
+a b c d e f g h i j k l m n o p q r s t u v x y z
+1 2 3 4 5 6 7 8 9 0 - = _ + < > ? / . , : "
+</p>
+
+
+*/
+
+$brandFontA: 'Roboto Condensed', sans-serif;	
+
+@font-face{
+	font-family: 'Roboto Slab', sans-serif;	
+	font-family: 'Roboto Condensed', sans-serif;
+	src: url(https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto+Slab:400,700);
+	}
+
+/* Style Guide Rules */
+h3.brandFontA{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 48px;
+	color: $base-e;
+	text-transform: uppercase;
+  	}
+h3.brandFontB{
+	font-family: 'Roboto Slab', sans-serif;
+	font-weight: bold;
+	font-size: 48px;
+	color: $base-e;
+	text-transform: uppercase;
+	}
+p.brandFontA{
+	font-family: 'Roboto Condensed', sans-serif;
+	color: $base-d;
+	font-size: 21px;
+    letter-spacing: 3px;
+}
+.glyphs {
+	font-family: $brandFontA;
+}
