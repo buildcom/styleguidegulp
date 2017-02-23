@@ -5,7 +5,7 @@ name: buttons
 category: Atoms
 ---
 
-If your button performs an action, such as submitting a form or triggering some javascript event, then use a `<button>` element. A Primary button should only be used economically as per one primary cta is best per page, default and complementary buttons can be used secondary cta.  
+If your call to action (cta) performs an action, such as submitting a form or triggering some javascript event, then use a `<button>` element. A Primary button should only be used economically as per one primary cta per page is best practice, default and complementary buttons can be used as secondary to a primary cta.
 
 ```html_example
 <button class="btn ld-btn-defaultCta" href="#">Default</button>
