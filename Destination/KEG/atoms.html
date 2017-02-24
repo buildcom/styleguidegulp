@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+  <head>
+    
+    <title>Atoms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="build/doc.css">
+    <link rel="stylesheet" href="theme.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- EXTERNAL -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto+Slab:400,700" rel="stylesheet">
+  
+  </head>
+  <body>
+    <div class="container">
+      
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Kegerator.com</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle visible-lg" data-toggle="dropdown" role="button" aria-expanded="false">Jump to <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                
+                  <li><a href="#buttons">Buttons</a></li>
+                
+                  <li><a href="#colors">Colors</a></li>
+                
+                  <li><a href="#feedback">Feedback</a></li>
+                
+                  <li><a href="#alerts">Alerts</a></li>
+                
+                  <li><a href="#badges">Badges</a></li>
+                
+                  <li><a href="#labels">Labels</a></li>
+                
+                  <li><a href="#popover">Popover</a></li>
+                
+                  <li><a href="#tooltips">Tooltips</a></li>
+                
+                  <li><a href="#grids">Grids</a></li>
+                
+                  <li><a href="#icons">Icons</a></li>
+                
+                  <li><a href="#images">Images</a></li>
+                
+                  <li><a href="#links">Links</a></li>
+                
+                  <li><a href="#select-fields">Select Fields</a></li>
+                
+                  <li><a href="#checkboxes">Checkboxes</a></li>
+                
+                  <li><a href="#radio">Radio</a></li>
+                
+                  <li><a href="#text-fields">Text Fields</a></li>
+                
+                  <li><a href="#typography">Typography</a></li>
+                
+                  <li><a href="#font-families">Fonts</a></li>
+                
+                  <li><a href="#headings">Headings</a></li>
+                
+                  <li><a href="#leading">Leading</a></li>
+                </ul>
+              </li>
+              
+                <li><a href="molecules.html">Molecules</a></li>
+              
+                <li><a href="atoms.html">Atoms</a></li>
+              
+                <li><a href="organisms.html">Organisms</a></li>
+              
+                <li><a href="templates.html">Templates</a></li>
+                     
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container -->
+      </nav>
+
+      <section class="content">
+        <div class="row">
+          <ul class="nav nav-pills" data-spy="affix" data-offset-top="200">
+            <li class="dropdown">
+              <a href="#" class="btn dropdown-toggle visible-lg" data-toggle="dropdown" role="button" aria-expanded="false">Jump to <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+              
+                <li><a href="#buttons">Buttons</a></li>
+              
+                <li><a href="#colors">Colors</a></li>
+              
+                <li><a href="#feedback">Feedback</a></li>
+              
+                <li><a href="#alerts">Alerts</a></li>
+              
+                <li><a href="#badges">Badges</a></li>
+              
+                <li><a href="#labels">Labels</a></li>
+              
+                <li><a href="#popover">Popover</a></li>
+              
+                <li><a href="#tooltips">Tooltips</a></li>
+              
+                <li><a href="#grids">Grids</a></li>
+              
+                <li><a href="#icons">Icons</a></li>
+              
+                <li><a href="#images">Images</a></li>
+              
+                <li><a href="#links">Links</a></li>
+              
+                <li><a href="#select-fields">Select Fields</a></li>
+              
+                <li><a href="#checkboxes">Checkboxes</a></li>
+              
+                <li><a href="#radio">Radio</a></li>
+              
+                <li><a href="#text-fields">Text Fields</a></li>
+              
+                <li><a href="#typography">Typography</a></li>
+              
+                <li><a href="#font-families">Fonts</a></li>
+              
+                <li><a href="#headings">Headings</a></li>
+              
+                <li><a href="#leading">Leading</a></li>
+              
+              </ul>
+            </li>
+          </ul>
+        </div>
+    <h1></h1>
+<h1 id="buttons" class="styleguide">Buttons</h1>
+<p class="styleguide">If your call to action (cta) performs an action, such as submitting a form or triggering some javascript event, then use a <code class="styleguide">&lt;button&gt;</code> element. A Primary button should only be used economically as per one primary cta per page is best practice, default and complementary buttons can be used as secondary to a primary cta.</p><div class="codeExample">
+  <div class="exampleOutput">
+    <button class="btn ld-btn-defaultCta" href="#">Default</button>
+<button class="btn ld-btn-primaryCta" href="#">Primary</button>
+<button class="btn ld-btn-compCta" href="#">Complementary</button>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn ld-btn-defaultCta"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn ld-btn-primaryCta"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn ld-btn-compCta"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Complementary<span class="nt">&lt;/button&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="colors" class="styleguide">Colors</h1>
+<p class="styleguide">These are the <strong>primary</strong> theme colors that make up the web color pallet. There are additional colors available that are used to add depth and enrich this experience. Within the complementary, system and base color pallet you can extend the primary colors.</p>
+<div class="row">
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card bg-color-base-a bdr-color-base-c">
+            <span>
+                <code>$color-base-a</code><br>
+                <code>#ffffff</code>
+            </span>
+        </div>
+        <p class="center-block">
+            <strong>Base Palette</strong><br>
+            The base color for the site and all neutral background content.
+        </p>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card bg-color-brand-b bdr-color-brand-c">
+            <span>
+                <code>$color-brand-b</code><br>
+                <code>#dd3300</code>
+            </span>
+        </div>
+        <p class="center-block">
+            <strong>Brand Palette</strong><br>
+            The primary brand color is used for active brand elements.
+        </p>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card bg-color-brand-d bdr-color-brand-e">
+            <span>
+                <code>$color-brand-f</code><br>
+                <code>#bb3300</code>
+            </span>
+        </div>
+        <p class="center-block">
+            <strong>Brand Palette</strong><br>
+            A secondary brand color is related to the primary brand.
+        </p>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card bg-color-base-b bdr-color-base-c">
+            <span>
+                <code>$color-base-b</code><br>
+                <code>#f2f2f2</code>
+            </span>
+        </div>
+        <p class="center-block">
+            <strong>Base Palette</strong><br>
+            The base background color for ui elements with a neutral base.
+        </p>
+    </div>
+</div>
+
+<h1 id="feedback" class="styleguide">Feedback</h1>
+
+<ul class="section-nav">
+  <li><a href="#alerts">Alerts</a></li>
+  <li><a href="#badges">Badges</a></li>
+  <li><a href="#labels">Labels</a></li>
+  <li><a href="#popover">Popover</a></li>
+  <li><a href="#tooltips">Tooltips</a></li>
+</ul>
+<p class="styleguide">Any informative elements or interactions with alerts, progress and feedback mechanisms explained here.</p>
+<h2 id="alerts" class="styleguide">Alerts</h2>
+<p class="styleguide">Alerts are a feedback mechanisms where you need an ever green notice...</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+<div class="alert alert-warning">
+EXAMPLE: For more important information regarding content or action. <a href="#" data-toggle="modal" data-target="">Click here</a> 
+</div>
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span><span class="nt">&gt;</span>
+EXAMPLE: For more important information regarding content or action. <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">""</span><span class="nt">&gt;</span>Click here<span class="nt">&lt;/a&gt;</span> 
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="badges" class="styleguide">Badges</h2>
+<p class="styleguide">Look at that badge being a <span>bad***</span> badger.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+<button class="btn btn-primary" type="button">
+  Messages <span class="badge">4</span>
+</button>
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+  Messages <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/button&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="labels" class="styleguide">Labels</h2>
+<div class="codeExample">
+  <div class="exampleOutput">
+    
+  <h3>Example <span class="label label-default">Label</span></h3>   
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;h3&gt;</span>Example <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"label label-default"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/span&gt;&lt;/h3&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="popover" class="styleguide">Popover</h2>
+<p class="styleguide">Add small overlays of content, like those...</p>
+<h2 id="tooltips" class="styleguide">Tooltips</h2>
+<p class="styleguide">A message that appears when a cursor is positioned over an icon, image, hyperlink, or other element in a user interface.
+<br/><a ref="http://getbootstrap.com/javascript/#tooltips">http://getbootstrap.com/javascript/#tooltips</a></p>
+<h1 id="grids" class="styleguide">Grids</h1>
+<p class="styleguide">The grid system is an aid, not a guarantee. It permits a number of possible uses for each designer. The grid system is based on Bootstaps 12 column grid system. All grids must be divisible by an even integer to maintain a 12 column grid structure. There are many ways to use a grid with various media breakpoints and helper classes. See the full documentation <a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a></p><div class="codeExample">
+  <div class="exampleOutput">
+    
+<div class="row">
+  <div class="col-md-1">.col-1</div>
+  <div class="col-md-1">.col-2</div>
+  <div class="col-md-1">.col-3</div>
+  <div class="col-md-1">.col-4</div>
+  <div class="col-md-1">.col-5</div>
+  <div class="col-md-1">.col-6</div>
+  <div class="col-md-1">.col-7</div>
+  <div class="col-md-1">.col-8</div>
+  <div class="col-md-1">.col-9</div>
+  <div class="col-md-1">.col-10</div>
+  <div class="col-md-1">.col-11</div>
+  <div class="col-md-1">.col-12</div>
+</div>
+
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-1<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-2<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-3<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-4<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-5<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-6<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-7<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-8<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-9<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-10<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-11<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-md-1"</span><span class="nt">&gt;</span>.col-12<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="icons" class="styleguide">Icons</h1>
+<p class="styleguide">This icon font contains only the icons we actually use and need from the Font Awesome font family.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+<i class="icon-file"></i> icon-file
+
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"icon-file"</span><span class="nt">&gt;&lt;/i&gt;</span> icon-file</pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="images" class="styleguide">Images</h1>
+<p class="styleguide">Images use <code class="styleguide">&lt;img data-search=&quot;/&quot;&gt;</code> attr with added classes <code class="styleguide">cld-pre cld-responsive img-responsive</code> for helper filters.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+<img class="cld-pre cld-responsive img-responsive" data-src="bucket/sub-bucket/file-name.jpg" />
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"cld-pre cld-responsive img-responsive"</span> <span class="na">data-src=</span><span class="s">"bucket/sub-bucket/file-name.jpg"</span> <span class="nt">/&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="links" class="styleguide">Links</h1>
+<p class="styleguide">Document <code class="styleguide">&lt;a&gt;</code> href text links here.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+<p>Lorem ipsum dolor sit amet <a href="/">Text Link <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;p&gt;</span>Lorem ipsum dolor sit amet <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span><span class="nt">&gt;</span>Text Link <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"fa fa-chevron-right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/i&gt;&lt;/a&gt;&lt;/p&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="select-fields" class="styleguide">Select Fields</h1>
+
+<ul class="section-nav">
+  <li><a href="#checkboxes">Checkboxes</a></li>
+  <li><a href="#radio">Radio</a></li>
+  <li><a href="#text-fields">Text Fields</a></li>
+</ul>
+<p class="styleguide">Document select field here. See text field documentation for more info.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+
+ <input type="text" class="form-control" placeholder="User input" aria-describedby="sizing-addon2">
+
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"User input"</span> <span class="na">aria-describedby=</span><span class="s">"sizing-addon2"</span><span class="nt">&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="checkboxes" class="styleguide">Checkboxes</h2>
+<p class="styleguide">Document checkboxes here.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /input-group --&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="radio" class="styleguide">Radio</h2>
+<p class="styleguide">Document radio buttons here.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-addon"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span><span class="c">&lt;!-- /input-group --&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="text-fields" class="styleguide">Text Fields</h2>
+<p class="styleguide">Document text fields here.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+
+ <input type="text" class="form-control" placeholder="input text" aria-describedby="sizing-addon2">
+
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"input text"</span> <span class="na">aria-describedby=</span><span class="s">"sizing-addon2"</span><span class="nt">&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="typography" class="styleguide">Typography</h1>
+
+<ul class="section-nav">
+  <li><a href="#font-families">Fonts</a></li>
+  <li><a href="#headings">Headings</a></li>
+  <li><a href="#leading">Leading</a></li>
+</ul>
+<p class="styleguide">Typography is an important element that makes up our websites presentation and structure. The font families used span from display to body font sizes. These specified fonts choices and rules make up our whole typographic system. The uses of type will be explained here.</p>
+<h2 id="font-families" class="styleguide">Fonts</h2>
+<p class="styleguide">Using web font <code class="styleguide">font-face</code> rule, you can specify a non &quot;web-safe&quot; font for the designated use of branded sites. We 
+organize font families by rules of Typography. See <a class="styleguide" 
+href="https://fonts.google.com/specimen/Roboto+Condensed">Google Fonts</a>.</p>
+<h3 class="brandFontA">Robot Condensed</h3>
+
+<p class="brandFontA">
+A B C D E F G H I J K L M N O P Q R S T U V X Y Z
+a b c d e f g h i j k l m n o p q r s t u v x y z
+1 2 3 4 5 6 7 8 9 0 - = _ + < > ? / . , : "
+</p>
+
+<h2 id="headings" class="styleguide">Headings</h2>
+<p class="styleguide">Headings or <code class="styleguide">&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;</code> titles are used for the presentation and heirarchy of information on a page. Like a primary cta&#39;s it is best practice to keep your page titles limited to one h1 heading per page. It is common to use multiple headings, please denote the heirarchy of importance of each title to ensure best SEO practices.</p><div class="codeExample">
+  <div class="exampleOutput">
+    
+<h1>h1. 30px Heading</h1>
+<h2>h2. 24px Heading</h2>
+<h3>h3. 18px Heading</h3>
+<h4>h4. 16px Heading</h4>
+<h5>h5. 13px Heading</h5>
+<h6>h6. 12px Heading</h6>
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;h1&gt;</span>h1. 30px Heading<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;h2&gt;</span>h2. 24px Heading<span class="nt">&lt;/h2&gt;</span>
+<span class="nt">&lt;h3&gt;</span>h3. 18px Heading<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;h4&gt;</span>h4. 16px Heading<span class="nt">&lt;/h4&gt;</span>
+<span class="nt">&lt;h5&gt;</span>h5. 13px Heading<span class="nt">&lt;/h5&gt;</span>
+<span class="nt">&lt;h6&gt;</span>h6. 12px Heading<span class="nt">&lt;/h6&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="leading" class="styleguide">Leading</h2>
+<p class="styleguide">The space between lines of type is traditionally known as leading. We define our web-leading as line-height, this controls the vertical rhythm of the typographic grid. Leading will be defined as part of the typography system with the exceptional helper class to break the rules where needed.</p>      </section>
+      <footer>
+        <p>This documentation generated using <a href="http://github.com/trulia/hologram">Hologram</a>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,799 @@
+/*doc
+---
+title: Alerts
+name: alerts
+parent: feedback
+---
+
+Alerts are a feedback mechanisms where you need an ever green notice...
+
+```html_example
+
+<div class="alert alert-warning">
+EXAMPLE: For more important information regarding content or action. <a href="#" data-toggle="modal" data-target="">Click here</a> 
+</div>
+
+```
+
+*/
+/*doc
+---
+title: Badges
+name: badges
+parent: feedback
+---
+
+Look at that badge being a <span>bad***</span> badger.
+
+```html_example
+
+<button class="btn btn-primary" type="button">
+  Messages <span class="badge">4</span>
+</button>
+
+```
+
+*/
+/*doc
+---
+title: Buttons
+name: buttons
+category: Atoms
+---
+
+If your call to action (cta) performs an action, such as submitting a form or triggering some javascript event, then use a `<button>` element. A Primary button should only be used economically as per one primary cta per page is best practice, default and complementary buttons can be used as secondary to a primary cta.
+
+```html_example
+<button class="btn ld-btn-defaultCta" href="#">Default</button>
+<button class="btn ld-btn-primaryCta" href="#">Primary</button>
+<button class="btn ld-btn-compCta" href="#">Complementary</button>
+```
+
+*/
+/*doc
+---
+title: Checkboxes
+name: checkboxes
+parent: select-fields
+---
+
+Document checkboxes here.
+
+
+```html_example
+
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="checkbox" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+
+```
+
+*/
+/*doc
+---
+title: Colors
+name: colors
+category: Atoms
+---
+
+These are the **primary** theme colors that make up the web color pallet. There are additional colors available that are used to add depth and enrich this experience. Within the complementary, system and base color pallet you can extend the primary brand colors.
+
+<div class="row">
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card bg-color-base-a bdr-color-base-c">
+            <span>
+                <code>$color-base-a</code><br>
+                <code>#ffffff</code>
+            </span>
+        </div>
+        <p class="center-block">
+            <strong>Base Palette</strong><br>
+            The base color for the site and all neutral background content.
+        </p>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card bg-color-brand-b bdr-color-brand-c">
+            <span>
+                <code>$color-brand-b</code><br>
+                <code>#21B260</code>
+            </span>
+        </div>
+        <p class="center-block">
+            <strong>Brand Palette</strong><br>
+            The primary brand color is used for active brand elements.
+        </p>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card bg-color-brand-d bdr-color-brand-e">
+            <span>
+                <code>$color-brand-a</code><br>
+                <code>#F1FFF5</code>
+            </span>
+        </div>
+        <p class="center-block">
+            <strong>Brand Palette</strong><br>
+            A secondary brand color is related to the primary brand.
+        </p>
+    </div>
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+        <div class="card bg-color-base-b bdr-color-base-c">
+            <span>
+                <code>$color-base-b</code><br>
+                <code>#f2f2f2</code>
+            </span>
+        </div>
+        <p class="center-block">
+            <strong>Base Palette</strong><br>
+            The base background color for ui elements with a neutral base.
+        </p>
+    </div>
+</div>
+
+*/
+.bg-color-base-a {
+  background-color: #fff; }
+
+.bdr-color-base-b, .bg-color-base-b {
+  border-color: #f2f2f2;
+  background-color: #f2f2f2; }
+
+.bdr-color-base-c {
+  border-color: #e6e6e6; }
+
+.bg-color-base-c {
+  background-color: #e6e6e6; }
+
+.bdr-color-base-d, .bg-color-base-d {
+  border-color: #909090;
+  background-color: #909090; }
+
+.bdr-color-base-e, .bg-color-base-e {
+  border-color: #303030;
+  background-color: #303030; }
+
+.bdr-color-base-f, .bg-color-base-f {
+  border-color: #212121;
+  background-color: #212121; }
+
+.color-brand-a, .bg-color-brand-a {
+  color: #F1FFF5;
+  background-color: #F1FFF5; }
+
+.color-brand-b, .bg-color-brand-b {
+  color: #21B260;
+  background-color: #21B260; }
+
+.color-brand-c, .bg-color-brand-c {
+  color: #089746;
+  background-color: #089746; }
+
+.color-brand-d, .bg-color-brand-d {
+  color: #007733;
+  background-color: #007733; }
+
+.color-brand-e, .bg-color-brand-e {
+  color: #007733;
+  background-color: #007733; }
+
+.color-brand-f, .bg-color-brand-f {
+  color: #002E14;
+  background-color: #002E14; }
+
+.color-system-a, .bg-color-system-a {
+  color: #ff9900;
+  background-color: #ff9900; }
+
+.color-system-b, .bg-color-system-b {
+  color: #f47421;
+  background-color: #f47421; }
+
+.color-system-c, .bg-color-system-c {
+  color: #60b760;
+  background-color: #60b760; }
+
+.color-system-d, .bg-color-system-d {
+  color: #bd4b4b;
+  background-color: #bd4b4b; }
+
+.color-system-e, .bg-color-system-e {
+  color: #cc0000;
+  background-color: #cc0000; }
+
+.color-system-f, .bg-color-system-f {
+  color: #990000;
+  background-color: #990000; }
+
+/*doc
+---
+title: Feedback
+name: feedback
+category: Atoms
+---
+
+Any informative elements or interactions with alerts, progress and feedback mechanisms explained here.
+
+*/
+/*doc
+---
+title: Fonts
+name: font-families
+parent: typography
+---
+
+Using `@import url(//fonts.googleapis.com/css?family=Open+Sans);` web font `font-family` rule, you can specify a non "web-safe" font for the designated use on our sites. We organize font families by symantical classes... 
+
+<h3 class="brandFontA">Source Sans Pro</h3>
+
+<p class="brandFontA">
+A B C D E F G H I J K L M N O P Q R S T U V X Y Z
+a b c d e f g h i j k l m n o p q r s t u v x y z
+1 2 3 4 5 6 7 8 9 0 - = _ + < > ? / . , : "
+</p>
+
+<h3 class="exFontFamily-system">Font Family Base</h3>
+
+<p class="exFontFamily-class">
+A B C D E F G H I J K L M N O P Q R S T U V X Y Z
+a b c d e f g h i j k l m n o p q r s t u v x y z
+1 2 3 4 5 6 7 8 9 0 - = _ + < > ? / . , : "
+</p>
+
+*/
+@font-face {
+  font-family: 'Source Sans Pro', sans-serif;
+  src: url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:600); }
+
+/* Style Guide Rules */
+h3.brandFontA {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 48px;
+  color: #303030;
+  text-transform: uppercase; }
+
+p.brandFontA {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #909090;
+  font-size: 21px;
+  letter-spacing: 3px; }
+
+.glyphs {
+  font-family: "Source Sans Pro", sans-serif; }
+
+/*doc
+---
+title: Grids
+name: grids
+category: Atoms
+---
+
+The grid system is an aid, not a guarantee. It permits a number of possible uses for each designer. The grid system is based on Bootstaps 12 column grid system. All grids must be divisible by an even integer to maintain a 12 column grid structure. There are many ways to use a grid with various media breakpoints and helper classes. See the full documentation <a href="http://getbootstrap.com/css/#grid">http://getbootstrap.com/css/#grid</a>
+
+```html_example
+
+<div class="row">
+  <div class="col-md-1">.col-1</div>
+  <div class="col-md-1">.col-2</div>
+  <div class="col-md-1">.col-3</div>
+  <div class="col-md-1">.col-4</div>
+  <div class="col-md-1">.col-5</div>
+  <div class="col-md-1">.col-6</div>
+  <div class="col-md-1">.col-7</div>
+  <div class="col-md-1">.col-8</div>
+  <div class="col-md-1">.col-9</div>
+  <div class="col-md-1">.col-10</div>
+  <div class="col-md-1">.col-11</div>
+  <div class="col-md-1">.col-12</div>
+</div>
+
+
+```
+
+*/
+/*doc
+---
+title: Headings
+name: headings
+parent: typography
+---
+
+Headings or `<h1>, <h2>, <h3>` titles are used for the presentation and heirarchy of information on a page. Like a primary cta's it is best practice to keep your page titles limited to one h1 heading per page. It is common to use multiple headings, please denote the heirarchy of importance of each title to ensure best SEO practices.
+ 
+```html_example
+
+<h1>h1. 30px Heading</h1>
+<h2>h2. 24px Heading</h2>
+<h3>h3. 18px Heading</h3>
+<h4>h4. 16px Heading</h4>
+<h5>h5. 13px Heading</h5>
+<h6>h6. 12px Heading</h6>
+
+```
+
+*/
+/*doc
+---
+title: Icons
+name: icons
+category: Atoms
+---
+
+This icon font contains only the icons we actually use and need from the Font Awesome font family.
+
+```html_example
+
+<i class="icon-file"></i> icon-file
+
+
+```
+
+*/
+/*doc
+---
+title: Images
+name: images
+category: Atoms
+---
+
+Images use `<img data-search="/">` attr with added classes `cld-pre cld-responsive img-responsive` for helper filters.
+
+
+
+```html_example
+
+<img class="cld-pre cld-responsive img-responsive" data-src="bucket/sub-bucket/file-name.jpg" />
+
+```
+
+*/
+/*doc
+---
+title: Labels
+name: labels
+parent: feedback
+---
+
+```html_example
+
+  <h3>Example <span class="label label-default">Label</span></h3>	
+
+```  
+
+*/
+/*doc
+---
+title: Leading 
+name: leading
+parent: typography
+---
+
+The space between lines of type is traditionally known as leading. We define our web-leading as line-height, this controls the vertical rhythm of the typographic grid. Leading will be defined as part of the typography system with the exceptional helper class to break the rules where needed.
+
+*/
+/*doc
+---
+title: Links
+name: links
+category: Atoms
+---
+
+Document `<a>` href text links here.
+
+```html_example
+
+<p>Lorem ipsum dolor sit amet <a href="/">Text Link <i class="fa fa-chevron-right" aria-hidden="true"></i></a></p>
+
+```
+
+*/
+/*doc
+---
+title: Popover
+name: popover
+parent: feedback
+---
+
+Add small overlays of content, like those...
+
+*/
+/*doc
+---
+title: Radio
+name: radio
+parent: select-fields
+---
+
+Document radio buttons here.
+
+```html_example
+
+    <div class="input-group">
+      <span class="input-group-addon">
+        <input type="radio" aria-label="...">
+      </span>
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+
+```
+
+
+*/
+/*doc
+---
+title: Select Fields
+name: select-fields
+category: Atoms
+---
+
+Document select field here. See text field documentation for more info.
+
+```html_example
+
+
+ <input type="text" class="form-control" placeholder="User input" aria-describedby="sizing-addon2">
+
+
+```
+
+*/
+/*doc
+---
+title: Text Fields
+name: text-fields
+parent: select-fields
+---
+
+Document text fields here.
+
+```html_example
+
+
+ <input type="text" class="form-control" placeholder="input text" aria-describedby="sizing-addon2">
+
+
+```
+
+*/
+/*doc
+---
+title: Tooltips
+name: tooltips
+parent: feedback
+---
+
+A message that appears when a cursor is positioned over an icon, image, hyperlink, or other element in a user interface.
+<br/><a ref="http://getbootstrap.com/javascript/#tooltips">http://getbootstrap.com/javascript/#tooltips</a>
+
+*/
+/*doc
+---
+title: Typography
+name: typography
+category: Atoms
+---
+
+Typography is an important element that makes up our websites presentation and structure. The font families used span from display to body font sizes. These specified fonts choices and rules make up our whole typographic system. The uses of type will be explained here.
+
+*/
+/*doc
+---
+title: Blocks
+name: blocks
+category: Molecules
+---
+
+Document the blocks here.
+
+*/
+/*doc
+---
+title: Breadcrumb
+name: breadcrumb
+category: Molecules
+---
+
+Document the breadcrumb here.
+
+*/
+/*doc
+---
+title: Button Groups
+name: button-groups
+category: Molecules
+---
+
+Document buttons groups and stuff.
+
+*/
+/*doc
+---
+title: Cards
+name: cards
+category: Molecules
+---
+
+Cards to the max!
+
+*/
+/*doc
+---
+title: Forms
+name: forms
+category: Molecules
+---
+
+Doc yo forms here - bruh.
+
+*/
+/*doc
+---
+title: Input Groups
+name: input-groups
+category: Molecules
+---
+
+Input groups. Do it. Do it NOW!
+
+*/
+/*doc
+---
+title: List Groups
+name: list-groups
+category: Molecules
+---
+
+Document your list groups here.
+
+*/
+/*doc
+---
+title: Messaging
+name: messaging
+category: Molecules
+---
+
+Document messaging here.
+
+*/
+/*doc
+---
+title: Navigation
+name: navigation
+category: Molecules
+---
+
+Here be the navigation. Yar!
+
+*/
+/*doc
+---
+title: Panels
+name: panels
+category: Molecules
+---
+
+Document your panels here.
+
+*/
+/*doc
+---
+title: Price Block
+name: price-block
+category: Molecules
+---
+
+Document your Price Block here.
+
+*/
+/*doc
+---
+title: Quotes
+name: quotes
+category: Molecules
+---
+
+Document quotes here.
+
+*/
+/*doc
+---
+title: Scroll to Top
+name: scroll-to-top
+category: Molecules
+---
+
+Document scroll to the top doc.
+
+*/
+/*doc
+---
+title: Slider
+name: slider
+category: Molecules
+---
+
+Document slider here.
+
+*/
+/*doc
+---
+title: Tables
+name: tables
+category: Molecules
+---
+
+Document tables here.
+
+*/
+/*doc
+---
+title: Thumbnails
+name: thumbnails
+category: Molecules
+---
+
+Document thumbnails here.
+
+*/
+/*doc
+---
+title: Title Header
+name: title-header
+category: Molecules
+---
+
+Document title header here.
+
+*/
+/*doc
+---
+title: Tooltip
+name: tooltip
+category: Molecules
+---
+
+Document tooltip use case style here.
+
+*/
+/*doc
+---
+title: Category Box
+name: category-box
+category: Organisms
+---
+
+I'm a cat box documentation.
+
+*/
+/*doc
+---
+title: Category Section
+name: category-section
+category: Organisms
+---
+
+I'm a category section documentation.
+
+*/
+/*doc
+---
+title: Footer
+name: footer
+category: Organisms
+---
+
+I'm the footer documentation.
+
+*/
+/*doc
+---
+title: Form Blocks
+name: form-blocks
+category: Organisms
+---
+
+I'm the form blocks documentation.
+
+*/
+/*doc
+---
+title: Header
+name: header
+category: Organisms
+---
+
+I'm the header documentation.
+
+*/
+/*doc
+---
+title: Login
+name: login
+category: Organisms
+---
+
+I'm the login documentation.
+
+*/
+/*doc
+---
+title: Modal
+name: modal
+category: Organisms
+---
+
+I'm an example of modal documentation.
+
+*/
+/*doc
+---
+title: Packary
+name: packery
+category: Organisms
+---
+
+I'm the packary documentation.
+
+*/
+/*doc
+---
+title: Persistent Header
+name: persistent-header
+category: Organisms
+---
+
+I'm the persistent header documentation.
+
+*/
+/*doc
+---
+title: Sections
+name: sections
+category: Organisms
+---
+
+I'm in the sections documentation.
+
+*/
+/*doc
+---
+title: Sub Category Section
+name: sub-category-section
+category: Organisms
+---
+
+I'm in the sub cat section documentation.
+
+*/
+/*doc
+---
+title: Tabs
+name: tabs
+category: Organisms
+---
+
+I'm the tabs documentation.
+
+*/
+/*doc
+---
+title: Tippy Top
+name: tippy-top
+category: Organisms
+---
+
+I'm the tippy top head documentation.
+
+*/
+/*doc
+---
+title: Packery
+name: packery
+category: Pages
+---
+
+I'm the packery doc.
+
+*/
