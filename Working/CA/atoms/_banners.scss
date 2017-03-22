@@ -1,0 +1,61 @@
+/*doc
+---
+title: Typography
+name: typography
+category: Atoms
+---
+<!--for Atoms section--><h3 class="styleguide">Site Banners</h3>
+
+<p class="styleguide">These are the banners that are used on category pages to call attention to certain brands or sales.</p>
+
+<h4>Brand Callout Banner</h4>
+
+<p class="styleguide">It needs to be exported in two different sizes for different breakpoints. The sizes are specified in the template.</p>
+
+<div><a href="https://github.com/livingdirect/psd-templates/tree/master/display/brandCalloutBanners.psd">
+    <img src="https://res.cloudinary.com/livingdirect/image/upload/v1/team-web-designers/global-assets/bannerTesting2.jpg">
+</div></a>
+
+<p class="styleguide">This banner sits next to a square element on the page.</p>
+
+<div>
+    <img src="https://res.cloudinary.com/livingdirect/image/upload/v1/team-web-designers/global-assets/brand-callout-banner-mockup.jpg">
+</div>
+
+  ```html_example
+
+.leftContent {
+  background: url(imageurl) top left no-repeat; 
+  display: block; 
+  height: 250px;
+  position: relative;
+  width: 100%;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+}
+
+
+```
+
+ <h4>Category Banner</h4>
+
+  <div><a href="https://github.com/livingdirect/psd-templates/tree/master/display/categoryBannerTemplates.psd">
+    <img src="https://res.cloudinary.com/livingdirect/image/upload/v1/team-web-designers/global-assets/bannerTesting1.jpg">
+  </div></a>
+
+  
+  <p class="styleguide">On category pages, two of these banners sit side by side.</p> 
+
+  <div>
+    <img src="https://res.cloudinary.com/livingdirect/image/upload/v1489603973/team-web-designers/global-assets/category-banner-mockup.jpg">
+  </div>
+
+  ```html_example
+
+.categoryname{
+background: url('imageurl') top right no-repeat #fff;
+}
+
+
+```
+*/
