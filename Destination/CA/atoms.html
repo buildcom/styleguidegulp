@@ -472,7 +472,75 @@ EXAMPLE: For more important information regarding content or action. <span class
   <li><a href="#headings">Headings</a></li>
   <li><a href="#leading">Leading</a></li>
 </ul>
-<p class="styleguide">Typography is an important element that makes up our websites presentation and structure. The font families used span from display to body font sizes. These specified fonts choices and rules make up our whole typographic system. The uses of type will be explained here.</p>
+<p class="styleguide">&lt;!--for Atoms section--&gt;<h3 class="styleguide">Site Banners</h3></p>
+<p class="styleguide">These are the banners that are used on category pages to call attention to certain brands or sales.</p>
+
+<h4>Brand Callout Banner</h4>
+
+<p class="styleguide">It needs to be exported in two different sizes for different breakpoints. The sizes are specified in the template.</p>
+
+<div><a href="https://github.com/livingdirect/psd-templates/tree/master/display/brandCalloutBanners.psd">
+    <img src="https://res.cloudinary.com/livingdirect/image/upload/v1/team-web-designers/global-assets/bannerTesting2.jpg">
+</div></a>
+
+<p class="styleguide">This banner sits next to a square element on the page.</p>
+
+<div>
+    <img src="https://res.cloudinary.com/livingdirect/image/upload/v1/team-web-designers/global-assets/brand-callout-banner-mockup.jpg">
+</div>
+<div class="codeExample">
+  <div class="exampleOutput">
+    
+.leftContent {
+  background: url(imageurl) top left no-repeat; 
+  display: block; 
+  height: 250px;
+  position: relative;
+  width: 100%;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+}
+
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre>.leftContent {
+  background: url(imageurl) top left no-repeat; 
+  display: block; 
+  height: 250px;
+  position: relative;
+  width: 100%;
+  border: 1px #ccc solid;
+  border-radius: 4px;
+}</pre>
+    </div>
+  </div>
+</div>
+<p class="styleguide"> <h4>Category Banner</h4></p><p class="styleguide">  <div><a href="https://github.com/livingdirect/psd-templates/tree/master/display/categoryBannerTemplates.psd">
+    <img src="https://res.cloudinary.com/livingdirect/image/upload/v1/team-web-designers/global-assets/bannerTesting1.jpg">
+  </div></a></p><p class="styleguide">  <p class="styleguide">On category pages, two of these banners sit side by side.</p> </p><p class="styleguide">  <div>
+    <img src="https://res.cloudinary.com/livingdirect/image/upload/v1489603973/team-web-designers/global-assets/category-banner-mockup.jpg">
+  </div></p><div class="codeExample">
+  <div class="exampleOutput">
+    
+.categoryname{
+background: url('imageurl') top right no-repeat #fff;
+}
+
+
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre>.categoryname{
+background: url('imageurl') top right no-repeat #fff;
+}</pre>
+    </div>
+  </div>
+</div>
+
 <h2 id="font-families" class="styleguide">Fonts</h2>
 <p class="styleguide">Using <code class="styleguide">@import url(//fonts.googleapis.com/css?family=Open+Sans);</code> web font <code class="styleguide">font-family</code> rule, you can specify a non &quot;web-safe&quot; font for the designated use on our sites. We organize font families by symantical classes... </p>
 <h3 class="brandFontA">Open Sans Condensed</h3>
